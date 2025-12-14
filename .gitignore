@@ -1,0 +1,15 @@
+data.json
+config_custom.toml
+*.exe
+*.bin
+*.jpg
+*.png
+cert/cred.json
+cert/key.pem
+cert/pubkey.pem
+cert/readme-keypem.md
+invido-content.db-journal
+sync_blog.sh
+cert/cert/cred.json
+cert/cert/key.pem
+cert/cert/pubkey.pem

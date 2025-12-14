@@ -1,0 +1,9 @@
+{{- define "tagnew" -}}
+title: {{.Title}}
+datetime: {{.DateTime}}
+id: {{.PageId}}
+comments: no
+rootpath: /tags
+---
+[single_taggedposts '{{.Title}}']
+{{end}}

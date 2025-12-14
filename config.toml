@@ -1,0 +1,11 @@
+PostDestSubDir = "posts"
+PageDestSubDir = "pages"
+
+ContentPage="content/page-src"
+ContentPost="content/post-src"
+
+StaticSiteDir = "invido"
+
+[Database]
+DbFileName = "invido-content.db"
+SQLDebug = true

@@ -1,0 +1,69 @@
+{{- define "linkbase" -}}
+<a href="{{.HrefLink}}" target="_blank">{{.DisplayLink}}</a>
+{{- end -}}
+
+{{- define "figstack" -}}
+<section class="vertstack">
+    {{- range .Images}}
+    <figure>
+        <a href="#" id="{{.Id}}" onclick="appGallery.displayImage(`${id}`)"><img src="{{.Redux}}" alt="{{.Caption}}" /></a>
+        <figcaption>{{.Caption}}</figcaption>
+    </figure>
+    {{- end}}
+</section>
+{{- end -}}
+
+{{- define "youtube" -}}
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="266" mozallowfullscreen="mozallowfullscreen" src="https://www.youtube.com/embed/{{.VideoID}}?feature=player_embedded\" webkitallowfullscreen="webkitallowfullscreen" width="320"></iframe>
+{{- end -}}
+
+{{- define "latestposts" -}}
+<h3 class="centered subtitle">Ultimi post</h3>
+<ul>
+    {{- range .LatestPosts}}
+    <li>
+        <a href="{{.Link}}">{{.Title}}</a>
+        <time datetime="{{.DateTimeTxt}}">{{.DateFormatted}}</time>
+    </li>
+    {{- end}}
+</ul>
+{{- end -}}
+
+
+{{- define "singletaggedposts" -}}
+<h3 class="centered subtitle">{{.Title}}</h3>
+<h6 class="centered subtitle">{{.NumOfPosts}} posts </h6>
+<ul>
+    {{- range .TagPosts}}
+    <li>
+        <a href="{{.Link}}">{{.Title}}</a>
+        <time datetime="{{.DateTimeTxt}}">{{.DateFormatted}}</time>
+    </li>
+    {{- end}}
+</ul>
+{{- end -}}
+
+
+{{- define "archiveposts" -}}
+<h3 class="centered subtitle">Anno {{.Year}}</h3>
+<h6 class="centered subtitle">{{.NumOfPosts}} posts </h6>
+<ul>
+    {{- range .YearPosts}}
+    <li>
+        <a href="{{.Link}}">{{.Title}}</a>
+        <time datetime="{{.DateTimeTxt}}">{{.DateFormatted}}</time>
+    </li>
+    {{- end}}
+</ul>
+{{- end -}}
+
+{{- define "tagposts" -}}
+<h3 class="centered subtitle">Tags</h3>
+<ul>
+    {{- range .Tags}}
+    <li>
+        <a href="{{.Uri}}">{{.Title}} ({{.NumOfPosts}})</a>
+    </li>
+    {{- end}}
+</ul>
+{{- end -}}
