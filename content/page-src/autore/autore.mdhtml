@@ -1,0 +1,38 @@
+title: autore
+datetime: 2025-12-14
+id: autore-PG
+comments: no
+---
+<header>
+  <h1>Autore</h1>
+</header>
+<p class="center">
+  <img src="foto01_320.jpg" />
+</p>
+<section>
+  <p>Mi chiamo Igor e mi occupo di software. Da qualche anno vivo e
+    lavoro nella capitale austriaca in pianta stabile.
+    Le mie origini sono da ricercare nella bassa mantovana, dove <i>a la Breda</i> (Breda Cisoni), giocavo abitualmente
+    a
+    briscola e Invido nel bar Acli o nel bar della Cooperativa.</p>
+
+  <p>
+    Qui si può vedere dove si trova la mitica Breda Cisoni:
+    [linkcap 'Breda Map', 'https://maps.google.com/maps?f=q&hl=it&q=+Breda+Cisoni+Italy&om=1']</p>
+
+  <p>
+    Il sito è un omaggio ai tempi passati nei bar di Breda a giocare a carte.
+    Ho partecipato a numerosi tornei di briscola e qualche volta
+    a dei tornei d'Invido. Tra i miei giochi di carte preferiti,
+    oltre alla briscola, vanno annoverati: <i>l'invido</i>, <i>lo spazzino</i>, <i>la mariazza</i>,
+    <i>il tresette</i>,
+    la <i>briscola in 5</i>, <i>al ciapanò</i>, <i>la pataia</i>, <i>il çent böst</i>, <i>dubito</i>,
+    il gioco delle dita e il <i>gioco dei re</i>, tutti giocati con
+    carte piacentine.
+    Quando di tanto in tanto ritorno a Breda, mi diverto a guardare le partite di carte al bar, come
+    la <i>Mariasa</i>, la <i>briscula scuperta</i>, <i>briscola in 4</i> e <i>tressette</i>.
+  </p>
+  <p>
+    Qui a Vienna, invece, niente carte ma altre attività ricreative, come la corsa o la bici, un capitolo a parte
+    descritto nel mio [linkcap 'Igorrun', 'https://igorrun.invido.it/''].</p>
+</section>
