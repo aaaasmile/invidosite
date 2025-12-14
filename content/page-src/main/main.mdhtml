@@ -1,0 +1,32 @@
+title: Invido
+datetime: 2025-12-14
+id: main-PG
+comments: no
+path: /
+---
+<h1 class="centered title">Invido.it</h1>
+<p class="centered tagline">
+    <i>san nu mia voia, a cuminci gnanca</i>
+</p>
+
+<h2 class="centered subtitle">Benvenuti</h2>
+  <p>Questo è il sito <i>invido.it</i> che prende il nome dall’omonimo gioco delle carte Invido, 
+    un simpatico gioco di carte praticato nella bassa padana. Su questo sito troverete diversi
+  giochi di carte che ho sviluppato negli anni: Tressette, Briscola, Invido, Solitario e altri.
+Tutti ispirati ai tempi di quando giocavo a carte al bar di Breda Cisoni.</p>
+<section>
+  <p>[figstack 
+    'foto01.jpg', 'Cuperativa',
+    'foto02.jpg', 'Invido',
+    'foto03.jpg', 'Invido in partita'
+  ]</p>
+</section>
+
+<section>
+  [latest_posts 'Invido News', '10']
+</section>
+<section>
+    <h3>Archivio</h3>
+    <p>Tutti gli articoli si trovano in questo [linkcap 'archivio', '/pages/archivio']</p>
+</section>
+

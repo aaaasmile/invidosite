@@ -18,6 +18,7 @@ type LiteDB struct {
 func OpenSqliteDatabase(dbPath string, debugSql bool) (*LiteDB, error) {
 	_, err := os.Stat(dbPath)
 	if err != nil {
+		log.Println("Error on OpenSqliteDatabase")
 		return nil, err
 	}
 	ld := &LiteDB{

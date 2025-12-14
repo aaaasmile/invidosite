@@ -214,6 +214,11 @@ Uso il flag -editpost. Per esempio:
 
     .\invido-site.exe -buildmain
 
+## Per vedere il sito creato
+
+    cd .\launcher
+    .\launcher.exe
+
 ### Tags
 Se cambi un tag in una pagina mdhmtl bisogna ricreare la pagina del tag.
 Il modo più semplice è quello di ricreare tutte le pagine dopo avere fatto uno scan

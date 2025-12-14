@@ -36,7 +36,7 @@ func NewMdHtmlProcess(debug bool, mpLks *idl.MapPagePostsLinks) *MdHtmlProcess {
 	res := MdHtmlProcess{
 		debug:             debug,
 		validateMandatory: true,
-		templDir:          "templates/htmlgen",
+		templDir:          "src/templates/htmlgen",
 		mapLinks:          mpLks,
 	}
 	return &res
@@ -245,6 +245,9 @@ func (mp *MdHtmlProcess) PageCreateOrUpdateStaticHtml(srcMdFullName string, fnam
 	if err := mp.createIndexHtml(); err != nil {
 		return err
 	}
+	if err := mp.createImageGalleryJson(); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -324,6 +327,7 @@ func (mp *MdHtmlProcess) createIndexHtml() error {
 
 func (mp *MdHtmlProcess) createImageGalleryJson() error {
 	if mp.ImgJsonGen == "" {
+		log.Println("[createImageGalleryJson] no images in gallery")
 		return nil
 	}
 	fname := path.Join(mp.TargetDir, "photos.json")

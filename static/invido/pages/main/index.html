@@ -1,4 +1,3 @@
-{{- define "postbeg" -}}
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +6,7 @@
   <meta name="description" content="Invido un sito che tratta giochi di carte tradizionali italiani">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title id="title">
-    {{.Title}}
+    Invido
   </title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
@@ -18,54 +17,28 @@
     •
     <a href="/pages/autore/">Autore</a>
     •
-    <a href="/pages/carte/">Carte</a>
-    •
-    <a href="/pages/breda/">Breda</a>
+    <a href="/pages/statistiche/">Statistiche</a>
   </nav>
   <main>
     <article class="post">
-      {{- range .Lines}}
-      {{. -}}
-      {{- end}}
-{{- end -}}
-
-{{define "postfinal"}}
-      <nav class="postnav">
-        {{- if .HasPrev}}
-          <a href="{{.PrevURI}}">&lt; Post successivo</a>
-        {{- else }}
-          <span>&lt; Post successivo</span>
-        {{end -}}
-        <a href="/">Home</a>
-        {{- if .HasNext}}
-          <a href="{{.NextURI}}">Post precedente &gt;</a>
-        {{end -}}
-      </nav>
-    </article>
-  </main>
-  <footer>
-    <p>
-      Pubblicato:
-      <time datetime="{{.DateTime}}">{{.DateFormatted}}</time>
-    </p>
-{{- end -}}
-
-{{define "pagefinal"}}
+      <h1 class="centered title">Igor Run Blog</h1>
+      <h2 class="centered subtitle">Per caso, un bredese a Vienna. Di corsa.</h2>
+      <p class="centered tagline">
+          <i>Ovvero perché mi alleno così raramente con il giro della civetta</i>
+      </p>
+      <section>
+        <p>Here your awesome new page!</p>
+      </section>    
     </article>
   </main>
   <footer>
     <p>
       Aggiornato:
-      <time datetime="{{.DateTime}}">{{.DateFormatted}}</time>
+      <time datetime="2025-12-14 20:00">14 Dicembre 2025 - 20:32</time>
     </p>
-{{- end -}}
-
-{{define "footer"}}
     <nav>
-      <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>
       <a href="https://corsa.invido.it/" target="_blank">Tools per la Corsa</a>
-      <a href="https://vienna.invido.it/" target="_blank">Vienna IOL</a>
-
+      <a href="https://invido.it/" target="_blank">Invido</a>
       <nav class="flatnav">
         <a href="https://github.com/aaaasmile" target="_blank"><svg height="32" aria-hidden="true"
             viewBox="0 0 24 24" width="32">
@@ -89,26 +62,7 @@
         </a>
       </nav>
     </nav>
-    <p class="copyright">© 2025 - IgorRun for <em>invido.it</em>. All rights reserved.</p>
+    <p class="copyright">© 2025 - Igor Run for <em>invido.it</em>. All rights reserved.</p>
   </footer>
-  {{if .HasGallery -}}
-  <div id="image-wrapper" class="gone">
-    <div id="close-btn" class="btn" onclick="appGallery.hideGalleryImage()">X</div>
-    <div id="image-panel">
-      <div id="previous-btn" class="btn slider-button" onclick="appGallery.prevImage()">&lt;</div>
-      <img id="the-image" class="hidden">
-      <div id="next-btn" class="btn slider-button" onclick="appGallery.nextImage()">&gt;</div>
-    </div>
-  </div>
-  {{end -}}
-</body>
-{{if .HasGallery -}}
-<script type="module">
-  import appGallery from '/js/gallery.js?001'
-  window.appGallery = appGallery()
-  window.appGallery.loadData()
-</script>
-{{end -}}
-
+  </body>
 </html>
-{{end}}

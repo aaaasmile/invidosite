@@ -32,11 +32,12 @@ func EditPost(datepost string) error {
 		return err
 	}
 	var err error
-	if post.liteDB, err = db.OpenSqliteDatabase(fmt.Sprintf("..\\..\\%s", conf.Current.Database.DbFileName),
+	if post.liteDB, err = db.OpenSqliteDatabase(conf.Current.Database.DbFileName,
 		conf.Current.Database.SQLDebug); err != nil {
 		return err
 	}
-	if err := post.editPost("../posts-src"); err != nil {
+	post_src := conf.Current.ContentPost
+	if err := post.editPost(post_src); err != nil {
 		return err
 	}
 	return nil

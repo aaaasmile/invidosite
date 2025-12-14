@@ -221,7 +221,7 @@ func (bb *Builder) createTagMdhtml(tag_item *idl.TagItem, pageItem *idl.PageItem
 	page_src := conf.Current.ContentPage
 	contentDir := page_src + "/tags"
 
-	templDir := "templates/mdhtml"
+	templDir := "src/templates/mdhtml"
 	templName := path.Join(templDir, "newtag.html")
 	var partFirst bytes.Buffer
 	tmplPage := template.Must(template.New("TagSrc").ParseFiles(templName))
@@ -265,7 +265,7 @@ func (bb *Builder) createTagMdhtml(tag_item *idl.TagItem, pageItem *idl.PageItem
 
 func (bb *Builder) buildFeed() error {
 	log.Println("[rebuildFeed] start ")
-	templDir := "templates/xml"
+	templDir := "src/templates/xml"
 	templName := path.Join(templDir, "feed.xml")
 	var partFirst bytes.Buffer
 	tmplPage := template.Must(template.New("FeedSrc").ParseFiles(templName))

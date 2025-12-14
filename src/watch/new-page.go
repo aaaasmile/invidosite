@@ -28,17 +28,18 @@ func NewPage(name string, datepage string, watch_for_changes bool) error {
 		Name:         name,
 		NameCompress: name_compr,
 		DatetimeOrig: datepage,
-		templDir:     "templates/mdhtml",
+		templDir:     "src/templates/mdhtml",
 	}
 	if err := page.setDateTimeFromString(datepage); err != nil {
 		return err
 	}
+	page_src := conf.Current.ContentPage
 
-	if err := page.createNewPage("../page-src"); err != nil {
+	if err := page.createNewPage(page_src); err != nil {
 		return err
 	}
 	if watch_for_changes {
-		if err := page.editPage("../page-src"); err != nil {
+		if err := page.editPage(page_src); err != nil {
 			return err
 		}
 	}

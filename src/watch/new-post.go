@@ -28,17 +28,18 @@ func NewPost(title string, datepost string, watch_for_changes bool) error {
 		Title:         title,
 		TitleCompress: tit_compr,
 		DatetimeOrig:  datepost,
-		templDir:      "templates/mdhtml",
+		templDir:      "src/templates/mdhtml",
 	}
 	if err := post.setDateTimeFromString(datepost); err != nil {
 		return err
 	}
+	post_src := conf.Current.ContentPost
 
-	if err := post.createNewPost("../posts-src"); err != nil {
+	if err := post.createNewPost(post_src); err != nil {
 		return err
 	}
 	if watch_for_changes {
-		if err := post.editPost("../posts-src"); err != nil {
+		if err := post.editPost(post_src); err != nil {
 			return err
 		}
 	}
@@ -66,7 +67,7 @@ func (pp *Post) createNewPost(targetRootDir string) error {
 	log.Printf("[createNewPost] create new post '%s' on '%s'", pp.Title, pp.Datetime)
 	var err error
 
-	if pp.liteDB, err = db.OpenSqliteDatabase(fmt.Sprintf("..\\..\\%s", conf.Current.Database.DbFileName),
+	if pp.liteDB, err = db.OpenSqliteDatabase(conf.Current.Database.DbFileName,
 		conf.Current.Database.SQLDebug); err != nil {
 		return err
 	}
