@@ -1,4 +1,3 @@
-{{- define "postbeg" -}}
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +6,7 @@
   <meta name="description" content="Invido un sito che tratta giochi di carte tradizionali italiani">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title id="title">
-    {{.Title}}
+    carte
   </title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="shortcut icon" href="/favicon.ico"/>
@@ -25,43 +24,44 @@
   </nav>
   <main>
     <article class="post">
-      {{- range .Lines}}
-      {{. -}}
-      {{- end}}
-{{- end -}}
-
-{{define "postfinal"}}
-      <nav class="postnav">
-        {{- if .HasPrev}}
-          <a href="{{.PrevURI}}">&lt; Post successivo</a>
-        {{- else }}
-          <span>&lt; Post successivo</span>
-        {{end -}}
-        <a href="/">Home</a>
-        {{- if .HasNext}}
-          <a href="{{.NextURI}}">Post precedente &gt;</a>
-        {{end -}}
-      </nav>
-    </article>
-  </main>
-  <footer>
-    <p>
-      Pubblicato:
-      <time datetime="{{.DateTime}}">{{.DateFormatted}}</time>
-    </p>
-{{- end -}}
-
-{{define "pagefinal"}}
+      <header>
+        <h1>Giochi di carte</h1>
+      </header>
+      <section>
+        <p>Qui di seguito riporto i programmi che ho sviluppato personalmente per giocare a carte.</p>
+        <h3> Il gioco del solitario</h3>
+        <p class="center">
+          <a href="/solitario"><img src="foto01_320.jpg" /></a>
+        </p>
+        <p>Vai al <a href="/solitario" target="_blank">Solitario</a></p>
+        <h3> Il gioco del Tressette </h3>
+        <p class="center">
+          <a href="/tressette"><img src="foto02_320.jpg" /></a>
+        </p>
+        <p>Vai al <a href="/tressette" target="_blank">Tressette</a></p>
+        <h3> Il gioco del Invido </h3>
+        <p class="center">
+          <a href="/invido"><img src="foto03_320.jpg" /></a>
+        </p>
+        <p>Vai all' <a href="/invido" target="_blank">Invido</a></p>
+        <h3> Cuperativa (collezione di giochi) </h3>
+        <p class="center">
+          <a href="/cuperativa"><img src="foto04_320.jpg" /></a>
+        </p>
+        <p>Vai alla <a href="/cuperativa" target="_blank">Cuperativa</a></p>
+        <h3> Briscola </h3>
+        <p class="center">
+          <a href="/briscola"><img src="foto05_320.jpg" /></a>
+        </p>
+        <p>Vai alla <a href="/briscola" target="_blank">Briscola</a></p>
+      </section>
     </article>
   </main>
   <footer>
     <p>
       Aggiornato:
-      <time datetime="{{.DateTime}}">{{.DateFormatted}}</time>
+      <time datetime="2025-12-14 23:00">14 Dicembre 2025 - 23:50</time>
     </p>
-{{- end -}}
-
-{{define "footer"}}
     <nav>
       <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>
       <a href="https://corsa.invido.it/" target="_blank">Tools per la Corsa</a>
@@ -92,24 +92,5 @@
     </nav>
     <p class="copyright">© 2001 - 2025 IgorRun for <em>invido.it</em>. All rights reserved.</p>
   </footer>
-  {{if .HasGallery -}}
-  <div id="image-wrapper" class="gone">
-    <div id="close-btn" class="btn" onclick="appGallery.hideGalleryImage()">X</div>
-    <div id="image-panel">
-      <div id="previous-btn" class="btn slider-button" onclick="appGallery.prevImage()">&lt;</div>
-      <img id="the-image" class="hidden">
-      <div id="next-btn" class="btn slider-button" onclick="appGallery.nextImage()">&gt;</div>
-    </div>
-  </div>
-  {{end -}}
-</body>
-{{if .HasGallery -}}
-<script type="module">
-  import appGallery from '/js/gallery.js?001'
-  window.appGallery = appGallery()
-  window.appGallery.loadData()
-</script>
-{{end -}}
-
+  </body>
 </html>
-{{end}}
