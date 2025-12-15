@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="description" content="Invido un sito che tratta giochi di carte tradizionali italiani">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="title">
+    tressette
+  </title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="shortcut icon" href="/favicon.ico"/>
+</head>
+
+<body>
+  <nav class="centered">
+    <a href="/">Home</a>
+    •
+    <a href="/pages/autore/">Autore</a>
+    •
+    <a href="/pages/carte/">Carte</a>
+    •
+    <a href="/pages/breda/">Breda</a>
+  </nav>
+  <main>
+    <article class="post">
+      <header>
+        <h1>Tressette</h1>
+      </header>
+      <section>
+        <p>Il Tressette è un gioco di carte molto famoso in Italia, che viene giocato in numerosissime varianti locali.
+        </p>
+        <h3>Versione Windows</h3>
+        <p>La versione Windows la potete scaricare da questo link:
+          <a href="https://sourceforge.net/projects/tressette/files/latest/download" target="_blank">Versione Windows</a>
+        <h3>Screenshots</h3>
+        <p class="center">
+          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" onclick="appGallery.displayImage(`${id}`)"><img src="foto01_320.jpg" alt="Inizio" /></a>        <figcaption>Inizio</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" onclick="appGallery.displayImage(`${id}`)"><img src="foto02_320.jpg" alt="Opzioni" /></a>        <figcaption>Opzioni</figcaption>    </figure>    <figure>        <a href="#" id="foto04_04" onclick="appGallery.displayImage(`${id}`)"><img src="foto04_320.jpg" alt="Tasto destro mouse" /></a>        <figcaption>Tasto destro mouse</figcaption>    </figure>    <figure>        <a href="#" id="foto05_06" onclick="appGallery.displayImage(`${id}`)"><img src="foto05_320.jpg" alt="Dichiarazioni" /></a>        <figcaption>Dichiarazioni</figcaption>    </figure></section>
+        </p>
+        <h2>Regole del gioco</h2>
+        <h3>Le carte</h3>
+        <p>Viene usato il mazzo di carte da briscola con 40 carte. L'ordine delle carte è il seguente,
+          dalla carta più alta a
+          quella pi bassa: tre, due, asso, re, cavallo, fante, sette, sei, cinque e quattro.</p>
+        <h3>Distribuzione delle carte</h3>
+        <p>Il mazzo da briscola viene mescolato dal mazziere e distribuito ai 4 giocatori. Ogni giocatore riceve 10 carte,
+          distribuite 5 per volta dal mazziere, in senso antiorario. Il mazziere cambia, in senso antiorario, alla fine della
+          smazzata.</p>
+        <h3>Il gioco</h3>
+        <p>Il giocatore successivo, in senso antiorario al mazziere, comincia il gioco. Esso gioca una carta e i giocatori
+          successivi devono rispondere al seme della prima carta giocata. Se questo non è possibile, allora il giocatore gioca
+          un'altra carta qualsiasi. Rifiutare il segno non è consentito.</p>
+        <p>Vince la mano chi ha giocato la carta più alta del primo segno giocato.</p>
+        <h3>Il punteggio</h3>
+        <p>Quando tutte e 10 le mani sono state giocate, si contano i punti. Il punteggio massimo raggiungibile in una
+          giocata,
+          senza accuse, è di 11 punti. Un punto viene attribuito alla coppia che vince l'ultima mano, ogni asso preso vale un
+          punto, mentre un due, un tre, un re, un cavallo e un fante, valgono rispettivamente un terzo di punto.</p>
+        <p>Un punteggio extra viene garantito dall'accusa. Le accuse da tre punti sono sono: Napoletana (asso, due, tre in un
+          seme), tre tre, tre due e tre assi. Quelle da 4 punti sono: quattro assi, quattro due e quattro tre.</p>
+        <p>Il gioco termina quando viene raggiunto il punteggio stabilito nelle opzioni.</p>
+        <h3>Localizzazioni</h3>
+        <p>Il programma Tressette implementa le seguenti localizzazioni:</p>
+        <ul>
+          <li>Bredese (bassa mantovana)</li>
+          <li>Neutra (classica o senza patria)</li>
+        </ul>
+        <h3>Variante Bredese</h3>
+        <p>La variante bredese è quella del gioco del tressette che si gioca a Breda Cisoni nel bar della cooperativa o al bar
+          acli. In questa variante si usano le accuse dei buoni giochi. Per una perfetta simulazione del gioco è meglio
+          impostare la lingua sul dialetto bredese per distinguere meglio i segnali.</p>
+        <p>I segnali utilizzati vengono normalmente eseguiti con la mano, e sono, a volte, accompagnati anche da una
+          espressione
+          vocale. Nel programma essi vengono tutti dichiarati, anche se nel gioco reale nessun giocatore dice “ho il tre”, ma
+          dà
+          un pugno sul tavolo mentre gioca la carta.</p>
+        <p>I segnali utilizzabili nel programma sono:</p>
+        <ul>
+          <li>Busso (Cioca), il giocatore butta la carta forte sul tavolo perché vuole dal compagno la carta migliore</li>
+          <li>Volo, il giocatore va girare la carta in aria e dice “volo”. Significa che il giocatore gioca l'ultima carta del
+            seme della mano.</li>
+          <li>Striscio lungo, il giocatore striscia la carta sul tavolo. Significa che egli possiede molte carte del seme
+            della
+            mano.</li>
+          <li>Punto, il giocatore punta la carta col pollice e dice “la punto”, anche per non confondere il segno con l'asso.
+            Significa che egli possiede ancora una sola carta del seme della mano.</li>
+          <li> Via, il giocatore butta via la carta sul tavolo e dice “via”. Significa che il socio non deve giocare il seme
+            “buttato
+            via” dal giocatore che ha fatto il segno.</li>
+          <li>Busso il tre, il giocatore da un pugno sul tavolo e non dice nulla. Significa che egli ha il tre nel seme della
+            mano.</li>
+          <li>Busso il due, il giocatore bussa con le nocche sul tavolo e non dice nulla. Significa che egli ha il due nel
+            seme
+            della mano.</li>
+          <li>Punta l'asso, il giocatore punta la carta col pollice e non dice nulla. Significa che egli ha l'asso nel seme
+            della
+            mano.</li>
+        </ul>
+        <p>
+          Il giocatore al proprio turno, può giocando una carta, effettuare un qualsiasi segnale sopraelencato, anche se non
+          corrisponde alle carte che ha in mano (segnare falso). I segnali non sono mai obbligatori.</p>
+        <p>Di solito il gioco finisce quando una coppia raggiunge il punteggio di 101 e la coppia perdente passa al banco a
+          pagare il caffè alla coppia vincitrice, oppure lancia una rivincita a briscola, ma questo è un altro gioco.</p>
+        <h3>Variante Neutra (classica)</h3>
+        <p>Partendo dal presupposto che il tressette è un gioco locale, diventa difficile definire un insieme di regole del
+          gioco
+          che vadano bene al nord come al sud dell'Italia. Basta vedere le regole definite da Wikipedia.it, oppure da Pagat.
+          In
+          realtà questa variante non dovrebbe neanche esserci, ma visto che non è possibile implementare tutte le varianti in
+          una volta sola, meglio averne una che possa permettere di giocare anche senza localizzazione.</p>
+        <p>Questi sono i segnali supportati:</p>
+        <ul>
+          <li>Busso, invita il compagno a giocare la carta migliore.</li>
+          <li>Volo, l'ultima carta del seme della mano.</li>
+          <li>Liscio, quando il giocatore possiede altre carte basse dello stesso seme.</li>
+        </ul>
+        <p>Non è possibile effettuare segnali falsi ed è possibile segnalare le carte al proprio turno.</p>
+        <h3>Algoritmo di gioco</h3>
+        <p>L'algoritmo di gioco si ispira alle soluzioni adottate nel gioco del bridge. L'idea alla base è quella di
+          utilizzare un algoritmo
+          alpha-beta, come quello che viene usato nei programmi di scacchi. La differenza con gli scacchi è che, nel caso del
+          tressette, le carte dell'avversario non sono conosciute e devono essere supposte, per esempio a caso. Se si riescono
+          a
+          fare numerose supposizioni e per ognuna di esse, si calcola l'algoritmo, si può avere come risultato una strategia
+          che, a lungo andare, può essere vincente (metodo montecarlo). Il problema da risolvere, nell'implementazione
+          corrente,
+          è la limitatezza del tempo di calcolo di una giocata. Tempi superiori a qualche secondo non sono tollerati durante
+          il
+          gioco del tressette.</p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>
+      Aggiornato:
+      <time datetime="2025-12-16 00:00">16 Dicembre 2025 - 00:29</time>
+    </p>
+    <nav>
+      <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>
+      <a href="https://corsa.invido.it/" target="_blank">Tools per la Corsa</a>
+      <a href="https://vienna.invido.it/" target="_blank">Vienna IOL</a>
+
+      <nav class="flatnav">
+        <a href="https://github.com/aaaasmile" target="_blank"><svg height="32" aria-hidden="true"
+            viewBox="0 0 24 24" width="32">
+            <title>Github</title>
+            <path
+              d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+            </path>
+          </svg></a>
+        <a href="https://www.youtube.com/@cuperativa" target="_blank"><svg viewBox="0 0 32 32" width="32" height="32">
+            <title>Youtube</title>
+            <path
+              d="M9.54545455,12.008681 L9.54545455,4.88020789 L15.8181818,8.44458065 L9.54545455,12.008681 Z M23.4984545,2.63725448 C23.2224545,1.59913262 22.4091818,0.781655914 21.3766364,0.504215054 C19.5050455,0 12,0 12,0 C12,0 4.49495455,0 2.62336364,0.504215054 C1.59081818,0.781655914 0.777545455,1.59913262 0.501545455,2.63725448 C0,4.51873118 0,8.44444444 0,8.44444444 C0,8.44444444 0,12.3700215 0.501545455,14.2516344 C0.777545455,15.2897563 1.59081818,16.107233 2.62336364,16.38481 C4.49495455,16.8888889 12,16.8888889 12,16.8888889 C12,16.8888889 19.5050455,16.8888889 21.3766364,16.38481 C22.4091818,16.107233 23.2224545,15.2897563 23.4984545,14.2516344 C24,12.3700215 24,8.44444444 24,8.44444444 C24,8.44444444 24,4.51873118 23.4984545,2.63725448 Z"
+              fill="#000"></path>
+          </svg>
+        </a>
+        <a href="/feed" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>RSS Feed</title>
+              <path d="M3.00024 13.0225C8.18522 12.2429 11.7559 15.8146 10.9774 20.9996M3.00024 8.03784C10.938 7.25824 16.7417 13.0619 15.9621 20.9997M3.00024 3.05212C13.6919 2.27364 21.7264 10.3082 20.948 20.9998M5 21C3.89566 21 3 20.1043 3 19C3 17.8957 3.89566 17 5 17C6.10434 17 7 17.8957 7 19C7 20.1043 6.10434 21 5 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </nav>
+    <p class="copyright">© 2001 - 2025 IgorRun for <em>invido.it</em>. All rights reserved.</p>
+  </footer>
+  <div id="image-wrapper" class="gone">
+    <div id="close-btn" class="btn" onclick="appGallery.hideGalleryImage()">X</div>
+    <div id="image-panel">
+      <div id="previous-btn" class="btn slider-button" onclick="appGallery.prevImage()">&lt;</div>
+      <img id="the-image" class="hidden">
+      <div id="next-btn" class="btn slider-button" onclick="appGallery.nextImage()">&gt;</div>
+    </div>
+  </div>
+  </body>
+<script type="module">
+  import appGallery from '/js/gallery.js?001'
+  window.appGallery = appGallery()
+  window.appGallery.loadData()
+</script>
+</html>
