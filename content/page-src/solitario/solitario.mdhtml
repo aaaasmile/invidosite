@@ -1,0 +1,47 @@
+title: solitario
+datetime: 2025-12-15
+id: solitario-PG
+comments: no
+---
+<header>
+  <h1>Solitario</h1>
+</header>
+<section>
+  <p>Il solitario che ho creato è il classico Klondike, che ho implementato
+    usando le quaranta carte da briscola e le cinquantasei del Tarocco Piemontese.
+    Le regole del gioco le potete trovare su
+    [linkcap 'wikipedia', 'https://it.wikipedia.org/wiki/Klondike_(solitario)']. 
+    Credo che questo sia stato il mio primo gioco di carte che abbia implementato in C++ nel lontano 2001, 
+    mentre nel 2025 l'ho aggiornato aggiungendo anche la versione Web in Wasm/Escripten.</p>
+  <p>Il Solitario è disponibile in diverse versioni.</p>
+
+  <h3>Versione Web</h3>
+  <p>La versione Web (nessuna installazione necessaria) 
+    la trovate a questo [linkcap 'link','/web/solitario'].
+  <p class="center">
+    <a href="/web/solitario" target="_blank"><img src="foto01_320.jpg" /></a>
+  </p>
+
+  <h3>Versione Windows</h3>
+  <p>La versione Windows la potete scaricare da questo link: [linkcap 'Versione Windows', 'https://sourceforge.net/projects/solitarioita/files/latest/download']
+
+  <h3>Versione Android</h3>  
+  <p>La versione Android (file apk) la potete scaricare da questo link: 
+    [linkcap 'Versione Android', 'https://sourceforge.net/projects/solitarioita/files/Android/Solitario-2.3.1.apk/download']
+
+  <h3>Codici sorgenti</h3>
+  <p>I sorgenti del programma per tutte le versioni li potete trovare su [linkcap 'GitHub', 'https://github.com/aaaasmile/AndroSolitario']</p>
+  <p>Il progetto utilizza gli stessi sorgenti per i vari target (Windows, Escripten, WSL e Android). 
+    La base di tutte le versioni è la libreria C libSdl versione 3, mentre i miei sorgenti sono in C++. 
+  </p>
+
+  <h3>Screenshots</h3>  
+  <p class="center">
+    [figstack
+        'foto01.jpg', 'Versione Web Wasm',
+        'foto02.jpg', 'Tarocco Piemontese',
+        'foto03.jpg', 'Carte Piacentine',
+        'photo2.png', 'Versione Android'
+    ]
+  </p>
+</section>

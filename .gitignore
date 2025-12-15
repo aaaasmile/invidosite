@@ -13,3 +13,4 @@ sync_blog.sh
 cert/cert/cred.json
 cert/cert/key.pem
 cert/cert/pubkey.pem
+static/invido/web/*

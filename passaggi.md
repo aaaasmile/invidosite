@@ -168,6 +168,10 @@ Se per caso devo ricreare il sito (links, pages e posts)
 
     .\invido-site.exe -rebuildall
 
+## Creare una nuova page
+
+   .\invido-site.ex -newpage "solitario" -date "2025-01-18" -watch
+
 ## Creare un nuovo Post (New)
 Al momento il processo funziona con Visual Code (profilo Edit Post).
 Il database sarebbe meglio scaricarlo da current su invido.it.

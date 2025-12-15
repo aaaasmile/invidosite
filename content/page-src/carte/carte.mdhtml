@@ -10,32 +10,32 @@ comments: no
   <p>Qui di seguito riporto i programmi che ho sviluppato personalmente per giocare a carte.</p>
   <h3> Il gioco del solitario</h3>
   <p class="center">
-    <a href="/solitario"><img src="foto01_320.jpg" /></a>
+    <a href="/pages/solitario"><img src="foto01_320.jpg" /></a>
   </p>
-  <p>Vai al [linkcap 'Solitario', '/solitario']</p>
+  <p>Vai al [linkcap 'Solitario', '/pages/solitario']</p>
 
   <h3> Il gioco del Tressette </h3>
   <p class="center">
-    <a href="/tressette"><img src="foto02_320.jpg" /></a>
+    <a href="/pages/tressette"><img src="foto02_320.jpg" /></a>
   </p>
-  <p>Vai al [linkcap 'Tressette', '/tressette']</p>
+  <p>Vai al [linkcap 'Tressette', '/pages/tressette']</p>
 
   <h3> Il gioco del Invido </h3>
   <p class="center">
-    <a href="/invido"><img src="foto03_320.jpg" /></a>
+    <a href="/pages/invido"><img src="foto03_320.jpg" /></a>
   </p>
-  <p>Vai all' [linkcap 'Invido', '/invido']</p>
+  <p>Vai all' [linkcap 'Invido', '/pages/invido']</p>
 
   <h3> Cuperativa (collezione di giochi) </h3>
   <p class="center">
-    <a href="/cuperativa"><img src="foto04_320.jpg" /></a>
+    <a href="/pages/cuperativa"><img src="foto04_320.jpg" /></a>
   </p>
-  <p>Vai alla [linkcap 'Cuperativa', '/cuperativa']</p>
+  <p>Vai alla [linkcap 'Cuperativa', '/pages/cuperativa']</p>
 
   <h3> Briscola </h3>
   <p class="center">
-    <a href="/briscola"><img src="foto05_320.jpg" /></a>
+    <a href="/pages/briscola"><img src="foto05_320.jpg" /></a>
   </p>
-  <p>Vai alla [linkcap 'Briscola', '/briscola']</p>
+  <p>Vai alla [linkcap 'Briscola', '/pages/briscola']</p>
 
 </section>
