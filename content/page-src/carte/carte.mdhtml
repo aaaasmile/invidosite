@@ -7,7 +7,8 @@ comments: no
   <h1>Giochi di carte</h1>
 </header>
 <section>
-  <p>Qui di seguito riporto i programmi che ho sviluppato personalmente per giocare a carte.</p>
+  <p>Qui di seguito potete trovare i programmi che ho sviluppato per giocare a carte.</p>
+  
   <h3> Il gioco del solitario</h3>
   <p class="center">
     <a href="/pages/solitario"><img src="foto01_320.jpg" /></a>
