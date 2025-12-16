@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="description" content="Invido un sito che tratta giochi di carte tradizionali italiani">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="title">
+    invido
+  </title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="shortcut icon" href="/favicon.ico"/>
+</head>
+
+<body>
+  <nav class="centered">
+    <a href="/">Home</a>
+    •
+    <a href="/pages/autore/">Autore</a>
+    •
+    <a href="/pages/carte/">Carte</a>
+    •
+    <a href="/pages/breda/">Breda</a>
+  </nav>
+  <main>
+    <article class="post">
+      <header>
+        <h1>Invido</h1>
+      </header>
+      <section>
+        <p>Invido è un gioco di carte molto divertente, probabilmente derivato dal gioco envido argentino.
+          Ho realizzato il gioco così come viene giocato a Breda Cisoni, vale a dire in dialetto bredese. La versione in
+          italiano è puramente artificiale, vale a dire che ho immaginato come potete giocare usando l'italiano
+          invece del dialetto.
+        </p>
+        <h3>Versione Windows</h3>
+        <p>La versione Windows la potete scaricare da questo link:
+          <a href="https://sourceforge.net/projects/invido/files/latest/download?source=directory" target="_blank">Versione Windows</a>
+        <h3>Screenshots</h3>
+        <p class="center">
+          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" onclick="appGallery.displayImage(`${id}`)"><img src="foto01_320.jpg" alt="Inizio" /></a>        <figcaption>Inizio</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" onclick="appGallery.displayImage(`${id}`)"><img src="foto02_320.jpg" alt="In partita" /></a>        <figcaption>In partita</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" onclick="appGallery.displayImage(`${id}`)"><img src="foto03_320.jpg" alt="Chiamata" /></a>        <figcaption>Chiamata</figcaption>    </figure>    <figure>        <a href="#" id="foto04_06" onclick="appGallery.displayImage(`${id}`)"><img src="foto04_320.jpg" alt="Tasto destro mouse" /></a>        <figcaption>Tasto destro mouse</figcaption>    </figure></section>
+        </p>
+        <h2>Regole del gioco dell'Invido</h2>
+        <h3>Introduzione</h3>
+        <p>Lo scopo del gioco dell'Invido consiste nel raggiungere o superare i 24 punti.</p>
+        <h3>Svolgimento del gioco (2 giocatori)</h3>
+        <p>Il gioco si svolge con un mazzo di carte da briscola ridotto a 32 carte. Il mazzo per l'Invido è lo stesso come per
+          la
+          briscola, ma senza i 4 e 5.</p>
+        <p>L'ordine d'importanza delle carte è lo stesso che per il gioco del tressette, il 3 è la carta più alta poi segue il
+          2,
+          l'asso, il re, il cavallo, il fante il sette e il sei. Una volta mescolate le carte, il mazziere distribuisce 3
+          carte
+          all'avversario e 3 per se. A questo punto, la giocata ha inizio.</p>
+        <p>Il punteggio della giocata parte da 1 punto (canèla),
+          ma può variare a seconda delle chiamate. I possibili punteggi della giocata sono: 1 (valore iniziale), 3 (vale la
+          chiamata “invido”), 6 (vale la chiamata “tras mas”), 9 (vale la chiamata “tras mas nof”), 12 (vale la chiamata
+          “fuori
+          gioco”), 24 (chiamata “partita”) oppure 0 in caso di giocata andata “a monte”. Il giocatore che non ha il mazzo
+          inizia
+          la mano, egli può giocare una carta oppure effettuare una chiamata. La chiamata serve per cambiare il punteggio
+          corrente della giocata (per i dettagli vedi sezione <a href="#chiamate">Chiamate</a>).
+          La mano ha termine, quando entrambi i giocatori hanno giocato una carta.</p>
+        <p>La mano è assegnata al giocatore che ha giocato la carta più alta. Se le carte giocate hanno lo
+          stesso valore, la mano finisce patta. Una giocata ha termine, quando un giocatore vince 2 mani, oppure, in caso di
+          una
+          mano patta, quando un giocatore ha conquistato la prima mano.</p>
+        <p>Nel caso in cui tutte e tre le mani terminano patte, anche la giocata si conclude patta e non assegna nessun punto.
+          Al
+          termine della giocata, è assegnato il punteggio in palio al giocatore che l'ha vinta.</p>
+        <h3>Esempio di giocata (1)</h3>
+        <p>Giocatore 1, che chiamo <i>Ricu</i> : 3 coppe, 2 bastoni, 1 spade</p>
+        <p>Giocatore 2, che chiamo <i>Pagi</i> : 6 spade, 7 coppe, re denari</p>
+        <p>Tocca al Giocatore 2 (<i>Pagi</i>)</p>
+        <p><i>Pagi</i>: chiama "A monte" in quanto le sue carte sono basse. Ora tocca al giocatore 1 rispondere (<i>Ricu</i>)
+        </p>
+        <p><i>Ricu</i>: risponde con “No” in quanto le sue carte sono buone</p>
+        <p><i>Pagi</i>: gioca il re di denari</p>
+        <p><i>Ricu</i>: gioca l' asso di spade e vince la mano (asso è più grande del re)</p>
+        <p>A questo punto la prima mano è finita e vinta da <i>Ricu</i>. <i>Ricu</i> ha in mano un 3 e
+          non può più perdere la giocata (anche se <i>Pagi</i> avesse
+          un 3, la carta più alta, la mano sarebbe patta, ma siccome <i>Ricu</i> ha vinto la prima mano è lui
+          che vince la giocata). Quindi è tutto interesse di <i>Ricu</i> aumentare la posta in gioco
+          con una chiamata a “Invido”.
+        </p>
+        <p><i>Ricu</i>: chiama “Invido”</p>
+        <p><i>Pagi</i>: ha carte basse, in più sa che un 3 in mano all'avversario non gli lascerebbe scampo, quindi tenta di
+          annullare la giocata con una chiamata “a monte”.</p>
+        <p><i>Pagi</i>: chiama “A monte”.</p>
+        <p><i>Ricu</i>: risponde “No”.</p>
+        <p>Ora <i>Pagi</i> può accettare l'Invido oppure andare via senza giocare le carte perdendo il
+          punteggio attuale (1 punto).</p>
+        <p><i>Pagi</i>: dice “Vado via”.</p>
+        <p>La giocata è terminata e <i>Ricu</i> vince un punto.</p>
+        <h3>Esempio di giocata (2)</h3>
+        <p><i>Ricu</i> : re spade, 2 bastoni, 6 coppe</p>
+        <p><i>Pagi</i> : 7 spade, 3 denari, fante di bastoni</p>
+        <p>Tocca a <i>Ricu</i></p>
+        <p>Per cercare di prendere la prima mano, <i>Ricu</i> gioca la carta più alta: il due.</p>
+        <p><i>Ricu</i> gioca il 2 di bastoni</p>
+        <p><i>Pagi</i> può prendere il 2 e vincere la prima mano, un buon requisito per chiamare “Invido”</p>
+        <p><i>Pagi</i> chiama “Invido”</p>
+        <p><i>Ricu</i> deve rispondere: se accetta la chiamata deve essere convinto di vincere 2 mani.
+          Perdendo la prima mano dovrebbe riuscire a guadagnare due mani con il 6 di coppe e il re di spade,
+          impresa molto improbabile. Meglio un diversivo con la chiamata “A monte”</p>
+        <p><i>Ricu</i> chiama “A monte”</p>
+        <p><i>Pagi</i> sa di vincere la prima mano perché prende il 2 di bastoni con il 3 di denari,
+          ma la probabilità di perdere le altre due col 7 e col fante, è molto alta.</p>
+        <p><i>Pagi</i> pensa che se rifiuta “A monte” e <i>Ricu</i> gioca l'"Invido" quasi sicuramente
+          perderà, in più l'avversario può aumentare ulteriormente la posta con una chiamata “Tras mas”.</p>
+        <p><i>Pagi</i> allora accetta la chiamata “A monte” di <i>Ricu</i> e dice “va bene”.</p>
+        <p>La giocata termina “a monte”, come se non fosse mai giocata, e nessun punteggio viene assegnato.</p>
+        <h3>Esempio di giocata (3)</h3>
+        <p><i>Ricu</i> : re spade, 2 bastoni, asso di coppe</p>
+        <p><i>Pagi</i> : 2 spade, 3 denari, fante di bastoni</p>
+        <p>Tocca a <i>Ricu</i></p>
+        <p>Per cercare di prendere la prima mano, <i>Ricu</i> gioca la propria carta più alta: il due</p>
+        <p><i>Ricu</i> gioca il 2 di bastoni</p>
+        <p><i>Pagi</i> gioca il 2 di spade</p>
+        <p>La prima mano termina patta. Il giocatore che conquista la seconda mano, oppure in caso di ulteriore patta, la terza
+        mano, conquista la giocata.</p> 
+        <p><i>Pagi</i> ha un grosso vantaggio in quanto gioca dopo avere visto la carta
+        dell'avversario, in più è sicuro di non perdere la seconda mano con un 3.</p>
+        <p><i>Ricu</i> gioca d'anticipo ed effettua una chiamata un po' ardita.</p>
+        <p><i>Ricu</i> chiama “Invido”</p>
+        <p><i>Pagi</i> non teme l'aumento della posta e dice “Va bene”</p>
+        <p><i>Ricu</i> gioca l'asso di coppe</p>
+        <p><i>Pagi</i> chiama “tras mas”</p>
+        <p><i>Pagi</i> sa bene di avere vinto e tenta di alzare ulteriormente la posta in palio. <i>Ricu</i> deve solo sperare
+        che <i>Pagi</i> non abbia almeno un asso e che <i>Pagi</i> stia bleffando.</p>
+        <p><i>Ricu</i> chiama “Tras mas nof”</p>
+        <p><i>Ricu</i> è convinto che <i>Pagi</i> stia bluffando, non solo accetta il “tras mas” con una chiamata 
+          di accettazione implicita, ma chiede un ulteriore innalzamento della posta. <i>Pagi</i> non aspetta altro 
+          e rilancia di nuovo.</p>
+        <p><i>Pagi</i> chiama “Fuori gioco”</p>
+        <p>A questo punto il punteggio della giocata è 9 punti e una chiamata a 12 è in bilico. <i>Ricu</i> può continuare con la
+        sua convinzione, oppure andarsene e perdere 9 punti.</p>
+        <p><i>Ricu</i> chiama “Partita”</p>
+        <p><i>Ricu</i> rilancia ancora chiedendo di portare la posta al massimo consentito.</p>
+        <p><i>Pagi</i> dice “va bene”</p>
+        <p><i>Pagi</i> gioca il 3 e vince giocata e partita. <i>Ricu</i> potrebbe aver giocato punto su punto 
+        per molte giocate per poi pedere l'intera partita in una sola giocata.</p>
+        <h3 id="chiamate">Chiamate</h3>
+        <p>È possibile raggiungere i 24 punti senza mai chiamare nulla, semplicemente giocando le carte assegnando di volta in
+        volta un solo punto. In pratica questo caso non si verifica mai e durante la partita avvengono spesso delle chiamate.</p>
+        <p>Esistono diversi tipi di chiamate, quelle che tentano di cambiare il punteggio attuale della giocata e le chiamate di
+        risposta. Le chiamate di punteggio sono:</p>
+        <ul>
+        <li>“Invido” (3 punti),</li>
+        <li>“Tras mas” (6 punti),</li>
+        <li>“Tras mas nof” (9 punti),</li>
+        <li>“Fuori gioco” (12 punti),</li>
+        <li>“Partita” (24 punti).</li>
+        </ul>
+        <p>Ad una chiamata di punteggio si può rispondere con:</p>
+        <ul>
+        <li>“Va bene”,</li>
+        <li>“Vado via”</li>
+        <li>una controchiamata di punteggio</li>
+        <li>oppure con una chiama “A monte”.</li>
+        </ul>
+        <p>La chiamata di punteggio è ammessa solo se il punteggio chiamato è immediatamente superiore a quello corrente. Ad
+        esempio, all'inizio, quando il punteggio è 1 punto, la chiamata di punteggio ammessa è quella di “Invido”. Quando il
+        punteggio della giocata è invido, la chiamata ammessa è “Tras mas” e così via fino a partita.</p>
+        <p>Una chiamata di posta è valida quando controbatte la posta del giocatore avversario. 
+          Ad esempio, se <i>Ricu</i> ha chiamato “Invido” e <i>Pagi</i> ha detto “Va
+        bene”,  qui solo <i>Pagi</i> può chiamare “Tras mas”, vale a dire che solo l'avversarsio può alzare la posta al livello
+        successivo. <i>Ricu</i> e <i>Pagi</i> possono solo alzare la posta in gioco, mai abbassarla.</p>
+        <p>Ad una chiamata di punteggio è obbligatorio dare una risposta. 
+          Nel caso in cui <i>Ricu</i> non volesse accettare l'innalzamento della posta proposta da <i>Pagi</i>,
+        a <i>Ricu</i> non rimane altro che rispondere con un “Vado via” 
+        perdendo il punteggio della giocata prima della chiamata.</p> 
+        <p>Ad esempio: <i>Ricu</i> chiama “Invido” e <i>Pagi</i> risponde con “Trasmas”. </p>
+         <p> <i>Ricu</i> risponde “Vado via” e <i>Pagi</i>
+        vince 3 punti, la posta al momento della chiamata “Trasmas”. </p>
+        
+        <p>La chiamata “A monte” può essere effettuata in qualsiasi momento e, se è accettata, annulla la giocata in corso. </p>
+        <p>Ad esempio: </p>
+          <p><i>Ricu</i> chiama “Invido”</p> 
+          <p><i>Pagi</i> risponde con “Tras mas”</p> 
+          <p><i>Ricu</i> controbatte con “A monte”</p> 
+          <p><i>Pagi</i> accetta con “Va bene”. </p>
+          <p>La chiamata “A monte” sospende
+        l'attuale svolgimento del gioco fino alla risposta. Se la risposta è negativa, il gioco riprende dal punto in cui è
+        stato interrotto con la chiamata “A monte”.</p>
+        <h3>Particolarità del gioco</h3>
+        <p>Esiste un punteggio particolare che è quello di 23-23. Quando una giocata termina ed entrambi i giocatori si trovano
+        sul 23 pari, la partita non termina ai 24 punti, ma si azzera il punteggio e la partita si svolge agli 8 punti. Nel
+        caso in cui i 2 giocatori si trovassero poi sul punteggio di 7 pari, il punteggio si azzera di nuovo e la partita
+        continua come se si fosse raggiunto il punteggio di 23 pari.</p>
+        <p> Quindi la partita continua, in teoria anche all'infinito. Quando però un
+        giocatore raggiunge o supera gli 8 punti senza andare sul 7 pari ( sul 7-7 come 23-23 il punteggio viene azzerato),
+        la partita è finita. Nota che l'azzeramento dovuto al 7-7 avviene solo se si è prima raggiunto il punteggio di 23-23.</p>
+        <h3>Particolarità del programma</h3>
+        <p>Sulle chiamate “A monte”, per semplicità, le sole risposte ammesse sono “No” e “Va bene”. In partite reali non di rado
+        vi sono risposte negative implicite e ad un “A monte” si può sentire la risposta “Invido” (implica la risposta “No” e
+        la successiva chiamata “Invido”).</p>
+        <p>Non è supportata la risposta implicita “Va bene” quando si gioca una carta alla domanda di punteggio. Prima di giocare
+        una carta, bisogna avere risposto a tutte le domande in sospeso.</p>
+        <h3>Uso del programma</h3>
+        <p>Il programma Invido rispecchia fedelmente le regole di gioco dell'Invido. 
+          Le chiamate vengono effettuate usando i pulsanti che via via compaiono sulla parte destra della finestra. 
+          Per giocare una carta basta effettuare un click col pulsante sinistro del mouse sulla carta stessa. 
+          Con il tasto destro del mouse sulla carta, è possibile avere nuove funzioni, come “Vado Dentro”.</p>
+        <p>Al fianco delle carte, 3 led segnalano lo stato attuale della giocata, un led verde chiaro significa che la mano è
+        stata vinta, un led blu significa che la mano è stata pareggiata, mentre un led rosso segnala la mano persa. 
+        L'asso di spade punta sempre il giocatore che è di turno.</p>
+        <h3>Punteggio riportato</h3>
+        <p>Invido riporta costantemente il punteggio della partita. Il punteggio dei due giocatori viene mostrato nella parte
+        destra con la notazione propria dell'invido. Al posto dei numeri vengono usati due simboli: la linea (canèla) e
+        l'ovetto (oef). Una linea rappresenta 1 punto, mentre l'ovetto rappresenta 3 punti. Il punteggio attuale di ciascun
+        giocatore è la somma totale dei punti associati a ciascun ovetto e linea.</p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>
+      Aggiornato:
+      <time datetime="2025-12-17 00:00">17 Dicembre 2025 - 00:36</time>
+    </p>
+    <nav>
+      <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>
+      <a href="https://corsa.invido.it/" target="_blank">Tools per la Corsa</a>
+      <a href="https://vienna.invido.it/" target="_blank">Vienna IOL</a>
+
+      <nav class="flatnav">
+        <a href="https://github.com/aaaasmile" target="_blank"><svg height="32" aria-hidden="true"
+            viewBox="0 0 24 24" width="32">
+            <title>Github</title>
+            <path
+              d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+            </path>
+          </svg></a>
+        <a href="https://www.youtube.com/@cuperativa" target="_blank"><svg viewBox="0 0 32 32" width="32" height="32">
+            <title>Youtube</title>
+            <path
+              d="M9.54545455,12.008681 L9.54545455,4.88020789 L15.8181818,8.44458065 L9.54545455,12.008681 Z M23.4984545,2.63725448 C23.2224545,1.59913262 22.4091818,0.781655914 21.3766364,0.504215054 C19.5050455,0 12,0 12,0 C12,0 4.49495455,0 2.62336364,0.504215054 C1.59081818,0.781655914 0.777545455,1.59913262 0.501545455,2.63725448 C0,4.51873118 0,8.44444444 0,8.44444444 C0,8.44444444 0,12.3700215 0.501545455,14.2516344 C0.777545455,15.2897563 1.59081818,16.107233 2.62336364,16.38481 C4.49495455,16.8888889 12,16.8888889 12,16.8888889 C12,16.8888889 19.5050455,16.8888889 21.3766364,16.38481 C22.4091818,16.107233 23.2224545,15.2897563 23.4984545,14.2516344 C24,12.3700215 24,8.44444444 24,8.44444444 C24,8.44444444 24,4.51873118 23.4984545,2.63725448 Z"
+              fill="#000"></path>
+          </svg>
+        </a>
+        <a href="/feed" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>RSS Feed</title>
+              <path d="M3.00024 13.0225C8.18522 12.2429 11.7559 15.8146 10.9774 20.9996M3.00024 8.03784C10.938 7.25824 16.7417 13.0619 15.9621 20.9997M3.00024 3.05212C13.6919 2.27364 21.7264 10.3082 20.948 20.9998M5 21C3.89566 21 3 20.1043 3 19C3 17.8957 3.89566 17 5 17C6.10434 17 7 17.8957 7 19C7 20.1043 6.10434 21 5 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </nav>
+    <p class="copyright">© 2001 - 2025 IgorRun for <em>invido.it</em>. All rights reserved.</p>
+  </footer>
+  <div id="image-wrapper" class="gone">
+    <div id="close-btn" class="btn" onclick="appGallery.hideGalleryImage()">X</div>
+    <div id="image-panel">
+      <div id="previous-btn" class="btn slider-button" onclick="appGallery.prevImage()">&lt;</div>
+      <img id="the-image" class="hidden">
+      <div id="next-btn" class="btn slider-button" onclick="appGallery.nextImage()">&gt;</div>
+    </div>
+  </div>
+  </body>
+<script type="module">
+  import appGallery from '/js/gallery.js?001'
+  window.appGallery = appGallery()
+  window.appGallery.loadData()
+</script>
+</html>

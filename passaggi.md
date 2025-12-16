@@ -170,7 +170,7 @@ Se per caso devo ricreare il sito (links, pages e posts)
 
 ## Creare una nuova page
 
-   .\invido-site.ex -newpage "solitario" -date "2025-01-18" -watch
+   .\invido-site.exe -newpage "invido" -date "2025-12-16" -watch
 
 ## Creare un nuovo Post (New)
 Al momento il processo funziona con Visual Code (profilo Edit Post).
