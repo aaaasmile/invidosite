@@ -1,0 +1,107 @@
+title: cuperativa
+datetime: 2025-12-18
+id: cuperativa-PG
+comments: no
+---
+<header>
+  <h1>Cuperativa</h1>
+</header>
+<section>
+  <h3>Versione Windows</h3>
+  <p>La versione Windows della Cuperativa la potete scaricare da questo link:
+    [linkcap 'Versione Windows', 'https://sourceforge.net/projects/cuperativa/files/latest/download']
+
+  <h3>Screenshots</h3>
+  <p class="center">
+    [figstack
+    'foto01.jpg', 'Inizio',
+    'foto02.jpg', 'Opzioni',
+    'foto03.jpg', 'Gioco selezionato',
+    'foto04.jpg', 'Mariazza',
+    'foto05.jpg', 'Tombolon'
+    ]
+  </p>
+
+  <h3>Descrizione</h3>
+  <p>La cuperativa è una suite di diversi giochi di carte a due giocatori.
+    Sono presenti i seguenti giochi: Tressette, Tombolon, Scopetta, Spazzino, Mariazza, Briscolone e Briscola.
+    Il Tombolon e lo Spazzino sono della varianti molto interessanti della scopa.
+    La mariazza è una bella variante della briscola a 5 carte.</p>
+  <p>Tutti i giochi sono per due giocatori uno dei quali è il computer.</p>
+
+  <h3>Mazzi di carte</h3>
+  <p>Le carte incluse nel programma sono: bergamasche, milanesi, napoletane, piacentine, siciliane e trevigiane.</p>
+
+  <h3>Mazzi di carte opzionali</h3>
+  <p>Sono disponibili mazzi aggiuntivi da installare separatamente. Essi sono: il bellissimo mazzo di carte del Tarocco
+    Piemontese creato da Domenico Starna, le carte bolognesi, le carte genovesi, le carte piemontesi, le carte
+    romagnole, le carte della Sardegna, le carte trentine e le carte triestine.</p>
+
+  <p>I mazzi si trovano:</p>
+
+  <ul>
+    <li>[linkcap 'mazzo tarocco piemontese',
+      'https://github.com/aaaasmile/Solitario/blob/main/artifact/tarocco_piemontese.zip']
+    <li>[linkcap 'mazzo carte bolognesi', 'https://github.com/aaaasmile/Solitario/blob/main/artifact/bologna.zip']</li>
+    <li>[linkcap 'mazzo carte genovesi', 'https://github.com/aaaasmile/Solitario/blob/main/artifact/genova.zip']</li>
+    <li>[linkcap 'mazzo carte piemontesi', 'https://github.com/aaaasmile/Solitario/blob/main/artifact/piemonte.zip']
+    </li>
+    <li>[linkcap 'mazzo carte romagnole', 'https://github.com/aaaasmile/Solitario/blob/main/artifact/romagna.zip']</li>
+    <li>[linkcap 'mazzo carte sardegna', 'https://github.com/aaaasmile/Solitario/blob/main/artifact/sardegna.zip']</li>
+    <li>[linkcap 'mazzo carte trento', 'https://github.com/aaaasmile/Solitario/blob/main/artifact//trento.zip']</li>
+    <li>[linkcap 'mazzo carte trieste', 'https://github.com/aaaasmile/Solitario/blob/main/artifact/trieste.zip']</li>
+  </ul>
+  <p>Per installare un nuovo mazzo basta scompattare lo zip nella sotto directory res/carte dove è installato il
+    programma
+    Cuperativa (per esempio: <code>\\localappdata\Invido_it\Cuperativa\1_2_10\app\res\carte</code>). </p>
+  <p>Poi dovete lanciare Cuperativa. Ora nelle opzioni delle carte comparirà il nuovo mazzo scompattato dallo zip, mazzo
+    che potrà essere selezionato come tutti gli altri precedenti.</p>
+
+  <p>Esempio carte romagnole:</p>
+
+  <p>Scaricare lo zip romagna.zip</p>
+  <p>Scompattare lo zip in modo che si crei la directory res\carte\romagna con all'interno tutte le immagini delle carte
+  </p>
+  <p>Lanciare il programma Cuperativa, selezionare il menu opzioni, mazzi di carte, selezionare carte romagnole e
+    premere il pulsante [applica].</p>
+  <p>A questo punto tutti i giochi di carte saranno eseguiti usando il mazzo delle carte romagnole.</p>
+
+  <h3>Installazione Linux</h3>
+  <p>Non esistono pacchetti precompilati per l'ambiente Linux. In ogni modo è possibile eseguire il programma Cuperativa
+    settando l'ambiente di sviluppo, come ho fatto usando Ubuntu 14.04. La descrizione dettagliata del non triviale
+    processo, l'ho messa al link [linkcap 'Cuperativa Ubuntu',
+    'https://github.com/aaaasmile/CuperativaSoloRuby/blob/master/doc/ubuntu_install'].</p>
+
+  <h3>Sorgenti</h3>
+  <p>Il programma l'ho realizzato usando il linguaggio di programmazione Ruby.
+    Per evitare i problemi di installazione del linguaggio e delle sue librerie, ho creato una piccola applicazione
+    in c# che viene usata per lanciare Ruby con il suo script di partenza che esegue il programma Cuperativa. </p>
+  <p>Tutti i sorgenti del programma si trovano su [linkcap 'github', 'https://github.com/aaaasmile/CuperativaSoloRuby'].
+    Per lo sviluppo della versione 1.2.7
+    ho usato Visual Studio 2015 (edit, github e search supporto) e l'ormai introvabile Arachno IDE 0.7.13 (edit e
+    navigation).
+    Alcune funzioni le ho sviluppate in ambiente Linux con Ubuntu 14.04 e Visual Studio Code.</p>
+
+  <h3>Storia</h3>
+  <p>[figstack 
+    'foto06.jpg', 'Il bar della Cuperativa'
+  ]</p>
+  <p>
+    Ho appena finito di mangiare, il notiziario è finito ed è arrivato il momento del caffè. Che ore sono? L’una e
+    mezza? Bene un caffè e una briscola ci stanno.</p>
+  <p>Parcheggio in doppia fila, non faccio in tempo ad arrivare alla porta che già sento sbraitare e picchiare sui
+    tavoli.</p>
+
+  <p><i>“Antonio, il caffè l’amaro e le carte.”</i></p>
+
+  <p>Una bella briscola prima di riprendere e anche oggi il caffè lo paga il Galu.</p>
+
+  <p>Da qui nasce Cuperativa, dai riti, i suoni e le immagini di chi come me giocava a carte al bar.</p>
+
+  <p>Il nome nasce dal locale di Breda Cisoni dove dopo pranzo andavo vedere a giocare le migliori partite di carte del
+  mondo. A mariasa, invido, spazzino, briscola, tressette, cipanò e molti altri.
+  </p>
+  <p>Due bar a Breda Cisoni erano troppi ed ora la Cuperativa non è più funzionante. Rimane l'Acli a tenere alta la voglia 
+    di giocare a carte al bar.
+  </p>
+</section>
