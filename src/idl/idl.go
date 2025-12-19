@@ -17,15 +17,20 @@ type ImgDataItem struct {
 	Name    string `json:"name"`
 	Redux   string `json:"redux"`
 	Caption string `json:"caption"`
-}
-
-type ImgDataSection struct {
-	Id  string        `json:"id"`
-	Val []ImgDataItem `json:"val"`
+	SectId  string `json:"sectid"`
 }
 
 type ImgDataItems struct {
-	Images ImgDataSection `json:"images"`
+	Images []ImgDataItem `json:"images"`
+}
+
+type ImgDataSection struct {
+	SectId string        `json:"id"`
+	Val    []ImgDataItem `json:"val"`
+}
+
+type ImgDataSections struct {
+	Images []ImgDataSection `json:"images"`
 }
 
 func (fg *ImgDataItem) CalcReduced() error {

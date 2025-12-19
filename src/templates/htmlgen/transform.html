@@ -4,9 +4,9 @@
 
 {{- define "figstack" -}}
 <section class="vertstack">
-    {{- range .Images}}
+    {{- range .Val}}
     <figure>
-        <a href="#" id="{{.Id}}" onclick="appGallery.displayImage(`${id}`)"><img src="{{.Redux}}" alt="{{.Caption}}" /></a>
+        <a href="#" id="{{.Id}}" data-id="{{.SectId}}" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="{{.Redux}}" alt="{{.Caption}}" /></a>
         <figcaption>{{.Caption}}</figcaption>
     </figure>
     {{- end}}

@@ -197,12 +197,13 @@ func lexMatchMdHtmlKey(l *L) (StateFunc, bool) {
 /////////// ---- Grammar
 
 type MdHtmlGram struct {
-	Nodes       []trans.IMdhtmlLineNode
-	_curr_Node  trans.IMdhtmlLineNode
-	isMdHtmlCtx bool
-	debug       bool
-	templDir    string
-	mapLinks    *idl.MapPagePostsLinks
+	Nodes             []trans.IMdhtmlLineNode
+	_curr_Node        trans.IMdhtmlLineNode
+	isMdHtmlCtx       bool
+	debug             bool
+	templDir          string
+	fig_stack_counter int
+	mapLinks          *idl.MapPagePostsLinks
 }
 
 func NewMdHtmlGr(templDir string, maplinks *idl.MapPagePostsLinks, debug bool) *MdHtmlGram {
@@ -239,7 +240,8 @@ func (mh *MdHtmlGram) processItem(item Token) (bool, error) {
 	case item.Type == itemYouTubeEmbed:
 		mh._curr_Node = trans.NewYouTubeNode(item.Value)
 	case item.Type == itemFigStack:
-		mh._curr_Node = trans.NewFigStackNode(item.Value)
+		mh._curr_Node = trans.NewFigStackNode(item.Value, mh.fig_stack_counter)
+		mh.fig_stack_counter += 1
 	case item.Type == itemLatestPosts:
 		mh._curr_Node = trans.NewLatestPostsNode(item.Value, mh.mapLinks)
 	case item.Type == itemArchivePosts:

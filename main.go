@@ -36,6 +36,8 @@ import (
 // go run .\main.go  -scancontent
 // after edit a new post, prepare everything for the upload
 // go run .\main.go -forsync
+// buildonly one page
+// go run .\main.go  -buildonepage -name "briscola"
 func main() {
 	var ver = flag.Bool("ver", false, "Prints the current version")
 	var configfile = flag.String("config", "config.toml", "Configuration file path")
@@ -47,9 +49,10 @@ func main() {
 	var newpage = flag.String("newpage", "", "name of the new page")
 	var name = flag.String("name", "", "name of the page")
 	var rebuildall = flag.Bool("rebuildall", false, "force to create all htmls (links main, post and pages)")
-	var scancontent = flag.Bool("scancontent", false, "fill the db table with the missed souce content")
+	var scancontent = flag.Bool("scancontent", false, "fill the db table with the missed source content")
 	var buildposts = flag.Bool("buildposts", false, "create posts (only changed)")
 	var buildpages = flag.Bool("buildpages", false, "create pages (all)")
+	var buildonepage = flag.Bool("buildonepage", false, "build one page")
 	var buildmain = flag.Bool("buildmain", false, "create main index.html")
 	var buildfeed = flag.Bool("buildfeed", false, "create feed.xml")
 	var buildtags = flag.Bool("buildtags", false, "create tags html")
@@ -76,6 +79,10 @@ func main() {
 		}
 	} else if *buildpages {
 		if err := watch.BuildPages(*force); err != nil {
+			log.Fatal("ERROR: ", err)
+		}
+	} else if *buildonepage {
+		if err := watch.BuildOnePage(*name); err != nil {
 			log.Fatal("ERROR: ", err)
 		}
 	} else if *buildposts {

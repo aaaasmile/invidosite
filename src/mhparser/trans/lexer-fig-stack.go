@@ -13,14 +13,15 @@ import (
 
 type mdhtFigStackNode struct {
 	MdhtLineNode
-	figItems    []string
-	jsonImgPart string
+	figItems      []string
+	jsonImgPart   string
+	stack_counter int
 }
 
 // implements IMdhtmlTransfNode
 
-func NewFigStackNode(preline string) *mdhtFigStackNode {
-	res := mdhtFigStackNode{figItems: make([]string, 0)}
+func NewFigStackNode(preline string, stack_counter int) *mdhtFigStackNode {
+	res := mdhtFigStackNode{figItems: make([]string, 0), stack_counter: stack_counter}
 	arr := strings.Split(preline, "[")
 	if len(arr) > 0 {
 		res.before_link = arr[0]
@@ -53,7 +54,8 @@ func (ln *mdhtFigStackNode) Transform(templDir string) error {
 	new_fig := idl.ImgDataItem{}
 	for ix, item := range ln.figItems {
 		if !is_next_caption {
-			new_fig = idl.ImgDataItem{Name: item, Id: fmt.Sprintf("%02d", ix)}
+			new_fig = idl.ImgDataItem{Name: item, Id: fmt.Sprintf("%02d", ix),
+				SectId: fmt.Sprintf("%02d", ln.stack_counter)}
 			if err := new_fig.CalcReduced(); err != nil {
 				return err
 			}
@@ -66,7 +68,7 @@ func (ln *mdhtFigStackNode) Transform(templDir string) error {
 	}
 	templName := path.Join(templDir, "transform.html")
 	tmplPage := template.Must(template.New("FigStack").ParseFiles(templName))
-	Ctx := idl.ImgDataItems{Images: figs}
+	Ctx := idl.ImgDataSection{Val: figs}
 	var partStack bytes.Buffer
 	if err := tmplPage.ExecuteTemplate(&partStack, "figstack", Ctx); err != nil {
 		return err

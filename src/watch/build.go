@@ -141,6 +141,25 @@ func BuildPosts() error {
 	return nil
 }
 
+func BuildOnePage(name string) error {
+	start := time.Now()
+	log.Println("[BuildOnePage] start")
+	page_src := conf.Current.ContentPage
+
+	bb := Builder{
+		force: true,
+	}
+	if err := bb.InitDBData(); err != nil {
+		return err
+	}
+	if err := bb.builOnedPages(page_src, name); err != nil {
+		return err
+	}
+
+	log.Println("[BuildOnePage] completed, elapsed time ", time.Since(start))
+	return nil
+}
+
 func BuildPages(force bool) error {
 	start := time.Now()
 	log.Println("[BuildPages] start")
@@ -308,6 +327,29 @@ func (bb *Builder) buildPosts(srcDir string) error {
 	}
 	bb.tx.Commit()
 	log.Printf("%d posts processed ", len(bb.mdsFn))
+	return nil
+}
+
+func (bb *Builder) builOnedPages(srcDir string, name string) error {
+	bb.pages = make([]string, 0)
+	var err error
+	bb.pages, err = getSingleFileinDir(srcDir, name, bb.pages)
+	if err != nil {
+		return err
+	}
+	bb.tx, err = bb.liteDB.GetTransaction()
+	if err != nil {
+		return err
+	}
+	log.Printf("%d mdhtml pages found ", len(bb.pages))
+	for _, item := range bb.pages {
+		log.Println("[builOnedPages] on ", item)
+		if err := bb.buildPage(item); err != nil {
+			return err
+		}
+	}
+	bb.tx.Commit()
+	log.Printf("%d pages processed ", len(bb.pages))
 	return nil
 }
 
@@ -487,6 +529,35 @@ func (bb *Builder) getPageItemAndCheckMd5(mdHtmlFname string) (*idl.PageItem, bo
 		pageItem.Path = item
 	}
 	return &pageItem, same, nil
+}
+
+func getSingleFileinDir(dirAbs string, name string, ini []string) ([]string, error) {
+	r := ini
+	//log.Println("Scan dir for name", dirAbs, name)
+	files, err := os.ReadDir(dirAbs)
+	if err != nil {
+		return nil, err
+	}
+	for _, f := range files {
+		itemAbs := path.Join(dirAbs, f.Name())
+		if info, err := os.Stat(itemAbs); err == nil && info.IsDir() {
+			//fmt.Println("** Sub dir found ", f.Name())
+			r, err = getSingleFileinDir(itemAbs, name, r)
+			if err != nil {
+				return nil, err
+			}
+		} else {
+			ext := filepath.Ext(itemAbs)
+			//fmt.Println("** file is ", f.Name(), ext)
+			if strings.HasPrefix(ext, ".mdhtml") {
+				if strings.HasPrefix(f.Name(), name) {
+					r = append(r, path.Join(dirAbs, f.Name()))
+					return r, nil
+				}
+			}
+		}
+	}
+	return r, nil
 }
 
 func getFilesinDir(dirAbs string, ini []string) ([]string, error) {

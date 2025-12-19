@@ -177,7 +177,6 @@ Al momento il processo funziona con Visual Code (profilo Edit Post).
 Il database sarebbe meglio scaricarlo da current su invido.it.
 Per il nuovo post:
 
-    cd .\content\src\
     .\invido-site.exe  -newpost "WRU numero 12" -date "2025-11-30" -watch
 
 Ora edito il nuovo file mdhtml e vedo subito il risultato (nell'esempio di sopra su http://localhost:5572/posts/2025/04/17/25-04-17-NuovoSito/).
@@ -234,3 +233,8 @@ per aggiornare il db con il nuovo post nel tag
 Nota che il comando _-buildtags_ serve per creare il nuovo tag nel db e generare il file
 mdhtml (è una nuova page) che raccoglie tutti i posts che contengono il tag.
 Se il tag esiste già, nulla viene creato o modificato, tranne se la pagina ha un md5 obsoleto.
+
+## TODO
+- con il comando:
+     go run .\main.go  -buildonepage -name "briscola"
+non viene creato in modo corretto il file json di photos.json (function func (mp *MdHtmlProcess) parsedToHtml() error {).

@@ -94,7 +94,8 @@ func (mp *MdHtmlProcess) parsedToHtml() error {
 	}
 	normPrg := mp.scrGramm.Norm["main"]
 	lines := []string{}
-	img_data_items := []idl.ImgDataItem{}
+	img_data_sections := []idl.ImgDataSection{}
+	json_sect_ix := 0
 	for _, stItem := range normPrg.FnsList {
 		if stItem.Type == mhparser.TtHtmlVerbatim {
 			lines = append(lines, stItem.Params[0].ArrayValue...)
@@ -102,21 +103,27 @@ func (mp *MdHtmlProcess) parsedToHtml() error {
 		if stItem.Type == mhparser.TtJsonBlock {
 			labelJson := stItem.Params[0].Label
 			if labelJson == "TtJsonImgs" {
+				json_sect_ix_str := fmt.Sprintf("%02d", json_sect_ix)
 				img_arr := idl.ImgDataItems{}
 				bb := []byte(stItem.Params[0].Value)
 				if err := json.Unmarshal(bb, &img_arr); err != nil {
-					log.Println("[parsedToHtml] Unmarshal error")
+					log.Println("[parsedToHtml] Unmarshal img_arr error")
 					return err
 				}
-				img_data_items = append(img_data_items, img_arr.Images...)
+				img_section := idl.ImgDataSection{
+					SectId: json_sect_ix_str,
+					Val:    img_arr.Images,
+				}
+				img_data_sections = append(img_data_sections, img_section)
+				json_sect_ix += 1
 			} else {
 				return fmt.Errorf("[parsedToHtml] %s json block not supported", labelJson)
 			}
 			//fmt.Println("*** json item", stItem.Params[0].Value)
 		}
 	}
-	if len(img_data_items) > 0 {
-		imgs := idl.ImgDataItems{Images: img_data_items}
+	if len(img_data_sections) > 0 {
+		imgs := idl.ImgDataSections{Images: img_data_sections}
 		data_img, err := json.Marshal(imgs)
 		if err != nil {
 			log.Println("[parsedToHtml] Marshal error")
