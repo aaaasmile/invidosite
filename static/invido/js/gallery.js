@@ -29,20 +29,21 @@ export default () => {
                 .then((data) => {
                     //console.log('data from fetch: ', data)
                     const data_imgs = data.images
-                    for (let key in data_imgs) {
-                        if (data_imgs.hasOwnProperty(key)) {
-                            _dataImages = data_imgs[key].sort((a, b) => a.id.localeCompare(b.id))
-                            let index = 0
-                            _mapImg = new Map()
-                            _idArray = []
-                            _dataImages.forEach(item => {
-                                _mapImg.set(item.id, { name: item.name, redux: item.redux, caption: item.caption, ix: index })
-                                _idArray.push({id: item.id, dataid: key})
-                                index += 1
-                            })
-                            _mapStcks.set(key, {idarray: _idArray, mapimg: _mapImg})
-                        }
-                    }
+                    data_imgs.forEach(stack_item => {
+                        const key = stack_item.id
+                        const data_imgs_val = stack_item.val
+                        _dataImages = data_imgs_val.sort((a, b) => a.id.localeCompare(b.id))
+                        let index = 0
+                        _mapImg = new Map()
+                        _idArray = []
+                        _dataImages.forEach(item => {
+                            _mapImg.set(item.id, { name: item.name, redux: item.redux, caption: item.caption, ix: index })
+                            _idArray.push({ id: item.id, dataid: key })
+                            index += 1
+                        })
+                        _mapStcks.set(key, { idarray: _idArray, mapimg: _mapImg })
+
+                    })
 
                     //console.log('dataimages: ', _dataImages)
                     //console.log('mapImg: ', _mapImg)
@@ -59,7 +60,7 @@ export default () => {
         displayImage(id, dataid) {
             console.log('display image dataid, id ', dataid, id)
             let stackItem = _mapStcks.get(dataid)
-            if (!stackItem){
+            if (!stackItem) {
                 return
             }
             _mapImg = stackItem.mapimg

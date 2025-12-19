@@ -19,8 +19,13 @@ type ImgDataItem struct {
 	Caption string `json:"caption"`
 }
 
+type ImgDataSection struct {
+	Id  string        `json:"id"`
+	Val []ImgDataItem `json:"val"`
+}
+
 type ImgDataItems struct {
-	Images []ImgDataItem `json:"images"`
+	Images ImgDataSection `json:"images"`
 }
 
 func (fg *ImgDataItem) CalcReduced() error {
