@@ -104,15 +104,15 @@ func (mp *MdHtmlProcess) parsedToHtml() error {
 			labelJson := stItem.Params[0].Label
 			if labelJson == "TtJsonImgs" {
 				json_sect_ix_str := fmt.Sprintf("%02d", json_sect_ix)
-				img_arr := idl.ImgDataItems{}
+				img_data_section := idl.ImgDataSection{}
 				bb := []byte(stItem.Params[0].Value)
-				if err := json.Unmarshal(bb, &img_arr); err != nil {
+				if err := json.Unmarshal(bb, &img_data_section); err != nil {
 					log.Println("[parsedToHtml] Unmarshal img_arr error")
 					return err
 				}
 				img_section := idl.ImgDataSection{
 					SectId: json_sect_ix_str,
-					Val:    img_arr.Images,
+					Val:    img_data_section.Val,
 				}
 				img_data_sections = append(img_data_sections, img_section)
 				json_sect_ix += 1

@@ -9,16 +9,19 @@ export default () => {
     let _imageOverlay = null
     let _nextBtn = null
     let _prevBtn = null
+    let _savedScrollPosition = 0
 
     function resetStrc() {
         _dataImages = {}
         _mapStcks = new Map()
+        _mapImg = new Map()
         _idArray = []
         _currentImg = {}
         _image = null
         _imageOverlay = null
         _nextBtn = null
         _prevBtn = null
+        _savedScrollPosition = 0
     }
     return {
         loadData() {
@@ -57,7 +60,7 @@ export default () => {
                     console.error('error on fetch: ', err)
                 });
         },
-        displayImage(id, dataid) {
+        displayImage(id, dataid, fromNav) {
             console.log('display image dataid, id ', dataid, id)
             let stackItem = _mapStcks.get(dataid)
             if (!stackItem) {
@@ -83,18 +86,26 @@ export default () => {
             } else {
                 _prevBtn.classList.add('hidden')
             }
-            _imageOverlay.classList.remove('gone');
+            if (!fromNav) {
+                _savedScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                console.log('save scroll to ', _savedScrollPosition)
+                _imageOverlay.classList.remove('gone');
+            }
         },
         hideGalleryImage() {
             console.log('hide gallery image')
             _imageOverlay.classList.add('gone');
+            // Restore scroll position
+            document.body.style.overflow = '';
+            window.scrollTo(0, _savedScrollPosition);
+            console.log('scroll to ', _savedScrollPosition)
         },
         nextImage() {
             const index = _currentImg.ix
             console.log('next image of', index)
             if (index < _idArray.length - 1) {
                 const ele = _idArray[index + 1]
-                this.displayImage(ele.id, ele.dataid)
+                this.displayImage(ele.id, ele.dataid, true)
             }
         },
         prevImage() {
@@ -102,7 +113,7 @@ export default () => {
             console.log('prev image of', index)
             if (index > 0) {
                 const ele = _idArray[index - 1]
-                this.displayImage(ele.id, ele.dataid)
+                this.displayImage(ele.id, ele.dataid, true)
             }
         }
     }

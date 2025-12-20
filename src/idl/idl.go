@@ -20,10 +20,6 @@ type ImgDataItem struct {
 	SectId  string `json:"sectid"`
 }
 
-type ImgDataItems struct {
-	Images []ImgDataItem `json:"images"`
-}
-
 type ImgDataSection struct {
 	SectId string        `json:"id"`
 	Val    []ImgDataItem `json:"val"`
