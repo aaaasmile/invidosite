@@ -4,57 +4,63 @@ id: briscola-PG
 comments: no
 ---
 <header>
-    <h1>Briscola</h1>
+  <h1>Briscola</h1>
 </header>
 <section>
   <h3>Versione Web</h3>
-  <p>La versione Web (nessuna installazione necessaria) 
+  <p>La versione Web (nessuna installazione necessaria)
     la trovate a questo [linkcap 'link','https://cup.invido.it/#/'].
   <p class="center">
-    <a href="https://cup.invido.it/#/" target="_blank"><img src="foto01_320.jpg" /></a>
+    <a href="https://cup.invido.it/#/" class="image-link">
+      <img src="foto01_320.jpg" />
+       <span class="run-button">Run</span>
+    </a>
   </p>
-  <p> Il programma della Briscola è l'unico gioco che fa parte della suite web che voleva essere la versione 
-    in javascript del programma Ruby Cuperativa, che ho descritto in un'altra [linkcap 'pagina', '/pages/cuperativa' ].</p>  
-  <p>Dopo aver programmato per l'ennesima volta una Briscola in un nuovo linguaggio e target, mi sono veramente 
+  <p> Il programma della Briscola è l'unico gioco che fa parte della suite web che voleva essere la versione
+    in javascript del programma Ruby Cuperativa, che ho descritto in un'altra [linkcap 'pagina', '/pages/cuperativa' ].
+  </p>
+  <p>Dopo aver programmato per l'ennesima volta una Briscola in un nuovo linguaggio e target, mi sono veramente
     divertito ad inventare informazioni e messaggi informativi, che magari in altri contesti, magari vantano
-    diciture come <i>"Pubblicità Progresso"</i> (vedi e prova [linkcap 'il link!', 'https://cup.invido.it/#/info']). 
+    diciture come <i>"Pubblicità Progresso"</i> (vedi e prova [linkcap 'il link!', 'https://cup.invido.it/#/info']).
   </p>
   <p>Non sono andato molto oltre la Briscola in quanto lo sviluppo in Javascript mi ha annoiato.</p>
 
-  <h3>Screenshots</h3>  
+  <h3>Screenshots</h3>
   <p class="center">
     [figstack
     'foto01.jpg', 'In partita',
     'foto05.jpg', 'Opzioni',
     'foto06.jpg', 'Informazioni',
-    'foto07.jpg', 'Prenota!' 
+    'foto07.jpg', 'Prenota!'
     ]
   </p>
 
   <h3>Versione Windows vintage</h3>
-  <p>Uno dei primissimi giochi di carte che ho sviluppato in C++ e che poi ho abbandonato.  
+  <p>Uno dei primissimi giochi di carte che ho sviluppato in C++ e che poi ho abbandonato.
     [linkcap 'Download Briscola_Net', 'https://sourceforge.net/projects/briscola-net/files/latest/download']</p>
-   <p>In Windows 11 funziona ancora perfettamente come se l'era della New Economy non fosse mai finita.</p> 
+  <p>In Windows 11 funziona ancora perfettamente come se l'era della New Economy non fosse mai finita.</p>
 
-  <h3>Screenshots di Briscola_Net</h3>  
+  <h3>Screenshots di Briscola_Net</h3>
   <p class="center">
     [figstack
     'foto02.jpg', 'Inizio',
     'foto03.jpg', 'In partita',
     'foto04.jpg', 'Opzioni di rete'
     ]
-  </p> 
+  </p>
 
   <h3>Note sullo sviluppo</h3>
-  <p>Briscola Net è un programma per giocare a briscola da soli contro il computer, oppure contro un avversario collegato in rete.</p>
+  <p>Briscola Net è un programma per giocare a briscola da soli contro il computer, oppure contro un avversario
+    collegato in rete.</p>
 
-<p>È stato il mio primo progetto di sviluppo di un gioco di carte, quando il Millennium Bug era una bufala molto recente.</p>
-<p>Il progetto è nato dalla voglia di testare la tecnologia ActiveX. 
-Il programma utilizza ActiveX per la gestione del mazzo delle carte, mentre il gioco è realizzato utilizzando le 
-librerie MFC in C++. Erano i tempi in cui  programmavano diversi componenti grafici da assemblare in un'applicazione 
-usando ambienti di sviluppo come il Visual Basic, Delphi, MFC e le applicazioni MSOffice.
-Per esempio, ricordo che il mazzo di carte funzionava benissimo anche dentro a Excel.</p>
-<p>Dato l’uso massiccio di tecnologie prettamente Microsoft, il gioco è disponibile solo in versione Windows.</p>
-<p>Il codice soregente del programma si trova [linkcap 'qui', 'https://github.com/aaaasmile/briscola_net']</p>
+  <p>È stato il mio primo progetto di sviluppo di un gioco di carte, quando il Millennium Bug era una bufala molto
+    recente.</p>
+  <p>Il progetto è nato dalla voglia di testare la tecnologia ActiveX.
+    Il programma utilizza ActiveX per la gestione del mazzo delle carte, mentre il gioco è realizzato utilizzando le
+    librerie MFC in C++. Erano i tempi in cui programmavano diversi componenti grafici da assemblare in un'applicazione
+    usando ambienti di sviluppo come il Visual Basic, Delphi, MFC e le applicazioni MSOffice.
+    Per esempio, ricordo che il mazzo di carte funzionava benissimo anche dentro a Excel.</p>
+  <p>Dato l’uso massiccio di tecnologie prettamente Microsoft, il gioco è disponibile solo in versione Windows.</p>
+  <p>Il codice soregente del programma si trova [linkcap 'qui', 'https://github.com/aaaasmile/briscola_net']</p>
 
-</section>    
+</section>

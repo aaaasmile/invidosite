@@ -622,3 +622,34 @@ form {
 p.center {
   text-align: center;
 }
+/* Run Button */
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+.run-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.image-link:hover .run-button {
+  opacity: 1;
+}
+
+.image-link:hover img {
+  opacity: 0.9;
+}

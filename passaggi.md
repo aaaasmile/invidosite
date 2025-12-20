@@ -172,6 +172,10 @@ Se per caso devo ricreare il sito (links, pages e posts)
 
    .\invido-site.exe -newpage "cuperativa" -date "2025-12-18" -watch
 
+## Cambiare una page
+
+    .\invido-site.exe -editpage -name "cuperativa"
+
 ## Creare un nuovo Post (New)
 Al momento il processo funziona con Visual Code (profilo Edit Post).
 Il database sarebbe meglio scaricarlo da current su invido.it.
