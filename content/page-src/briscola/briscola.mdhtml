@@ -9,11 +9,11 @@ comments: no
 <section>
   <h3>Versione Web</h3>
   <p>La versione Web (nessuna installazione necessaria)
-    la trovate a questo [linkcap 'link','https://cup.invido.it/#/'].
+    la trovate su questo [linkcap 'link','https://cup.invido.it/#/'].
   <p class="center">
     <a href="https://cup.invido.it/#/" class="image-link">
-      <img src="foto01_320.jpg" />
-       <span class="run-button">Run</span>
+      <img src="foto01_320.jpg" class="image-run" />
+      <button type="button" class="run-button-always">RUN in Browser</button>
     </a>
   </p>
   <p> Il programma della Briscola è l'unico gioco che fa parte della suite web che voleva essere la versione
