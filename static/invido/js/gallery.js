@@ -98,7 +98,10 @@ export default () => {
             _imageOverlay.classList.add('gone');
             // Restore scroll position
             document.body.style.overflow = '';
-            window.scrollTo(0, _savedScrollPosition);
+            window.scrollTo({
+                top: _savedScrollPosition,
+                behavior: 'smooth'  // Adds nice animation
+            });
             console.log('scroll to ', _savedScrollPosition)
         },
         nextImage() {
