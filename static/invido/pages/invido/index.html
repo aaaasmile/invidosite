@@ -38,7 +38,7 @@
           <a href="https://sourceforge.net/projects/invido/files/latest/download?source=directory" target="_blank">Versione Windows</a>
         <h3>Screenshots</h3>
         <p class="center">
-          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" onclick="appGallery.displayImage(`${id}`)"><img src="foto01_320.jpg" alt="Inizio" /></a>        <figcaption>Inizio</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" onclick="appGallery.displayImage(`${id}`)"><img src="foto02_320.jpg" alt="In partita" /></a>        <figcaption>In partita</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" onclick="appGallery.displayImage(`${id}`)"><img src="foto03_320.jpg" alt="Chiamata" /></a>        <figcaption>Chiamata</figcaption>    </figure>    <figure>        <a href="#" id="foto04_06" onclick="appGallery.displayImage(`${id}`)"><img src="foto04_320.jpg" alt="Tasto destro mouse" /></a>        <figcaption>Tasto destro mouse</figcaption>    </figure></section>
+          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto01_320.jpg" alt="Inizio" /></a>        <figcaption>Inizio</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto02_320.jpg" alt="In partita" /></a>        <figcaption>In partita</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto03_320.jpg" alt="Chiamata" /></a>        <figcaption>Chiamata</figcaption>    </figure>    <figure>        <a href="#" id="foto04_06" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto04_320.jpg" alt="Tasto destro mouse" /></a>        <figcaption>Tasto destro mouse</figcaption>    </figure></section>
         </p>
         <h2>Regole del gioco dell'Invido</h2>
         <h3>Introduzione</h3>
@@ -216,7 +216,7 @@
   <footer>
     <p>
       Aggiornato:
-      <time datetime="2025-12-17 00:00">17 Dicembre 2025 - 00:36</time>
+      <time datetime="2025-12-20 21:00">20 Dicembre 2025 - 21:18</time>
     </p>
     <nav>
       <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>

@@ -33,7 +33,7 @@
           <a href="https://sourceforge.net/projects/cuperativa/files/latest/download" target="_blank">Versione Windows</a>
         <h3>Screenshots</h3>
         <p class="center">
-          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" onclick="appGallery.displayImage(`${id}`)"><img src="foto01_320.jpg" alt="Inizio" /></a>        <figcaption>Inizio</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" onclick="appGallery.displayImage(`${id}`)"><img src="foto02_320.jpg" alt="Opzioni" /></a>        <figcaption>Opzioni</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" onclick="appGallery.displayImage(`${id}`)"><img src="foto03_320.jpg" alt="Gioco selezionato" /></a>        <figcaption>Gioco selezionato</figcaption>    </figure>    <figure>        <a href="#" id="foto04_06" onclick="appGallery.displayImage(`${id}`)"><img src="foto04_320.jpg" alt="Mariazza" /></a>        <figcaption>Mariazza</figcaption>    </figure>    <figure>        <a href="#" id="foto05_08" onclick="appGallery.displayImage(`${id}`)"><img src="foto05_320.jpg" alt="Tombolon" /></a>        <figcaption>Tombolon</figcaption>    </figure></section>
+          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto01_320.jpg" alt="Inizio" /></a>        <figcaption>Inizio</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto02_320.jpg" alt="Opzioni" /></a>        <figcaption>Opzioni</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto03_320.jpg" alt="Gioco selezionato" /></a>        <figcaption>Gioco selezionato</figcaption>    </figure>    <figure>        <a href="#" id="foto04_06" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto04_320.jpg" alt="Mariazza" /></a>        <figcaption>Mariazza</figcaption>    </figure>    <figure>        <a href="#" id="foto05_08" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto05_320.jpg" alt="Tombolon" /></a>        <figcaption>Tombolon</figcaption>    </figure></section>
         </p>
         <h3>Descrizione</h3>
         <p>La cuperativa è una suite di diversi giochi di carte a due giocatori.
@@ -85,7 +85,7 @@
           navigation).
           Alcune funzioni le ho sviluppate in ambiente Linux con Ubuntu 14.04 e Visual Studio Code.</p>
         <h3>Storia</h3>
-        <p><section class="vertstack">    <figure>        <a href="#" id="foto06_00" onclick="appGallery.displayImage(`${id}`)"><img src="foto06_320.jpg" alt="Il bar della Cuperativa" /></a>        <figcaption>Il bar della Cuperativa</figcaption>    </figure></section></p>
+        <p><section class="vertstack">    <figure>        <a href="#" id="foto06_00" data-id="01" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto06_320.jpg" alt="Il bar della Cuperativa" /></a>        <figcaption>Il bar della Cuperativa</figcaption>    </figure></section></p>
         <p>
           Ho appena finito di mangiare, il notiziario è finito ed è arrivato il momento del caffè. Che ore sono? L’una e
           mezza? Bene un caffè e una briscola ci stanno.</p>
@@ -106,7 +106,7 @@
   <footer>
     <p>
       Aggiornato:
-      <time datetime="2025-12-18 22:00">18 Dicembre 2025 - 22:31</time>
+      <time datetime="2025-12-20 21:00">20 Dicembre 2025 - 21:18</time>
     </p>
     <nav>
       <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>
