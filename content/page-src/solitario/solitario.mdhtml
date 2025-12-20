@@ -19,7 +19,7 @@ comments: no
   <p>La versione Web (nessuna installazione necessaria) 
     la trovate a questo [linkcap 'link','/web/solitario'].
   <p class="center">
-    <a href="/web/solitario" target="_blank"><img src="foto01_320.jpg" /></a>
+    [img_link_run 'foto01_320.jpg', '/web/solitario', 'RUN nel Browser']
   </p>
 
   <h3>Versione Windows</h3>

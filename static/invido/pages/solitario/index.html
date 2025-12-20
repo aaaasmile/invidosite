@@ -39,7 +39,7 @@
         <p>La versione Web (nessuna installazione necessaria) 
           la trovate a questo <a href="/web/solitario" target="_blank">link</a>.
         <p class="center">
-          <a href="/web/solitario" target="_blank"><img src="foto01_320.jpg" /></a>
+          <a href="/web/solitario" class="image-link">    <img src="foto01_320.jpg" class="image-run" />    <button type="button" class="run-button-always">RUN nel Browser</button></a>
         </p>
         <h3>Versione Windows</h3>
         <p>La versione Windows la potete scaricare da questo link: <a href="https://sourceforge.net/projects/solitarioita/files/latest/download" target="_blank">Versione Windows</a>
@@ -53,7 +53,7 @@
         </p>
         <h3>Screenshots</h3>  
         <p class="center">
-          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" onclick="appGallery.displayImage(`${id}`)"><img src="foto01_320.jpg" alt="Versione Web Wasm" /></a>        <figcaption>Versione Web Wasm</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" onclick="appGallery.displayImage(`${id}`)"><img src="foto02_320.jpg" alt="Tarocco Piemontese" /></a>        <figcaption>Tarocco Piemontese</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" onclick="appGallery.displayImage(`${id}`)"><img src="foto03_320.jpg" alt="Carte Piacentine" /></a>        <figcaption>Carte Piacentine</figcaption>    </figure>    <figure>        <a href="#" id="photo2_06" onclick="appGallery.displayImage(`${id}`)"><img src="photo2_320.png" alt="Versione Android" /></a>        <figcaption>Versione Android</figcaption>    </figure></section>
+          <section class="vertstack">    <figure>        <a href="#" id="foto01_00" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto01_320.jpg" alt="Versione Web Wasm" /></a>        <figcaption>Versione Web Wasm</figcaption>    </figure>    <figure>        <a href="#" id="foto02_02" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto02_320.jpg" alt="Tarocco Piemontese" /></a>        <figcaption>Tarocco Piemontese</figcaption>    </figure>    <figure>        <a href="#" id="foto03_04" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="foto03_320.jpg" alt="Carte Piacentine" /></a>        <figcaption>Carte Piacentine</figcaption>    </figure>    <figure>        <a href="#" id="photo2_06" data-id="00" onclick="appGallery.displayImage(`${id}`, `${this.getAttribute('data-id')}`)"><img src="photo2_320.png" alt="Versione Android" /></a>        <figcaption>Versione Android</figcaption>    </figure></section>
         </p>
       </section>
     </article>
@@ -61,7 +61,7 @@
   <footer>
     <p>
       Aggiornato:
-      <time datetime="2025-12-15 23:00">15 Dicembre 2025 - 23:19</time>
+      <time datetime="2025-12-20 22:00">20 Dicembre 2025 - 22:33</time>
     </p>
     <nav>
       <a href="https://igorrun.invido.it/" target="_blank">Igorrun Blog personale sul tema corsa</a>
