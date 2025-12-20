@@ -39,6 +39,7 @@ un preprocessor che mi genera un codice html. Esso supporta queste macro:
 - archive_posts
 - tag_posts
 - single_taggedposts
+- img_link_run
 
 Tutti i comandi sono compresi tra parantesi quadre. La lista la trovo nel file _lexer-builtin-func.go_.
 
@@ -150,7 +151,19 @@ apre il db con il check dell'integrità referenziale.
     FROM tags_to_post ttp 
     LEFT JOIN post p ON ttp.post_id = p.id 
     WHERE p.id IS NULL;
+    
+## img_link_run
+Per lanciare i giochi nel browser ho bisogno di un'immagine di sfondo, un bottone
+ed un link nel quale parte il gioco nel browser. Esempio
 
+    [img_link_run 'foto01_320.jpg', 'https://cup.invido.it/#/', 'RUN in Browser']
+
+Il codice generato è questo:
+
+    <a href="https://cup.invido.it/#/" class="image-link">
+      <img src="foto01_320.jpg" class="image-run" />
+      <button type="button" class="run-button-always">RUN in Browser</button>
+    </a>
 
 ### config_custom.toml
 È il file che mi esegue un ovveride del file config.toml. 

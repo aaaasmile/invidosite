@@ -62,6 +62,8 @@ func (i TokenType) String() string {
 		return "itemTagPosts"
 	case itemSingleTaggedPosts:
 		return "itemSingleTaggedPosts"
+	case itemImgLinkRun:
+		return "itemImgLinkRun"
 	}
 	return fmt.Sprintf("TokenType %d undef", i)
 }

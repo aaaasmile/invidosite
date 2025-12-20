@@ -250,6 +250,8 @@ func (mh *MdHtmlGram) processItem(item Token) (bool, error) {
 		mh._curr_Node = trans.NewTagPostsNode(item.Value, mh.mapLinks)
 	case item.Type == itemSingleTaggedPosts:
 		mh._curr_Node = trans.NewSingleTaggedPostsNode(item.Value, mh.mapLinks)
+	case item.Type == itemImgLinkRun:
+		mh._curr_Node = trans.NewImgLinkRunNode(item.Value)
 	case item.Type == itemText:
 		// ignore
 	case item.Type == itemSeparator:

@@ -242,6 +242,7 @@ const (
 	itemArchivePosts
 	itemTagPosts
 	itemSingleTaggedPosts
+	itemImgLinkRun
 	itemEOF
 )
 

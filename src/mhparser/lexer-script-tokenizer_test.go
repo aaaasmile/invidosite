@@ -806,3 +806,51 @@ s<p>[single_taggedposts 'MaratonaGara']</p>e`
 		t.Errorf("expected  D di, but %s ", secline)
 	}
 }
+
+func TestParseHtmlImgLinkRun(t *testing.T) {
+	str := `title: Un altro post entusiasmante
+datetime: 2024-12-23
+id: 20241108-00
+---
+<p>first line</p>
+s<p>[img_link_run 'foto01_320.jpg', 'https://cup.invido.it/#/', 'RUN nel Browser']</p>e`
+
+	lex := ScriptGrammar{
+		Debug:    true,
+		TemplDir: "../templates/htmlgen",
+		MapLinks: createFakeLinks(),
+	}
+	err := lex.ParseScript(str)
+	if err != nil {
+		t.Error("Error is: ", err)
+		return
+	}
+
+	err = lex.CheckNorm()
+	if err != nil {
+		t.Error("Error in parser norm ", err)
+		return
+	}
+	err = lex.EvaluateParams()
+	if err != nil {
+		t.Error("Error in evaluate ", err)
+		return
+	}
+	nrm := lex.Norm["main"]
+	lastFns := len(nrm.FnsList) - 1
+	stFns := nrm.FnsList[lastFns]
+	if len(stFns.Params) != 1 && !stFns.Params[0].IsArray {
+		t.Error("expected one array param with lines")
+		return
+	}
+	ll := &stFns.Params[0]
+	len_exp := 2
+	if len(ll.ArrayValue) != len_exp {
+		t.Errorf("expected %d html lines, but have %d lines", len_exp, len(ll.ArrayValue))
+		return
+	}
+	secline := ll.ArrayValue[1]
+	if !strings.Contains(secline, "button type=") {
+		t.Errorf("expected  button type=, but %s ", secline)
+	}
+}

@@ -11,10 +11,7 @@ comments: no
   <p>La versione Web (nessuna installazione necessaria)
     la trovate su questo [linkcap 'link','https://cup.invido.it/#/'].
   <p class="center">
-    <a href="https://cup.invido.it/#/" class="image-link">
-      <img src="foto01_320.jpg" class="image-run" />
-      <button type="button" class="run-button-always">RUN in Browser</button>
-    </a>
+    [img_link_run 'foto01_320.jpg', 'https://cup.invido.it/#/', 'RUN in Browser']
   </p>
   <p> Il programma della Briscola è l'unico gioco che fa parte della suite web che voleva essere la versione
     in javascript del programma Ruby Cuperativa, che ho descritto in un'altra [linkcap 'pagina', '/pages/cuperativa' ].

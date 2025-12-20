@@ -67,3 +67,10 @@
     {{- end}}
 </ul>
 {{- end -}}
+
+{{- define "imglinkrun" -}}
+<a href="{{.HrefLink}}" class="image-link">
+    <img src="{{.ImgSrc}}" class="image-run" />
+    <button type="button" class="run-button-always">{{.RunCaption}}</button>
+</a>
+{{- end -}}
