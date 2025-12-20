@@ -90,6 +90,7 @@ export default () => {
                 _savedScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
                 console.log('save scroll to ', _savedScrollPosition)
                 _imageOverlay.classList.remove('gone');
+                document.body.style.overflow = 'hidden';
             }
         },
         hideGalleryImage() {
