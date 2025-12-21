@@ -7,28 +7,43 @@ comments: no
   <h1>Breda Cisoni, Appunti di storia © 2005</h1>
   <h4>Autore: <b>Fabrizio Castoldi</b></h4>
 </header>
+<nav class="scroll-menu">
+  <ul class="menu-links">
+    <li><a href="\pages\breda01" class="menu-link current">Introduzione</a></li>
+    <li><a href="\pages\breda_origini" class="menu-link">Origini</a></li>
+    <li><a href="\pages\breda_1300" class="menu-link">1300 - 1599</a></li>
+    <li><a href="\pages\breda_1600" class="menu-link">1600 - 1814</a></li>
+    <li><a href="\pages\breda_1814" class="menu-link">1815 - 1900</a></li>
+    <li><a href="\pages\breda_1900" class="menu-link">1901 - 2005</a></li>
+  </ul>
+</nav>
 <section>
-  <figure class="small">
-    <img src="foto01_320.jpg">
-    <figcaption>
-      <i>Longitudine 10° 31’ 52" 32</i>
-    </figcaption>
-    <figcaption>
-      <i>Latitudine 45° 0’ 41" 76'</i>
-    </figcaption>
-  </figure>
-</section>
-<section>
-  <p>Il bredese prof. <b>Sarzi Bola Mario</b>, con felicissima espressione, riassumeva le origini lontane del nostro paese:
-    “<b><i>Breda è una creatura dell’acqua. Questo paese affonda le sue remote origini nell’adunarsi di gruppi anonimi di
-    poveri contadini, che, faticando, cercavano modesto sostentamento nel lavoro dei terreni emergenti dalle paludi e
-    dagli acquitrini malarici, formati dal disordinato zigzagare del Po e dell’Oglio</i></b>”.</p>
+  <p>Il bredese prof. <b>Sarzi Bola Mario</b>, con felicissima espressione, riassumeva le origini lontane del nostro
+    paese:
+    “<b><i>Breda è una creatura dell’acqua. Questo paese affonda le sue remote origini nell’adunarsi di gruppi anonimi
+        di
+        poveri contadini, che, faticando, cercavano modesto sostentamento nel lavoro dei terreni emergenti dalle paludi
+        e
+        dagli acquitrini malarici, formati dal disordinato zigzagare del Po e dell’Oglio</i></b>”.</p>
 
   <p>Al fiume Oglio, che impediva il deflusso delle acque di scolo, alle inondazioni periodiche del Po che irrompevano
     dal Casalasco, non va dimenticata (secondo alcuni studiosi) la presenza dell’Adda o di una sua diramazione, che dal
-    cremonese arrivava fino a noi, facendo forse il giro che ora compie il canale detto <b>Gambina</b> o <b>Navarolo Vecchio</b> e
+    cremonese arrivava fino a noi, facendo forse il giro che ora compie il canale detto <b>Gambina</b> o <b>Navarolo
+      Vecchio</b> e
     unitosi, presso Breda, col canale Commessaggio, si versava nell’Oglio, la’ dove sorgeva il castello di Montesauro,
     al di qua della Torre d’Oglio.</p>
+
+  <p class="center">
+    <figure class="small">
+      <img src="foto01_320.jpg">
+      <figcaption>
+        <i>Longitudine 10° 31’ 52" 32</i>
+      </figcaption>
+      <figcaption>
+        <i>Latitudine 45° 0’ 41" 76'</i>
+      </figcaption>
+    </figure>
+  </p>
 
   <a href="\pages\breda_origini">Origini &gt;</a>
 </section>

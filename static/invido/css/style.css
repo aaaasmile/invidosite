@@ -357,7 +357,7 @@ footer {
   align-self: center;
 }
 
-figure.small{
+figure.small {
   display: flex;
   flex-flow: column;
   margin: auto;
@@ -679,3 +679,159 @@ p.center {
   background-color: #45a049;
 }
 
+/* Breda Navigation Menu */
+/* ===== SCROLLING MENU ===== */
+.scroll-menu {
+  position: relative;
+  /* Changed from fixed to relative */
+  float: left;
+  /* Float it to the left */
+  margin: 20px 30px 20px 0px;
+  /* Space around it */
+  width: 180px;
+  background: #111;
+  border: 1px solid #747070;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  z-index: 10;
+}
+
+
+/* Menu list */
+.menu-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links li {
+  margin: 5px 0;
+}
+
+/* Menu links */
+.menu-link {
+  display: block;
+  padding: 6px 10px;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.menu-link:hover {
+  background-color: #f0f0f0;
+  color: #111;
+  transform: translateX(3px);
+}
+
+/* Active page highlighting */
+.menu-link.current {
+  background-color: #e3f2fd;
+  color: #111;
+  font-weight: bold;
+}
+
+
+.home-link:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .scroll-menu {
+    float: none;
+    width: auto;
+    max-width: 300px;
+    margin: 20px auto;
+    /* Center it on mobile */
+    display: block;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .menu-links li {
+    margin: 2px;
+  }
+
+  .menu-link {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+
+/* For mobile phones - menu disappears */
+@media (max-width: 480px) {
+  .scroll-menu {
+    display: none;
+    /* Hide completely on small screens */
+  }
+
+  /* Optional: Show a small menu button instead */
+  .mobile-menu-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  /* When mobile menu is toggled open */
+  .scroll-menu.mobile-visible {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    z-index: 999;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ===== OPTIONAL: Floating header alternative ===== */
+/* If you want the menu to be at the very top in its own container */
+.menu-container {
+  width: 100%;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.menu-container .scroll-menu {
+  float: none;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 800px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0 15px;
+}
+
+.menu-container .menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}

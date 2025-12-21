@@ -7,6 +7,16 @@ comments: no
   <h1>Breda dal 1814 al 1900</h1>
   <h4>Autore: <b>Fabrizio Castoldi</b></h4>
 </header>
+<nav class="scroll-menu">
+  <ul class="menu-links">
+    <li><a href="\pages\breda01" class="menu-link">Introduzione</a></li>
+    <li><a href="\pages\breda_origini" class="menu-link">Origini</a></li>
+    <li><a href="\pages\breda_1300" class="menu-link">1300 - 1599</a></li>
+    <li><a href="\pages\breda_1600" class="menu-link">1600 - 1814</a></li>
+    <li><a href="\pages\breda_1814" class="menu-link current">1815 - 1900</a></li>
+    <li><a href="\pages\breda_1900" class="menu-link">1901 - 2005</a></li>
+  </ul>
+</nav>
 <section>
   <p>Il comune sabbionetano dal 1814 al 1859 era parte del <b>Regno Lombardo Veneto</b> e nel 1859 incorporato nel <b>regno d’
     Italia</b> sotto la provincia di Cremona mentre <b>Mantova era ancora austriaca.</b></p>
@@ -37,5 +47,5 @@ comments: no
     immettersi sull’attuale via XXV Aprile di fronte alle scuole per proseguire verso la successiva stazione di Villa.
   </p>
 
-  <a href="\pages\breda_1600"> &lt; 1600 - 1814 </a> | <a href="\pages\breda_1900"> 1900 - Oggi &gt;</a>
+  <a href="\pages\breda_1600"> &lt; 1600 - 1814 </a> | <a href="\pages\breda_1900"> 1900 - 2005 &gt;</a>
 </section>
