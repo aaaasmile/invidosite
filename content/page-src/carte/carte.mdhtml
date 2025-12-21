@@ -6,8 +6,21 @@ comments: no
 <header>
   <h1>Giochi di carte</h1>
 </header>
+<nav class="scroll-menu">
+  <ul class="menu-links">
+    <li><a href="\pages\solitario" class="menu-link">Solitario</a></li>
+    <li><a href="\pages\tressette" class="menu-link">Tressette</a></li>
+    <li><a href="\pages\invido" class="menu-link">Invido</a></li>
+    <li><a href="\pages\cuperativa" class="menu-link">Cuperativa</a></li>
+    <li><a href="\pages\briscola" class="menu-link">Briscola</a></li>
+  </ul>
+</nav>
 <section>
-  <p>Qui di seguito potete trovare i programmi che ho sviluppato per giocare a carte.</p>
+  <p>Qui di seguito potete trovare i programmi che ho sviluppato per giocare a carte.
+    Sono programmi che ho sviluppato negli anni. Alcuni sono rimasti così come sono nati, altri, invece,
+    ho cercato di aggiornarli nel tempo, oppure di portarli su nuovi target, come Android o il browser.
+    Tutti i programmi sono forniti di codice sorgente e sono forniti così come sono. 
+  </p>
   
   <h3> Il gioco del solitario</h3>
   <p class="center">
