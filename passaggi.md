@@ -183,7 +183,7 @@ Se per caso devo ricreare il sito (links, pages e posts)
 
 ## Creare una nuova page
 
-   .\invido-site.exe -newpage "cuperativa" -date "2025-12-18" -watch
+   .\invido-site.exe -newpage "breda01" -date "2025-12-21" -watch
 
 ## Cambiare una page
 
@@ -203,6 +203,17 @@ A questo punto, se voglio preparare tutti i files per il comando rsync, uso il s
     .\invido-site.exe -all4sync
 Ora apro WSL e lancio rsync (vedi sync_blog.sh)
 
+
+### Cambiare un post già pubblicato (Edit)
+Uso il flag -editpost. Per esempio:
+
+    .\invido-site.exe -editpost -date "2025-11-30"
+
+### Cambiare solo il main (per esempio per il live)
+
+    .\invido-site.exe -buildmain
+
+### all4sync
 
 Questo è quello che esegue il flag -all4sync
 
@@ -225,14 +236,6 @@ Questo è quello che esegue il flag -all4sync
 
 In futuro, con la funzione "cerca", il sync del db con i dati della ricerca probabilmente sarà necessario.
 
-### Cambiare un post già pubblicato (Edit)
-Uso il flag -editpost. Per esempio:
-
-    .\invido-site.exe -editpost -date "2025-11-30"
-
-### Cambiare solo il main (per esempio per il live)
-
-    .\invido-site.exe -buildmain
 
 ## Per vedere il sito creato
 

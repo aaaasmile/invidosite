@@ -357,6 +357,26 @@ footer {
   align-self: center;
 }
 
+figure.small{
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  border: none;
+  max-width: 200px;
+
+  img {
+    max-width: 200px;
+  }
+
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+}
+
 figure {
   border: thin #222 solid;
   display: flex;
@@ -376,6 +396,8 @@ figure {
     text-align: center;
   }
 }
+
+
 
 .person img {
   height: 100px;
@@ -656,3 +678,4 @@ p.center {
 .run-button-always:hover {
   background-color: #45a049;
 }
+
