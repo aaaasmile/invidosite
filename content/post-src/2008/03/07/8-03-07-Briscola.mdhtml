@@ -1,0 +1,16 @@
+title: Briscola
+datetime: 2008-03-07
+id: 8-03-07-Briscola-PS
+tags: Briscola
+---
+<header class="withimg">
+  <div>
+    <h1>Briscola</h1>
+    <time>7 Marzo 2008</time>
+  </div>
+  <img src="foto01.jpg" />
+</header>
+<section>
+  <p>Nella Cuperativa, l'ultimo gioco arrivato è la <b>briscola in due</b>. Si può scaricare
+    con la Cuperativa 0.5.0.</p>
+</section>

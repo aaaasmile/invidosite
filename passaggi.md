@@ -194,7 +194,7 @@ Al momento il processo funziona con Visual Code (profilo Edit Post).
 Il database sarebbe meglio scaricarlo da current su invido.it.
 Per il nuovo post:
 
-    .\invido-site.exe  -newpost "Tressette" -date "2008-02-09" -watch
+    .\invido-site.exe  -newpost "Briscola" -date "2008-03-07" -watch
 
 Ora edito il nuovo file mdhtml e vedo subito il risultato (nell'esempio di sopra su http://localhost:5572/posts/2025/04/17/25-04-17-NuovoSito/).
 
