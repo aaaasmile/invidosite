@@ -70,6 +70,14 @@ Come linkcap ma non apre una  nuova page
 
     <a href='https://wien-rundumadum-2024-130k.legendstracking.com/'>Tracker</a> 
 
+### linkimgnext
+Come linknext, ma al posto del link di testo ho un'immagine
+
+    [linkimgnext, 'foto02_320.jpg', '/pages/tressette']
+che genera:
+
+    <a href="/pages/tressette"><img src="foto02_320.jpg" /></a>
+
 ### figstack
 Serve per creare velocemente una galleria di immagini.
 Esempio:

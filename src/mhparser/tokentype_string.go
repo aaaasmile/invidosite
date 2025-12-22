@@ -54,6 +54,8 @@ func (i TokenType) String() string {
 		return "itemLinkCaption"
 	case itemLinkNext:
 		return "itemLinkNext"
+	case itemLinkImgNext:
+		return "itemLinkImgNext"
 	case itemYouTubeEmbed:
 		return "itemYouTubeEmbed"
 	case itemLatestPosts:

@@ -42,6 +42,15 @@ func buildDescrInLex(l *L) {
 	arr = append(arr, fn)
 
 	fn = DescrFnItem{
+		KeyName:       "linkimgnext",
+		Labels:        []string{"Caption", "Url"},
+		ItemTokenType: itemLinkImgNext,
+		IsMultiline:   false,
+	}
+	fn.NumParam = len(fn.Labels)
+	arr = append(arr, fn)
+
+	fn = DescrFnItem{
 		KeyName:       "youtube",
 		Labels:        []string{"VideoID"},
 		ItemTokenType: itemYouTubeEmbed,

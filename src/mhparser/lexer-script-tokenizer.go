@@ -238,6 +238,7 @@ const (
 	itemLinkSimple
 	itemLinkCaption
 	itemLinkNext
+	itemLinkImgNext
 	itemYouTubeEmbed
 	itemLatestPosts
 	itemArchivePosts

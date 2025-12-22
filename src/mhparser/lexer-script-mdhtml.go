@@ -239,6 +239,8 @@ func (mh *MdHtmlGram) processItem(item Token) (bool, error) {
 		mh._curr_Node = trans.NewLinkCaptionNode(item.Value)
 	case item.Type == itemLinkNext:
 		mh._curr_Node = trans.NewLinkNextNode(item.Value)
+	case item.Type == itemLinkImgNext:
+		mh._curr_Node = trans.NewLinkImgNextNode(item.Value)
 	case item.Type == itemYouTubeEmbed:
 		mh._curr_Node = trans.NewYouTubeNode(item.Value)
 	case item.Type == itemFigStack:
