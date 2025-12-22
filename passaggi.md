@@ -194,10 +194,11 @@ Al momento il processo funziona con Visual Code (profilo Edit Post).
 Il database sarebbe meglio scaricarlo da current su invido.it.
 Per il nuovo post:
 
-    .\invido-site.exe  -newpost "Italian Special Solitaire" -date "2005-10-02" -watch
+    .\invido-site.exe  -newpost "Come si gioca a Mariazza" -date "2007-11-15" -watch
 
 Ora edito il nuovo file mdhtml e vedo subito il risultato (nell'esempio di sopra su http://localhost:5572/posts/2025/04/17/25-04-17-NuovoSito/).
 
+### Sincronizza il nuovo Post
 A questo punto, se voglio preparare tutti i files per il comando rsync, uso il seguente comando:
 
     .\invido-site.exe -all4sync
