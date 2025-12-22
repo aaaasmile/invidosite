@@ -1,0 +1,24 @@
+title: Stato del progetto Cuperativa
+datetime: 2008-05-30
+id: 8-05-30-StatodelprogettoCuperativa-PS
+tags: Cuperativa
+---
+<header class="withimg">
+  <div>
+    <h1>Stato del progetto Cuperativa</h1>
+    <time>30 Maggio 2008</time>
+  </div>
+  <img src="foto01.png" /> 
+</header>
+<section>
+  <p>Attualmente sto lavorando ad una nuova versione del programma, la quale consentirà un
+aggiornamento senza dovere scaricare ogni volta tutto il software. Questo avverrà
+quando ci si collegherà al server per giocare online. Siccome il programma non è
+compilato, ma interpretato, per aggiornare il software basta cambiare pochi files.
+In più, un utente che avesse voglia di cambiare il programma, può farlo direttamente
+usando semplicemente Notepad, o qualsiasi altro editor di testo. Personalizzare
+o aggiungere giochi di carte come la briscola sarà quindi immediato.</p>
+
+<p>Ecco in anteprima una schermata del gioco della briscola aggiornato col layout
+suggerito da Domenico Starna.</p>
+</section>    
