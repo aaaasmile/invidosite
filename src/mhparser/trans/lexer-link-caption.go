@@ -13,10 +13,20 @@ type mdhtLinkCaptionNode struct {
 	caption    string
 	href_arg   string
 	is_caption bool
+	is_next    bool
 }
 
 func NewLinkCaptionNode(preline string) *mdhtLinkCaptionNode {
 	res := mdhtLinkCaptionNode{is_caption: true}
+	arr := strings.Split(preline, "[")
+	if len(arr) > 0 {
+		res.before_link = arr[0]
+	}
+	return &res
+}
+
+func NewLinkNextNode(preline string) *mdhtLinkCaptionNode {
+	res := mdhtLinkCaptionNode{is_caption: true, is_next: true}
 	arr := strings.Split(preline, "[")
 	if len(arr) > 0 {
 		res.before_link = arr[0]
@@ -57,9 +67,14 @@ func (ln *mdhtLinkCaptionNode) Transform(templDir string) error {
 	CtxFirst := struct {
 		HrefLink    string
 		DisplayLink string
+		OpenNewPage bool
 	}{
 		HrefLink:    ln.href_arg,
 		DisplayLink: ln.caption,
+		OpenNewPage: true,
+	}
+	if ln.is_next {
+		CtxFirst.OpenNewPage = false
 	}
 	var partFirst bytes.Buffer
 	if err := tmplPage.ExecuteTemplate(&partFirst, "linkbase", CtxFirst); err != nil {

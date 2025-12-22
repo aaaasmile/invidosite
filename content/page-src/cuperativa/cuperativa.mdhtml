@@ -14,9 +14,9 @@ comments: no
   <h3>Giochi</h3>
   <p>La Cuperativa è una collezione di giochi di carte per giocare con il computer. I giochi supportati sono:</p>
   <ul>
-    <li>[linkcap 'Briscola in 2', '/pages/briscola/#regole']</li>
-    <li>[linkcap 'Spazzino', '/pages/spazzino/']</li>
-    <li>[linkcap 'Mariazza', '/pages/mariazza/']</li>
+    <li>[linknext 'Briscola in 2', '/pages/briscola/#regole']</li>
+    <li>[linknext 'Spazzino', '/pages/spazzino/']</li>
+    <li>[linknext 'Mariazza', '/pages/mariazza/']</li>
     <li>Scopetta in due</li>
     <li>Tombolon in due</li>
     <li>Tressette in due</li>

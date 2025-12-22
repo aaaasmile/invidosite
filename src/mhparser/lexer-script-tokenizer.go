@@ -237,6 +237,7 @@ const (
 	itemFigStack
 	itemLinkSimple
 	itemLinkCaption
+	itemLinkNext
 	itemYouTubeEmbed
 	itemLatestPosts
 	itemArchivePosts

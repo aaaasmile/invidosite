@@ -1,5 +1,10 @@
 {{- define "linkbase" -}}
-<a href="{{.HrefLink}}" target="_blank">{{.DisplayLink}}</a>
+<a href="{{.HrefLink}}" 
+{{if .OpenNewPage -}}
+target="_blank"
+{{end -}}
+>{{.DisplayLink}}</a>
+
 {{- end -}}
 
 {{- define "figstack" -}}
