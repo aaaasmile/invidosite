@@ -1,0 +1,37 @@
+title: Lo Spazzino
+datetime: 2008-11-20
+id: 8-11-20-LoSpazzino-PS
+tags: Spazzino
+---
+<header class="withimg">
+  <div>
+    <h1>Lo Spazzino</h1>
+    <time>20 Novembre 2008</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>Finalmente una nuova versione del programma <b>Cuperativa</b>, la versione 0.6.0.
+
+  <p>Questa versione consente di giocare allo spazzino, sia
+    contro il cpu che in rete contro avversari remoti. Lo spazzino è una variante
+    della scopa. Le regole del gioco si trovano nella
+    [linkcap 'sezione spazzino', '/pages/spazzino/']</p> 
+
+  <p> <b>Il server è stato aggiornato</b>, questo significa che le vecchie versioni di cuperativa
+    devono venire attualizzate per giocare in rete. Questo avviene in modo
+    automatico quando ci si collega al server online.
+    Durante l'aggiornamento online, viene scaricato un pacchetto di 4.4MB, molto
+    più piccolo del setup completo.</p>
+
+  <p>Questo il dettaglio della versione 0.6.0</p>
+
+  <p>
+  <ul>
+    <li> Aggiunto lo spazzino</li>
+    <li> Aggiunto la modalità gioco privato online</li>
+    <li> Migliorato il layout del programma</li>
+    <li> Migliorato l'aggiornamento automatico via server</li>
+  </ul>
+  </p>
+</section>
