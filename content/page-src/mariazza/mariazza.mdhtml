@@ -1,0 +1,33 @@
+title: mariazza
+datetime: 2025-12-22
+id: mariazza-PG
+comments: no
+---
+<header>
+    <h1>mariazza</h1>
+</header>
+<section>
+  <p>Probabilmente il modo più semplice per imparare a giocare a Mariazza è vedere come funziona 
+    in questo video:
+  </p>
+  <p class="center">
+  <figure>
+    [youtube 'H7ahL_4IvOI']
+    <figcaption>Giocare a Mariazza</figcaption>
+  </figure>
+  </p>
+  <h3>Sommario delle regole</h3>
+  <p>Si gioca come a briscola, ma con 5 carte. Vince chi per primo raggiunge i 41 punti.</p>
+  <p>Siccome i 41 punti si raggiungono durante la partita, essi vanno dichiarati, altrimenti il gioco 
+    continua. Per dichiarare la vittoria bisogna essere in presa.
+  </p>
+  <p>Il cavallo e re di un seme fanno Mariazza. La Mariazza vale 20 punti. 
+    Per raccogliere i punti, la Mariazza 
+    va dichiarata mostrando le carte del cavallo e re. 
+    Il punteggio della Mariazza viene assegnato solo quando il giocatore va in presa.
+  </p>
+  <p>La mariazza del seme di briscola vale, invece, 40 punti e una partita può già finire in prima mano
+    (mariazza di briscola dichiarata che prende la mano).
+  </p>
+  <p>Con il 7 di briscola è possibile scambiare la carta di briscola in tavola, questo a discrezione del giocatore.</p>
+</section>    
