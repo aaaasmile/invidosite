@@ -60,4 +60,15 @@ comments: no
   <p>Dato l’uso massiccio di tecnologie prettamente Microsoft, il gioco è disponibile solo in versione Windows.</p>
   <p>Il codice soregente del programma si trova [linkcap 'qui', 'https://github.com/aaaasmile/briscola_net']</p>
 
+  <h3 id="regole">Regole della Briscola</h3>
+  <p>La briscola è un popolare gioco di carte di origine italiana giocato con un mazzo di 40 carte, di quattro semi.
+    Nella Cuperativa è implementato il gioco con due giocatori.</p>
+
+  <h3>Scopo</h3>
+  <p>Si gioca con un mazzo di 40 carte diviso in 4 semi di 10 carte ciascuno. I punti disponibili per ciascun gioco sono
+    in totale 120, vince chi ne realizza almeno 61. Se i punti sono 60 il gioco è pari.</p>
+
+  <p>Il gioco può essere costituito da una singola partita, e quindi chi si aggiudica la partita si aggiudica il gioco,
+  oppure da più partite consecutive, che in Cuperativa sono denominate <i>segni</i>. 
+  Il gioco viene allora assegnato a colui che si aggiudica il numero prefissato all’inizio di <i>segni</i>.</p>
 </section>
