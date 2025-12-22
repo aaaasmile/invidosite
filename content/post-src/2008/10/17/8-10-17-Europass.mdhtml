@@ -1,0 +1,20 @@
+title: Europass
+datetime: 2008-10-17
+id: 8-10-17-Europass-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Europass</h1>
+    <time>17 Ottobre 2008</time>
+  </div>
+</header>
+<section>
+  <p>A quando il prossimo gioco? Vediamo, intanto ho creato una nuova
+applicazione per scrivere il mio curriculum in modo decente, sulla falsa riga del
+modello Europass.
+Niente di stravolgente, ma una buona occasione per creare
+un'applicazione in rails e pdfwriter. Appena la finisco, l'aggiungerò alla ristabilita
+sezione tools.</p>
+<p>L'applicazione si trova su GitHub a questo [linkcap 'Link', 'https://github.com/aaaasmile/MySmileCv']</p>
+</section>    
