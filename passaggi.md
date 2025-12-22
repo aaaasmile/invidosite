@@ -236,6 +236,16 @@ Questo è quello che esegue il flag -all4sync
 
 In futuro, con la funzione "cerca", il sync del db con i dati della ricerca probabilmente sarà necessario.
 
+### Archivio
+La pagina archivio situata su content/page-src/archivio non viene creata automaticamente 
+all'inizio. Essa viene solo aggiornata (invero è il [archive_posts] che viene cambiato). Quindi all'inizio uso:
+
+    .\invido-site.exe -newpage "archivio" -date "2025-12-22" -watch
+Poi in questa pagina posso mettere il titolo e il testo che voglio. L'archivio
+viene aggiornato usando il tag:
+
+    [archive_posts]
+Al momento la pagina d'archivio è fissa nel codice sorgente al nome 'archivio'.
 
 ## Per vedere il sito creato
 
@@ -252,6 +262,9 @@ per aggiornare il db con il nuovo post nel tag
 
 Nota che il comando _-buildtags_ serve per creare il nuovo tag nel db e generare il file
 mdhtml (è una nuova page) che raccoglie tutti i posts che contengono il tag.
+Ne mio caso è la directory content/page-src/tags/. Nota che se la directory 
+content/page-src/tags/ non esiste, il file sorgente di tag non viene generato.
+
 Se il tag esiste già, nulla viene creato o modificato, tranne se la pagina ha un md5 obsoleto.
 
 ## TODO

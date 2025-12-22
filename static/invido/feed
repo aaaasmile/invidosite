@@ -5,5 +5,11 @@
     <description>Invido un sito che tratta giochi di carte tradizionali italiani</description>
     <link>https://invido.it</link>
     <copyright>All rights reserved</copyright>
+    <item>
+        <title>Italian Special Solitaire</title>
+        <description>Aggiunto il programma Italian Special...</description>
+        <link>https://invido.it/posts/2005/10/02/5-10-02-ItalianSpecialSolitaire/#</link>
+        <pubDate>02 Oct 05 02:00 +0200</pubDate>
+    </item>
 </channel>
 </rss>
