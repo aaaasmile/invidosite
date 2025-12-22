@@ -77,8 +77,8 @@ func (mp *MdHtmlProcess) ProcessToHtml(script string) error {
 		if mp.scrGramm.Id == "" {
 			return fmt.Errorf("[ProcessToHtml] field 'id' in mdhtml is empty")
 		}
-		if mp.scrGramm.Datetime.Year() < 2010 {
-			return fmt.Errorf("[ProcessToHtml] field 'datetime' is empty or invalid")
+		if mp.scrGramm.Datetime.Year() < 2000 {
+			return fmt.Errorf("[ProcessToHtml] field 'datetime' is empty or invalid, or smaller than 2000")
 		}
 	}
 	if mp.debug {

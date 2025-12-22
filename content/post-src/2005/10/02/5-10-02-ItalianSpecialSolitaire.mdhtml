@@ -1,0 +1,33 @@
+title: Italian Special Solitaire
+datetime: 2005-10-02
+id: 5-10-02-ItalianSpecialSolitaire-PS
+tags: solitario
+---
+<header class="withimg">
+  <div>
+    <h1>Italian Special Solitaire</h1>
+    <time>2 Ottobre 2005</time>
+  </div>
+  <img src="foto01.jpg" />
+</header>
+<section>
+  <p>Aggiunto il programma Italian Special Solitaire 2.0. La peculiarità di questa
+    versione è quella di usare il mazzo del Tarocco Piemontese ridotto a 56 carte.
+    Nelle carte sono stati aggiunti i semi francesi e scritte in latino</p>
+
+  <p>Il programma Italian Special Solitaire 2.0 accetta anche delle opzioni a linea
+    di comando, per essere lanciato in full screen, oppure a risoluzione definita
+    dall'utente. Le immagini del mazzo sono in formato png e sono state realizzate,
+    così come quella dello sfondo, da Domenico Starna.</p>
+
+  <p>Le funzioni più importanti del programma sono:</p>
+
+  <ul>
+    <li> Solitario a 56 carte</li>
+    <li> Gestione del punteggio</li>
+    <li> Carte e sfondo personalizzabili</li>
+    <li> Multilingua: italiano, inglese e dialetto bredese della bassa mantovana destra Oglio.</li>
+    <li> Storia e descrizione del mazzo del Tarocco Piemontese (Domenico Starna).</li>
+  </ul>
+  <p>Il programma utilizza la libreria open source SDL. </p>
+</section>
