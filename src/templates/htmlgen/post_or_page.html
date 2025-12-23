@@ -32,14 +32,14 @@
 
 {{define "postfinal"}}
       <nav class="postnav">
-        {{- if .HasPrev}}
-          <a href="{{.PrevURI}}">&lt; Post successivo</a>
+        {{- if .HasNext}}
+          <a href="{{.NextURI}}">&lt; Post successivo</a>
         {{- else }}
           <span>&lt; Post successivo</span>
         {{end -}}
         <a href="/">Home</a>
-        {{- if .HasNext}}
-          <a href="{{.NextURI}}">Post precedente &gt;</a>
+        {{- if .HasPrev}}
+          <a href="{{.PrevURI}}">Post precedente &gt;</a>
         {{end -}}
       </nav>
     </article>

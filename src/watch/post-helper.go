@@ -38,6 +38,7 @@ func CreateMapLinks(liteDB *db.LiteDB) (*idl.MapPagePostsLinks, error) {
 	next_item := &idl.PostItem{}
 
 	for ix, item := range mapLinks.ListPost {
+		// remember that the order is descendig: most recent firts, oldest at the end
 		postLinks := idl.PostLinks{
 			Item: &item,
 		}
@@ -45,18 +46,18 @@ func CreateMapLinks(liteDB *db.LiteDB) (*idl.MapPagePostsLinks, error) {
 			// at least 2 or more elements
 			switch ix {
 			case 0:
-				next_item = &mapLinks.ListPost[ix+1]
-				postLinks.NextLink = next_item.Uri
-				postLinks.NextPostID = next_item.PostId
-			case last_ix:
+				prev_item = &mapLinks.ListPost[ix+1]
 				postLinks.PrevLink = prev_item.Uri
 				postLinks.PrevPostID = prev_item.PostId
+			case last_ix:
+				postLinks.NextLink = prev_item.Uri
+				postLinks.NextPostID = prev_item.PostId
 			default:
 				next_item = &mapLinks.ListPost[ix+1]
-				postLinks.NextLink = next_item.Uri
-				postLinks.NextPostID = next_item.PostId
-				postLinks.PrevLink = prev_item.Uri
-				postLinks.PrevPostID = prev_item.PostId
+				postLinks.NextLink = prev_item.Uri
+				postLinks.NextPostID = prev_item.PostId
+				postLinks.PrevLink = next_item.Uri
+				postLinks.PrevPostID = next_item.PostId
 			}
 			prev_item = &mapLinks.ListPost[ix]
 		}
