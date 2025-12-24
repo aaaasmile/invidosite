@@ -1,0 +1,24 @@
+title: Nuova versione
+datetime: 2010-05-03
+id: 10-05-03-Nuovaversione-PS
+tags: Cuperativa
+---
+<header>
+  <div>
+    <h1>Nuova versione 0.7.5 del programma Cuperativa</h1>
+    <time>3 Maggio 2010</time>
+  </div>
+</header>
+<section>
+  <p>Ho pubblicato una nuova versione del programma Cuperativa, la 0.7.5.
+Contiene il nuovo gioco del briscolone, effetti sonori e una grafica migliorata.</p>
+<p>Il gioco in rete funziona solo con la versione 0.7.5.</p>
+<p class="centered">
+  [figstack 
+    'foto01.png', 'Mariazza',
+    'foto02.png', 'Briscolone',
+    'foto03.png', 'In rete'
+  ]
+</p>
+
+</section>    
