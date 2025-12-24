@@ -1,0 +1,22 @@
+title: Tressette
+datetime: 2010-09-26
+id: 10-09-26-Tressette-PS
+tags: Tressette
+---
+<header>
+  <div>
+    <h1>Tressette</h1>
+    <time>26 Settembre 2010</time>
+  </div>
+</header>
+<section>
+  <p>Guardando le statistiche del programma tressette, che ho pubblicato su 
+   [linkcap 'sf.net', 'https://sourceforge.net/projects/tressette/' ]
+qualche tempo fa (tre.exe), mi sono accorto che presto saranno raggiunti i 10000 download.
+Per l'occasione, mi sembra il minimo dover aggiungere il gioco del tressette a due giocatori
+nella suite della cuperativa. Alcuni mi hanno chiesto quando ci sarà una nuova versione
+del programma tre.exe. Questo non accadrà a breve termine, ma mi piacerebbe tornare a rivisitare
+il gioco programmando di nuovo in c++, magari con la possibilità di collegarsi al server
+della cuperativa per il gioco in rete.</p>
+<p>E' nella calma la vera forza della cuperativa.</p>
+</section>    
