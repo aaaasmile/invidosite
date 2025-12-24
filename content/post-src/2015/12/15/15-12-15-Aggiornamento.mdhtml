@@ -1,0 +1,18 @@
+title: Aggiornamento
+datetime: 2015-12-15
+id: 15-12-15-Aggiornamento-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Aggiornamento</h1>
+    <time>15 Dicembre 2015</time>
+  </div>
+</header>
+<section>
+  <p>Dopo una lunga pausa, ho aggiornato questo sito aggiungendo il download del programma
+    [linknext 'BriscolaNet', '/pages/briscola/#vintage'].</p>
+  <p>Ho anche spostato i sorgenti dei miei progetti su [linkcap 'GitHub', 'https://github.com/aaaasmile'], 
+    per cui è probabile che, dopo una lunga pausa, 
+    in un prossimo futuro, ci saranno delle novità riguardante i giochi di carte su questo sito.</p>
+</section>
