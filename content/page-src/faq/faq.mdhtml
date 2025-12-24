@@ -1,0 +1,74 @@
+title: faq
+datetime: 2025-12-23
+id: faq-PG
+comments: no
+---
+<header>
+  <h1>Faq</h1>
+</header>
+<section>
+  <h4>Che cos’è Cuperativa?</h4>
+  <p>È una suite per giocare alle carte. Il programma è presente in due versioni. La prima, e più datata, è un programma
+    che si installa su windows (CuperativaSoloRuby).
+    Il sorgente si trova su: [linkcap 'github cuperativa', 'https://github.com/aaaasmile/CuperativaSoloRuby'].
+    Il software da installare si trova a questo [linknext 'link', '/pages/cuperativa'].
+  </p>
+
+  <p>La seconda versione è quella sviluppata attivamente ed è online. Si trova al link [linkcap 'cup.invido.it',
+    'https://cup.invido.it'].
+    Il codice sorgente
+    si trova su: [linkcap 'github cupservice', 'https://github.com/aaaasmile/Cupservice']</p>
+
+  <h4>Quali giochi sono inclusi nel programma Cuperativa?</h4>
+  <p>Al momento i giochi disponibili su CuperativaSoloRuby sono:</p>
+
+  <ul>
+    <li>la briscola</li>
+    <li>la mariazza</li>
+    <li>lo spazzino</li>
+    <li>la scopa</li>
+    <li>briscolone</li>
+    <li>tombolon</li>
+    <li>tressette</li>
+  </ul>
+  <p>Per cup.invido.it:</p>
+  <ul>
+    <li>la briscola</li>
+  </ul>
+  <p>I giochi sono tutti a due giocatori in modalità simulazione contro il computer.</p>
+
+  <h4>Perché il programma si chiama Cuperativa?</h4>
+  <p>È il nome in dialetto bredese del locale <i>Cooperativa la Nazionale</i> di Breda Cisoni.
+    Era il locale dove a Breda
+    Cisoni si giocava a carte ai massimi livelli, specialmente a briscola, tressette, spazzino, ciapanò, mariassa,
+    invido e ramino.</p>
+
+  <h4>Funziona il gioco in rete?</h4>
+  <p>No. Anche nella versione <i>cup.invido.it</i> si gioca solo contro il computer.</p>
+
+  <h4>Dove si scarica il programma Cuperativa?</h4>
+  <p>Dalla sezione cuperativa della pagina carte [linknext 'cuperativa', '/pages/cuperativa'].</p>
+
+  <h4>Come si gioca alla Mariazza?</h4>
+  <p>La Mariazza è una variante della briscola in due.
+    Le regole del gioco sono descritte nelle regole della [linknext 'Mariazza', '/pages/mariazza'].</p>
+
+  <h4>Ci sarà presto il mio gioco preferito xyz?</h4>
+  <p>Chissà, la vita è sempre piena di sorprese. Probabilmente la via più veloce è quella di scaricare i sorgenti da
+    [linkcap 'github cuperativa', 'https://github.com/aaaasmile/CuperativaSoloRuby']
+    implementare il gioco ed effettuare un pullrequest.</p>
+
+  <h4>Chi c’è dietro il software Cuperativa?</h4>
+  <p>Cuperativa è un progetto personale che ho creato durante il mio tempo libero. Quasi tutto il codice l’ho creato da
+    zero, mentre le risorse delle immagini le ho prese in rete o mi sono state inviate.
+    Ho creato Cuperativa per poter giocare a carte sul computer come alla Cuperativa
+    Nazionale o all’Acli di Breda.</p>
+
+  <h4> Che cos’è Invido?</h4>
+  <p>L’invido è un gioco di carte tipico della zona Casalasca e destra Oglio (in provincia di Cremona e Mantova). Si
+    gioca con le carte da briscola piacentine con un mazzo ridotto a 32 carte. La particolarità del gioco è la
+    possibilità di chiamare <i>“INVIDO”</i> durante la partita per aumentare la posta in gioco. Questa opportunità, di
+    interagire verbalmente con l’avversario durante la partita, fanno sì che il gioco risulti particolarmente vivace.
+  </p>
+  <p>Per maggiori informazioni puoi consultare la pagina [linknext 'Invido', '/pages/invido']</p>
+</section>

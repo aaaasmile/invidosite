@@ -201,7 +201,7 @@ Se per caso devo ricreare il sito (links, pages e posts)
 
 ## Creare una nuova page
 
-   .\invido-site.exe -newpage "mariazza" -date "2025-12-22" -watch
+   .\invido-site.exe -newpage "faq" -date "2025-12-23" -watch
 
 ## Cambiare una page
 
