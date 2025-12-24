@@ -1,0 +1,27 @@
+title: Pubblicato il gioco
+datetime: 2008-12-24
+id: 8-12-24-Pubblicatoilgioco-PS
+tags: Cuperativa
+---
+<header>
+  <div>
+    <h1>Pubblicato il gioco della Scopa - Cuperativa 0.6.1</h1>
+    <time>24 Dicembre 2008</time>
+  </div>
+</header>
+<section>
+  <p>Ho aggiunto al programma della <b>Cuperativa</b> il gioco della scopa a due giocatori.
+    Per un aggiornamento veloce dalla versione precedente, basta collegarsi al server online
+    della cuperativa, lì vengono scaricati in modo automatico. È solo un file da 150 kb. </p>
+
+  <p>Di seguito riporto la lista principale dei cambiamenti nella versione 0.6.1</p>
+
+  <ul>
+    <li>Aggiunto il gioco della scopa</li>
+    <li>Cambiate le animazioni nella briscola</li>
+    <li>Cambiata la grafica della mariazza</li>
+    <li>Corretto un errore sulla presa delle carte multiple nello spazzino</li>
+  </ul>
+
+  <p>A tutti gli appassionati della cuperativa e dell'invido, <b>auguri di buone feste</b>.</p>
+</section>
