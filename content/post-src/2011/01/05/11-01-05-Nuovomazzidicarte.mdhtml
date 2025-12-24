@@ -1,0 +1,37 @@
+title: Nuovo mazzi di carte
+datetime: 2011-01-05
+id: 11-01-05-Nuovomazzidicarte-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Nuovi mazzi di carte per il programma Cuperativa</h1>
+    <time>5 Gennaio 2011</time>
+  </div>
+</header>
+<section>
+  <p>Ho aggiunto nuovi mazzi di carte per il gioco cuperativa.
+    Essi sono: il bellissimo mazzo di carte del <b>Tarocco Piemontese</b> creato da Domenico Starna,
+    le carte bolognesi, le carte genovesi, le carte piemontesi, le carte romagnole, le carte della Sardegna,
+    le carte trentine e le carte triestine.</p>
+
+
+  <p>Per installare un nuovo mazzo basta scompattare lo zip nella sotto directory <code>res/carte</code>
+     dove è installato il programma
+    Cuperativa (per esempio <code>C:\cuperativa\ver_0_8_2\app\res\carte</code>).
+    Poi, dopo un restart del programma, nelle opzioni delle carte ora comparirà il nuovo mazzo
+    che potrà essere selezionato come tutti gli altri.</p>
+
+  <p>Esempio per le carte romagnole:</p>
+
+  <ul>
+    <li> Scaricare lo zip romagna.zip</li>
+    <li> Scompattare lo zip in modo che si crei la directory 
+      <code>C:\cuperativa\ver_0_8_2\app\res\carte\romagna</code> con
+      all'interno tutte le immagini delle carte</li>
+    <li> Lanciare il programma cuperativa, selezionare il menu opzioni, mazzi di carte, selezionare carte romagnole e
+      premere il pulsante [applica]</li>
+  </ul>
+
+  <p>A questo punto tutti i giochi di carte saranno eseguiti usando il mazzo delle carte romagnole.</p>
+</section>
