@@ -6,6 +6,30 @@
     <link>https://invido.it</link>
     <copyright>All rights reserved</copyright>
     <item>
+        <title>Tressette</title>
+        <description>Guardando le statistiche del programma...</description>
+        <link>https://invido.it/posts/2010/09/26/10-09-26-Tressette/#</link>
+        <pubDate>26 Sep 10 02:00 +0200</pubDate>
+    </item>
+    <item>
+        <title>Creato un nuovo Blog: igorrun</title>
+        <description>Ho creato un nuovo blog personale sulla...</description>
+        <link>https://invido.it/posts/2010/09/05/10-09-05-CreatounnuovoBlog/#</link>
+        <pubDate>05 Sep 10 02:00 +0200</pubDate>
+    </item>
+    <item>
+        <title>Nuova versione 0.7.5 del programma Cuperativa</title>
+        <description>Ho pubblicato una nuova versione del programma...</description>
+        <link>https://invido.it/posts/2010/05/03/10-05-03-Nuovaversione/#</link>
+        <pubDate>03 May 10 02:00 +0200</pubDate>
+    </item>
+    <item>
+        <title>Cuperativa</title>
+        <description>Tra un allenamento e l'altro e uno studio...</description>
+        <link>https://invido.it/posts/2010/03/07/10-03-07-Cuperativa/#</link>
+        <pubDate>07 Mar 10 01:00 +0100</pubDate>
+    </item>
+    <item>
         <title>Il Briscolone</title>
         <description>L'autunno non è ancora iniziato che è...</description>
         <link>https://invido.it/posts/2009/10/17/9-10-17-Briscolone/#</link>
@@ -148,30 +172,6 @@
         <description>Aggiunto il programma Italian Special...</description>
         <link>https://invido.it/posts/2005/10/02/5-10-02-ItalianSpecialSolitaire/#</link>
         <pubDate>02 Oct 05 02:00 +0200</pubDate>
-    </item>
-    <item>
-        <title>Tressette</title>
-        <description>Guardando le statistiche del programma...</description>
-        <link>https://invido.it/posts/2010/09/26/10-09-26-Tressette/#</link>
-        <pubDate>26 Sep 10 02:00 +0200</pubDate>
-    </item>
-    <item>
-        <title>Creato un nuovo Blog: igorrun</title>
-        <description>Ho creato un nuovo blog personale sulla...</description>
-        <link>https://invido.it/posts/2010/09/05/10-09-05-CreatounnuovoBlog/#</link>
-        <pubDate>05 Sep 10 02:00 +0200</pubDate>
-    </item>
-    <item>
-        <title>Nuova versione 0.7.5 del programma Cuperativa</title>
-        <description>Ho pubblicato una nuova versione del programma...</description>
-        <link>https://invido.it/posts/2010/05/03/10-05-03-Nuovaversione/#</link>
-        <pubDate>03 May 10 02:00 +0200</pubDate>
-    </item>
-    <item>
-        <title>Cuperativa</title>
-        <description>Tra un allenamento e l'altro e uno studio...</description>
-        <link>https://invido.it/posts/2010/03/07/10-03-07-Cuperativa/#</link>
-        <pubDate>07 Mar 10 01:00 +0100</pubDate>
     </item>
 </channel>
 </rss>
