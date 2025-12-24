@@ -1,0 +1,39 @@
+title: Nuova versione
+datetime: 2009-06-07
+id: 9-06-07-Nuovaversione-PS
+tags: Cuperativa
+---
+<header class="withimg">
+  <div>
+    <h1>Nuova versione di Cuperativa: 0.7.1</h1>
+    <time>7 Giugno 2009</time>
+  </div>
+  <img src="foto01.png" /> 
+</header>
+<section>
+  <p>In questa versione sono stati corretti numerosi bugs. Primo fra tutti la possibilità
+di effettuare un update in modo automatico e senza la necessità di scaricare 9Mb
+del setup. La lista degli utenti online è ora di nuovo funzionante. I giochi del
+Tombolon e della Mariazza sono stati corretti. Nella Briscola ora si possono
+vedere quante carte sono rimaste da pescare.
+</p>
+
+<h4>Changelog 0.7.0</h4>
+<p>Nella versione 0.7.0 è ora possibile giocare per la classifica. </p>
+
+<p>Da subito, per giocare gratuitamente in internet sul server della cuperativa,
+è necessario registrarsi. La registrazione gratuita avviene in modo molto semplice
+sul sito cuperativa.invido.it. Su questo sito
+ho messo anche un piccolo forum, che può essere usato anche per segnalare problemi o suggerimenti.</p>
+
+<p>In questa versione ho aggiunto il gioco del Tombolon. Questo gioco è stato 
+curato, per quanto riguarda le regole e il suo funzionamento, da Domenico Starna.
+Domenico ha potuto constatare, direttamente nei bar e nei circoli
+di Rovigo, come il gioco funzioni veramente.</p>
+
+<p>Le versioni precedenti della cuperativa non possono più giocare col server in internet.
+Per giocare online è quindi necessario l'aggiornamento all'ultima versione.
+Questo aggiornamento va fatto scaricando il programma Setup. Nelle prossime versioni
+sarà di nuovo  disponibile l'aggiornamento automatico.</p>
+
+</section>    
