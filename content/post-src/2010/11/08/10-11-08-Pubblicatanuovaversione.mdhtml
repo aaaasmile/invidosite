@@ -1,0 +1,17 @@
+title: Pubblicata nuova versione
+datetime: 2010-11-08
+id: 10-11-08-Pubblicatanuovaversione-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Pubblicata nuova versione della cuperativa: Aloa verde 0.8.2</h1>
+    <time>8 Novembre 2010</time>
+  </div>
+</header>
+<section>
+  <p>Nel software Cuperativa ho corretto nuovi errori che alcuni utenti mi hanno cortesemente segnalato,
+    come il mancato salvataggio dei settings.</p>
+  <p>Collegandosi al server della cuperativa con una versione precedente del programma,
+    si può effetuare un aggiornamento automatico. </p>
+</section>
