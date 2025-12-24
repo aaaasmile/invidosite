@@ -97,7 +97,7 @@ func (pp *Post) createNewPost(targetRootDir string) error {
 		}
 	}
 	pp.contentDir = contentDir
-	pp.postId = fmt.Sprintf("%d-%s-%s-%s-PS", pp.Datetime.Year()-2000, mm, dd, pp.TitleCompress)
+	pp.postId = fmt.Sprintf("%02d-%s-%s-%s-PS", pp.Datetime.Year()-2000, mm, dd, pp.TitleCompress)
 	pp.mdhtmlName = fmt.Sprintf("%d-%s-%s-%s.mdhtml", pp.Datetime.Year()-2000, mm, dd, pp.TitleCompress)
 	log.Println("content dir is empty, lets generate the file", pp.mdhtmlName)
 	if err := pp.createMdHtml(); err != nil {
