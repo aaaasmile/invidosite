@@ -32,9 +32,9 @@ comments: no
     ]
   </p>
 
-  <h3>Versione Windows vintage</h3>
-  <p>Uno dei primissimi giochi di carte che ho sviluppato in C++ e che poi ho abbandonato.
-    [linkcap 'Download Briscola_Net', 'https://sourceforge.net/projects/briscola-net/files/latest/download']</p>
+  <h3 id="vintage">Versione Windows vintage</h3>
+  <p><b>Briscola_Net</b> è uno dei primissimi giochi di carte che ho sviluppato in C++ e che poi ho abbandonato.
+    Il download della versione Windows si trova [linkcap 'qui', 'https://sourceforge.net/projects/briscola-net/files/latest/download'].</p>
   <p>In Windows 11 funziona ancora perfettamente come se l'era della New Economy non fosse mai finita.</p>
 
   <h3>Screenshots di Briscola_Net</h3>
@@ -69,6 +69,6 @@ comments: no
     in totale 120, vince chi ne realizza almeno 61. Se i punti sono 60 il gioco è pari.</p>
 
   <p>Il gioco può essere costituito da una singola partita, e quindi chi si aggiudica la partita si aggiudica il gioco,
-  oppure da più partite consecutive, che in Cuperativa sono denominate <i>segni</i>. 
-  Il gioco viene allora assegnato a colui che si aggiudica il numero prefissato all’inizio di <i>segni</i>.</p>
+    oppure da più partite consecutive, che in Cuperativa sono denominate <i>segni</i>.
+    Il gioco viene allora assegnato a colui che si aggiudica il numero prefissato all’inizio di <i>segni</i>.</p>
 </section>
