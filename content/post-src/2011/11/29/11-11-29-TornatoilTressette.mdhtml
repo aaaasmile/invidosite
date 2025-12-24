@@ -1,0 +1,22 @@
+title: Tornato il Tressette
+datetime: 2011-11-29
+id: 11-11-29-TornatoilTressette-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Tornato il Tressette su sf.net</h1>
+    <time>29 Novembre 2011</time>
+  </div>
+  <img src="foto01.jpg" />
+</header>
+<section>
+  <p>Dopo svariato tempo ho pubblicato su sf.net una nuova versione del 
+    [linknext 'tressette', '/pages/tressette'].
+    Si tratta di un bugfixing di qualche imprecisione che era rimasta in sospeso.
+    Per l'occasione ho aggiornato le librerie del suono, che ora funzionano con le nuove versioni del sistema operativo
+    windows.</p>
+  <p>I sorgenti del programma si trovano ora in svn e non più in cvs. Li avevo compilati anche sotto Ubuntu, 
+    ma non so se funzionano ancora.
+  </p>
+</section>
