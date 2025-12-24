@@ -1,0 +1,22 @@
+title: Cup col Tressette
+datetime: 2010-10-15
+id: 10-10-15-CupcolTressette-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Pubblicata nuova versione della cuperativa col Tressette</h1>
+    <time>15 Ottobre 2010</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>Dopo avere terminato la mia prima maratona non poteva mancare una nuova
+    versione del programma Cuperativa. Questa volta ho aggiunto il gioco
+    del tressette a due giocatori. Tra le altre migliorie al programma, ho aumentato
+    la forza del giocatore computer quando gioca a scopa.</p>
+  <p>Chi possiede la versione 0.7.5 può aggiornare il programma alla versione 0.8.0,
+    semplicemente collegandosi al server della cuperativa e seguire le istruzioni che compariranno.
+    Il programma, una volta attualizzato, ripartirà in modo automatico. Versioni precedenti alla 0.7.5
+    richiedono l'update via setup.exe sopra riportato.</p>
+</section>
