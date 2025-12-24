@@ -1,0 +1,42 @@
+title: Nuova versione Cuperativa
+datetime: 2015-12-31
+id: 15-12-31-NuovaversioneCuperativa-PS
+tags: Cuperativa
+---
+<header class="withimg">
+  <div>
+    <h1>Nuova versione Cuperativa 1.2.7</h1>
+    <time>31 Dicembre 2015</time>
+  </div>
+  <img src="foto01.jpg" />
+</header>
+<section>
+  <p>
+    Il mio 2015 non finisce senza una nuova versione del programma <b>Cuperativa</b>. La nuova versione 1.2.7
+    presenta una nuova grafica pur mantenendo lo stile retrò targato fine anni novanta.</p>
+
+  <p>Puoi scaricare la nuova versione 1.2.7 usando il link
+    [linknext 'Cuperativa 1.2.7', '/pages/cuperativa'].</p>
+  <p>I cambiamenti e le novità rispetto alla versione precedente sono:</p> 
+  <ul>
+    <li>migliorata la grafica</li>
+    <li>setup compatibile con Win7, Win8.1 e WinXP</li>
+    <li>senza dubbio creato il più forte giocatore artificiale di <i>Mariasa</i></li>
+    <li>semplificato l'interfaccia grafica togliendo l'obsoleto supporto di rete</li>
+    <li>giochi supportati a due giocatori contro il computer:
+      <i>briscola</i>, <i>mariazza</i>, <i>scopetta</i>,
+      <i>spazzino</i>, <i>briscolone</i>, <i>tombolon</i> e il <i>tressette</i>
+    </li>
+    <li>codice sorgete completo pubblicato su
+      [linkcap 'GitHub CuperativaSoloRuby', 'https://github.com/aaaasmile/CuperativaSoloRuby']</li>
+  </ul>
+  </p>
+
+  <p>Maggiori informazioni le puoi trovare su [linknext 'Cuperativa', '/pages/cuperativa'].</p>
+
+  [figstack
+    'foto02.jpg', 'Start'
+  ]
+
+
+</section>
