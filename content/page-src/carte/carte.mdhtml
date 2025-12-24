@@ -13,6 +13,7 @@ comments: no
     <li><a href="\pages\invido" class="menu-link">Invido</a></li>
     <li><a href="\pages\cuperativa" class="menu-link">Cuperativa</a></li>
     <li><a href="\pages\briscola" class="menu-link">Briscola</a></li>
+    <li><a href="\pages\faq" class="menu-link">Faq</a></li>
   </ul>
 </nav>
 <section>
