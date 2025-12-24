@@ -1,0 +1,21 @@
+title: Registrazione utenti
+datetime: 2009-02-28
+id: 9-02-28-Registrazioneutenti-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Registrazione utenti</h1>
+    <time>28 Febbraio 2009</time>
+  </div>
+</header>
+<section>
+  <p>Tutti i giochi di carte online hanno la possibilità di registrare gli utenti
+    che vi partecipano e di fornire punteggi con classifiche. Cuperativa non ha ancora questa
+    possibilità, ma è arrivato il momento di offrire questa possibilità anche nella cuperativa.</p>
+  <p>
+    Nella prossima versione, oltre al gioco del Tombolon, sarà possibile registrarsi
+    sul sito e giocare con un punteggio. Ho preso in considerazione di usare
+    servizi come Facebook, Google friend e openid. Nessun servizio mi ha convinto del tutto
+    ed allora, per il momento, la registrazione verrà fatta su questo sito.</p>
+</section>
