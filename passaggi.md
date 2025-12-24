@@ -93,6 +93,7 @@ cosidero per dato il file d'immagine in formato ridotto di larghezza 320 pixel.
 
 ### youtube
 Genera l'iframe che serve per contenere il video player di youtube.  
+Qui c'è solo un argomento.
 Esempio:
 
     [youtube 'IOP7RhDnLnw'] 
@@ -290,3 +291,4 @@ Se il tag esiste già, nulla viene creato o modificato, tranne se la pagina ha u
 - con il comando:
      go run .\main.go  -buildonepage -name "briscola"
 non viene creato in modo corretto il file json di photos.json (function func (mp *MdHtmlProcess) parsedToHtml() error ). [DONE]
+- dopo il rebuildall i tag nel main non vengono aggiornati, occorre lanciare all4sync 
