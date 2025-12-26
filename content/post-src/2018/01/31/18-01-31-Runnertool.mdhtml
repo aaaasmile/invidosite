@@ -1,0 +1,23 @@
+title: Runner tool
+datetime: 2018-01-31
+id: 18-01-31-Runnertool-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Runner tool</h1>
+    <time>31 Gennaio 2018</time>
+  </div>
+</header>
+<section>
+  <p>Uno degli strumenti che uso maggiormanete è il
+    [linkcap 'Runner Tool', 'https://corsa.invido.it/?lng=it'], che è la raccolta
+    di diverse funzioni per il bravo corridore amatore. Inizialmente l'avevo sviluppato come applicazione
+    per il browser Chrome (extension packged), ma Google ha deciso di non supportare più questo tipo di applicazioni.
+  </p>
+  <p>Così l'ho trasformata in un'applicazione Progressive Web Apps
+    (progetto su [linkcap 'PWAPP-runner-tool', 'https://github.com/aaaasmile/PWAPP-runner-tool']). </p>
+  <p>Questo tipo di appllicazione può funzionare anche offline e può essere salvata all'interno dell'elenco App
+    similmente alla mia [linkcap 'vecchia extension packaged', 'https://github.com/aaaasmile/corsa_tool'].</p>
+  <p> Buone corse.</p>
+</section>
