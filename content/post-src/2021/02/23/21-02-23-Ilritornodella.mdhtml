@@ -1,0 +1,110 @@
+title: Il ritorno della
+datetime: 2021-02-23
+id: 21-02-23-Ilritornodella-PS
+tags: Cuperativa
+---
+<header class="withimg">
+  <div>
+    <h1>Il ritorno della Cuperativa online</h1>
+    <time>23 Febbraio 2021</time>
+  </div>
+  <img src="foto01.jpg" /> 
+</header>
+<section>
+  <p>È con grande entusiasmo, che finalmente riesco ad annunciare una nuova versione della Cuperativa, 
+questa volta disponibile online su questo sito,  al link [linkcap 'cup.invido.it', 'https://cup.invido.it'].</p>
+
+<p>È passato diverso tempo, qualche annuncio troppo ottimista, diverse prove, ma anche altri interessi e 
+questo ne ha ritardato sempre più la pubblicazione.</p>
+
+<p>Durante il mio percorso di programmatore mi è sempre piaciuto, di tanto in tanto, sviluppare 
+i giochi di carte che si giocavano nel bar della Cuperativa a Breda Cisoni. Questo sito ne è una testimonianza. </p>
+
+<p>Ad un certo punto ho anche pubblicato una soluzione per giocare in rete, 
+con tanto di server, client e web per gestire iscrizioni e forum. Una soluzione che è 
+stata superata dall'evoluzione del web, che ha cannibalizzato soluzioni, come  quella che avevo 
+adottato, basate sul protocollo TCP/IP a porta dedicata. Tecnologia rigettata a priori per motivi 
+di sicurezza, togliendo di fatto la possibilità dei client di collegarsi al server della Cuperativa. 
+Skype, Kazaaa e compagnia, hanno mostrato che non è che chiudendo delle porte si blocca una 
+trasmissione dubbia, ma tant'è che la via è stata segnata: solo il web è il motore per comunicare. 
+Eccezioni sono viste malvolentieri e concesse solo a protocolli straconosciuti su server dedicati e danarosi.  
+L'IoT dei giorni nostri, però, con i suoi protocolli dai nomi candidi, sembrano far ripensare 
+all'idea di far passare tutto dal web e vanno a ripristinare la sotterrata comunicazione TCP/IP. </p>
+
+<p>A quei tempi ho anche pensato ad un'una escursione in Flash, ma non ho fatto fatto tempo a cominciare, 
+che è stato anch'esso bannato, questa volta dai produttori di browser. </p>
+
+<p>Mi è rimasto, allora, solo lo sviluppo per browser con la coppia html + javascript. Ritrovarmi, 
+dopo aver completato un'applicazione complessa come la Cuperativa, sviluppata interamente in 
+solitaria e nei ritagli di tempo, ad affrontare lo sviluppo da zero partendo da html mi ha fatto 
+venire strane sensazioni. Creare interfacce grafiche complesse usando costrutti Html come 
+h1, h2, h3, h4 h5, ul, li, p e div per creare tutto via css mi è sembrato tornare indietro di decenni. 
+Javascript, poi, sembrava ancora fermo ai tempi di Netscape. 
+Per riuscire a combinare qualcosa, con la motivazione che man mano scompariva, 
+ho dovuto optare per delle librerie e framework che nascevano al mattino ed erano già obsoleti alla sera.</p>
+
+<p>Ad un certo punto mi sono imbarcato nello sviluppo usando Angularjs, diventato poi Angular, 
+usando NodeJs in sottofondo. Mamma mia che polpettone. 
+Forse con una schiera di programmatori si può creare qualcosa di decente, ma nel mio piccolo 
+non sono riuscito ad andare oltre alla foresta dei files di configurazione. 
+Tre settimane di pausa voleva dire ricreare il progetto da capo, scaricare tonnellate di librerie 
+per riuscire a vedere qualche pulsante e passare ore su dei forum a cercare una soluzione 
+ad un problema in teoria banale, per rivedere di nuovo quei tre bottoni del mese prima.</p>
+
+<p>Col passare del tempo, però, le librerie e i browser hanno fatto passi da gigante. 
+Lo sviluppo da parte mia è diventato sempre più abbordabile. Ho dovuto abbandonare Ruby 
+in quanto non aveva sbocchi sul browser. Ruby, per una singola persona, è un linguaggio molto produttivo, 
+ma diventa caotico quando l'applicazione cresce. La velocità di sviluppo iniziale è veramente notevole. 
+Per me non è un caso che Twitter sia nato così. Cuperativa senza Ruby non sarebbe riuscita.</p>
+
+<p>Dopo aver affossato Angular, NodeJs e l'escursione in Typescript, tanto per farmi male, 
+ho cominciato a vedere la luce quando ho cominciato a programmare in Go. 
+Finalmente un passo in avanti. </p>
+
+<p>Sulle ali dell'entusiasmo dello sviluppo in pochissimo tempo di 
+[linkcap 'vienna.invido.it', 'https://vienna.invido.it/'], creato con la coppia Go e ReactJs, ho pensato che fosse 
+arrivato il tempo di riprendere la Cuperativa a pieno ritmo. Ma nulla da fare anche questa volta. 
+L'applicazione in ReactJS senza polpettoni alla Webpack, e quindi nodejs, non sono riuscito a farla crescere. 
+Altra strada senza uscita. </p>
+
+<p>Successivamente, visto i passi da gigante che ha fatto il supporto di javascript nel browser, 
+sono tornato ad una implementazione in html puro e javascript, ma non sono riuscito a creare una grafica decente.</p>
+
+<p>Però la nuova libreria Vue era già nell'aria e improvvisamente scrivere un'applicazione con 3 bottoni 
+non era più collegata all'installazione di qualche giga di software, che diventa obsoleto mentre lo si scarica.
+Vuetify ha, infine, completato l'opera. Così per creare una toolbar qui si usa il comando <i>toolbar</i>. 
+Oppure per creare una colonna si usa <i>col</i> e riga <i>row</i>. A volte ho anche pensato, che con Vuetify  
+si possa anche dimenticare il css.
+Improvvisamente lo sviluppo dell'interfaccia grafica è diventato veloce e sono riemersi i tempi 
+dello sviluppo di Cuperativa con Ruby e FoxGui. </p>
+
+<p>Il supporto del browser è limitato a quelli sui quali ho sviluppato (Chrome ad esempio). 
+La famosa non compatibilità con Internet Explorer 6, credo, sia und dolore sopportabile. 
+Purtroppo viene anche a mancare la compatibilità col browser Wap su linea Gprs. </p>
+
+<p>Ora, però, Cuperativa è finalmente pubblicato.</p>
+
+<p>Mi sembrava, sopratutto dopo l'ultimo mio viaggio a Breda Cisoni, che lo sviluppo della 
+Cuperativa sul sito [linkcap 'cup.invido.it', 'https://cup.invido.it/#/info '] fosse un atto dovuto. 
+Questo piccolo centro ricreativo, che è stato un punto di ritrovo per diverse generazioni, 
+ha lasciato molti piacevoli ricordi. Più che il gioco delle carte, è stata questa voglia di 
+spensieratezza il filo conduttore del sito. 
+Una spensieratezza ormai solo virtuale. </p>
+
+<p>Il codice completo della Cuperativa si trova su 
+[linkcap 'github.com/aaaasmile/cupservice', 'https://github.com/aaaasmile/cupservice']. 
+Al momento è implementata solo la briscola in modalità simulazione. 
+Ma tutti gli altri giochi connessi, come Mariazza, Scoperta e Briscolone sono molto semplici 
+da aggiungere. Per la possibilità di giocare in rete, invece, ci vorrà del tempo in quanto 
+la parte del server è da scrivere completamente. Non sarebbe male anche la possibilità di giocare 
+sullo smartphone. Vedremo.  </p>
+
+<p>Per chi volesse lasciare un parere o un commento sulla Cuperativa, può usare la mia 
+mail: <i>6colpiunbucosolo chiocciola gmx.net</i>. 
+Oppure il sito  [linkcap 'github.com/aaaasmile/cupservice', 'https://github.com/aaaasmile/cupservice'].
+</p>
+
+[figstack 
+  'foto02.jpg', 'In partita a Briscola'
+]
+</section>    
