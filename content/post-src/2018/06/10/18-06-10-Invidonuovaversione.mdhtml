@@ -1,0 +1,33 @@
+title: Invido nuova versione
+datetime: 2018-06-10
+id: 18-06-10-Invidonuovaversione-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Invido: finalmente la nuova versione 2.0.1</h1>
+    <time>10 Giugno 2018</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>Il programma si può scaricare da questo link: [linknext 'Invido 2.0.1', '/pages/invido'].</p>
+
+  <p>Finalmente la nuova versione del gioco dell'Invido che ora supporta la funzione <i>"Vado Dentro"</i>.
+    Basta usare il tasto destro sulla carta con la quale si vuole andare dentro. Ora il gioco dell'Invido è completo in
+    tutte le funzionalità ed è
+    ancora più forte. </p>
+  <p> Per la nuova versione ho fatto una revisione del [linkcap 'codice sorgente',
+    'https://github.com/aaaasmile/invidocpp'],
+    aggiornando la libreria SDL alla versione 2.0.</p>
+  <p> Sempre col tasto destro è possibile invitare il computer a chiamare di più, oppure dargli del <i>'bortolo'</i>.
+    Se poi questo invito viene accettato è tutto da provare.
+    Maggiori informazioni sul progetto del gioco dell'Invido
+    si trovano su [linknext 'Invido 2.0.1', '/pages/invido'].</p>
+  <p>Ho cambiato anche la musica in sottofondo pesscando una tra le più belle performance 
+    registrate dalla leggenda bredese <b>Wolmer Beltrami</b>.
+  </p>
+  [figstack 
+    'foto02.png', 'tasto destro'
+  ]
+</section>
