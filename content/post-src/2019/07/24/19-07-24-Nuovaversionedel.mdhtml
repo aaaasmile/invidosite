@@ -1,0 +1,23 @@
+title: Nuova versione del
+datetime: 2019-07-24
+id: 19-07-24-Nuovaversionedel-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Nuova versione del Tressette: 2.1.0</h1>
+    <time>24 Luglio 2019</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>Stimolato dalla segnalazione di qualche piccola imprecisione del programma Tressette, ho deciso di aggiornarlo
+    passando alla versione SDL 2.0 e visual studio 2015.</p>
+  <p> L'ultima versione che avevo creato, la 0.7.5, usava Visual
+    Studio 2009 sotto windows xp e la libreria sdl 1.0. Una costellazione che richiedeva uno sviluppo in una Virtual
+    Machine con un sistema operativo come Xp molto vintage.</p>
+
+  <p>Non ho corretto nessun bug, ho solo attualizzato il progetto e spostato i codici sorgenti su
+    [linkcap 'github', 'https://github.com/aaaasmile/tressettecpp'] mentre il sito di riferimento per il download rimane
+    [linknext 'tressette', '/pages/tressette']. </p>
+</section>
