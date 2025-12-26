@@ -1,0 +1,23 @@
+title: Tressette
+datetime: 2017-09-02
+id: 17-09-02-Tressette-PS
+tags:
+---
+<header>
+  <div>
+    <h1>Tressette versione 0.7.5</h1>
+    <time>2 Settembre 2017</time>
+  </div>
+</header>
+<section>
+  <p>Dopo aver settato una Virtual Machine con il mitico Windows XP, ho ritrovato il feeling per creare una nuova
+    versione del programma
+    [linknext 'Tressette', '/pages/tressette'], che sotto windows 10 non riusciva a salvare
+    le opzioni cambiate dall'utente. È stata anche l'occasione per migliorarne anche la grafica. La prima versione è
+    stata dodici anni fa,
+    ma il programma ha sempre funzionato in tutti i nuovi sistemi operativi che sono seguiti.</p>
+  <p>Solo lo sviluppo del
+    programma è diventato via via sempre
+    più difficoltoso, ma ripristinando Windows Xp e Visual Studio 2008 la compilazione dei sorgenti non è stata più un
+    problema. </p>
+</section>
