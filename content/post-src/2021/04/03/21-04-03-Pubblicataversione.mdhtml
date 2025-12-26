@@ -1,0 +1,42 @@
+title: Pubblicata versione
+datetime: 2021-04-03
+id: 21-04-03-Pubblicataversione-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Pubblicata versione 1.3.11 di CuperativaSoloRuby</h1>
+    <time>3 Aprile 2021</time>
+  </div>
+  <img src="foto01.jpg" />
+</header>
+<section>
+  <p>Lo sviluppo del programma CuperativaSoloRuby era ormai inattivo da un po' di tempo ed alcuni utenti mi hanno
+    segnalato dei problemi di installazione o di gioco nello Spazzino.</p>
+  <p>Interessante è che queste informazioni mi siano arrivate dopo che ho pubblicato
+    [linkcap 'cup.invido.it', 'https://cup.invido.it'], il quale però contiene, per ora, solo il gioco della Briscola.
+    Così per giocare a Spazzino o Mariasa non rimane altro che installare <b>CuperativaSoloRuby</b> per windows.</p>
+
+  <p> CuperativaSoloRuby si trova su questo
+    [linknext 'link', '/pages/cuperativa'].
+    La nuova versione contiene solo delle correzioni.
+    Per quanto riguarda lo sviluppo, il codice si trova su:
+    [linkcap 'github.com/aaaasmile/CuperativaSoloRuby', 'https://github.com/aaaasmile/CuperativaSoloRuby'].
+    Il programma utilizza Ruby 1.8.6. e foxgui con il suo binding FxRuby per la parte grafica.
+    Tecnologie abbastanza datate ma che danno un tocco vintage all'applicazione.
+    E funziona perfettamente anche sul mio nuovissimo Windows10.</p>
+
+  <p>Per quanto riguarda, invece, la nuova [linkcap 'cup.invido.it', 'https://cup.invido.it']
+    direi che l'approccio è molto diverso.
+    Applicazione online che però può funzionare benissimo offline. Nei ritagli di tempo sto lavorando all'algoritmo
+    della briscola scoperta, che credevo più semplice.
+  <p>I prossimi giochi quindi saranno:</p>
+  <ul>
+    <li>Briscola Scoperta</li>
+    <li>Mariazza</li>
+    <li>Spazzino</li>
+  </ul>
+
+  <p>Il progetto si può seguire, e perché no anche contribuire,
+    su github [linkcap 'github.com/aaaasmile/cupservice', 'https://github.com/aaaasmile/cupservice/tree/scuperta']. </p>
+</section>
