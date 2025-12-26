@@ -1,0 +1,27 @@
+title: Vienna IOL Vintage
+datetime: 2018-12-28
+id: 18-12-28-ViennaIOLVintage-PS
+tags: Vienna IOL
+---
+<header class="withimg">
+  <div>
+    <h1>Vienna IOL Vintage</h1>
+    <time>28 Dicembre 2018</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>In questa fase, dove mi diverto a programmare applicazioni da mettere sul sito <i>invido.it</i>,
+    mi sono imbattuto nella chiusura della sezione <i>Italians Online di Vienna</i>. 
+    Questo era un forum usato da diversi italiani residenti a
+    Vienna per scambiarsi messaggi e organizzare eventi nella loro nuova città.</p>
+
+  <p>Prima della chiusura, però, sono riuscito a salvare tutti i post della sezione di Vienna (vedi
+    [linkcap 'github iol-importer', 'https://github.com/aaaasmile/iol-importer']).
+    Ora, dopo aver visto un video molto interessante sul database sqlite e la ricerca libera su tutti i campi, 
+    ho creato una app (vedi [linkcap 'github iolvienna', 'https://github.com/aaaasmile/iolvienna']) 
+    con la quale è possibile navigare
+    attraverso più di 20 000 posts, scritti in più di dieci anni di attività della sezione di Vienna.</p>
+
+  <p>La pubblicazione si trova su invido.it al link: [linkcap 'vienna.invido.it', 'https://vienna.invido.it/']. </p>
+</section>
