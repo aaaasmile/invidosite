@@ -1,7 +1,8 @@
-title: briscola
+title: Briscola
 datetime: 2025-12-18
 id: briscola-PG
 comments: no
+description: Programma per giocare a briscola nel browser e download della versione Windows
 ---
 <header>
   <h1>Briscola</h1>

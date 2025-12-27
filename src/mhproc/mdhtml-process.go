@@ -162,11 +162,17 @@ func (mp *MdHtmlProcess) htmlFromTemplate(lines []string) error {
 	}
 	//fmt.Println("*** lines ", strings.Join(linesNoCr, ","))
 	CtxFirst := struct {
-		Title string
-		Lines []string
+		Title       string
+		Description string
+		Lines       []string
 	}{
 		Title: mp.scrGramm.Title,
 		Lines: linesNoCr,
+	}
+	if vv, ok := mp.scrGramm.CustomData["description"]; ok {
+		CtxFirst.Description = vv
+	} else {
+		CtxFirst.Description = CtxFirst.Title
 	}
 
 	if err := tmplPage.ExecuteTemplate(&partFirst, "postbeg", CtxFirst); err != nil {

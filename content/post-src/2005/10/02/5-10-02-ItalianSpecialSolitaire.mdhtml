@@ -30,4 +30,5 @@ tags: solitario
     <li> Storia e descrizione del mazzo del Tarocco Piemontese (Domenico Starna).</li>
   </ul>
   <p>Il programma utilizza la libreria open source SDL. </p>
+  <p>Il programma si trova [linknext 'qui', '/pages/solitario']
 </section>

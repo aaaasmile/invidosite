@@ -1,7 +1,8 @@
-title: spazzino
+title: Gioco dello spazzino
 datetime: 2025-12-22
 id: spazzino-PG
 comments: no
+description: Le regole del gioco dello Spazzino
 ---
 <header>
   <h1>Spazzino</h1>

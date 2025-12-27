@@ -1,7 +1,8 @@
-title: solitario
+title: Gioco del solitario
 datetime: 2025-12-15
 id: solitario-PG
 comments: no
+description: Programma per giocare al Solitario nel browser, Android e download della versione Windows
 ---
 <header>
   <h1>Solitario</h1>
