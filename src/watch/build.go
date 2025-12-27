@@ -289,7 +289,15 @@ func (bb *Builder) buildFeed() error {
 	var partFirst bytes.Buffer
 	tmplPage := template.Must(template.New("FeedSrc").ParseFiles(templName))
 
-	if err := tmplPage.ExecuteTemplate(&partFirst, "feedbeg", bb.mapLinks.ListPost); err != nil {
+	ctx := struct {
+		ListPost []idl.PostItem
+		ListPage []idl.PageItem
+	}{
+		ListPost: bb.mapLinks.ListPost,
+		ListPage: bb.mapLinks.ListPage,
+	}
+
+	if err := tmplPage.ExecuteTemplate(&partFirst, "feedbeg", ctx); err != nil {
 		return err
 	}
 	rootStaticDir := fmt.Sprintf("static\\%s\\", conf.Current.StaticSiteDir)

@@ -7,10 +7,17 @@
     <link>https://invido.it</link>
     <copyright>All rights reserved</copyright>
    
-    {{- range .}}
+    {{- range .ListPost}}
     <item>
         <title>{{.Title}}</title>
         <description>{{.Abstract}}</description>
+        <link>https://invido.it{{.Uri}}</link>
+        <pubDate>{{.DateTimeRfC822}}</pubDate>
+    </item>
+    {{- end}}
+    {{- range .ListPage}}
+    <item>
+        <title>{{.Title}}</title>
         <link>https://invido.it{{.Uri}}</link>
         <pubDate>{{.DateTimeRfC822}}</pubDate>
     </item>

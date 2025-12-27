@@ -241,7 +241,7 @@ func (bb *Builder) scanPageMdHtml(srcDir string) error {
 	}
 
 	for _, item := range bb.mdsFn {
-		if err := bb.scanPageItem(item, tx); err != nil {
+		if err := bb.scanPageItem(srcDir, item, tx); err != nil {
 			return err
 		}
 	}
@@ -253,7 +253,7 @@ func (bb *Builder) scanPageMdHtml(srcDir string) error {
 	return nil
 }
 
-func (bb *Builder) scanPageItem(mdHtmlFname string, tx *sql.Tx) error {
+func (bb *Builder) scanPageItem(srcDir string, mdHtmlFname string, tx *sql.Tx) error {
 	if bb.debug {
 		log.Println("[scanPageItem] file is ", mdHtmlFname)
 	}
@@ -282,9 +282,28 @@ func (bb *Builder) scanPageItem(mdHtmlFname string, tx *sql.Tx) error {
 		if err != nil {
 			return err
 		}
+		arr_src := strings.Split(srcDir, "/")
+		equal_ix := 0
+		for ini_ix, pp := range arr {
+			if len(arr_src) <= ini_ix {
+				break
+			}
+			if arr_src[ini_ix] == pp {
+				equal_ix += 1
+				continue
+			} else {
+				break
+			}
+		}
 		last_ix := len(arr) - 1
-		remain := arr[last_ix]
-		pageItem.Uri = fmt.Sprintf("/%s/%s/#", subDir, remain)
+		if arr[equal_ix] == "tags" {
+			last_ix = len(arr)
+			remain := strings.Join(arr[equal_ix:last_ix], "/")
+			pageItem.Uri = fmt.Sprintf("/%s/#", remain)
+		} else {
+			remain := strings.Join(arr[equal_ix:last_ix], "/")
+			pageItem.Uri = fmt.Sprintf("/%s/%s/#", subDir, remain)
+		}
 	}
 	if _, ok := bb.mapLinks.MapPage[pageItem.PageId]; !ok {
 		err = bb.liteDB.InsertNewPage(tx, &pageItem)
