@@ -32,9 +32,9 @@ comments: no
     ]
   </p>
 
-  <h3 id="vintage">Versione Windows vintage</h3>
+  <h3 id="vintage">Briscola_Net: la versione Windows vintage</h3>
   <p><b>Briscola_Net</b> è uno dei primissimi giochi di carte che ho sviluppato in C++ e che poi ho abbandonato.
-    Il download della versione Windows si trova [linkcap 'qui', 'https://sourceforge.net/projects/briscola-net/files/latest/download'].</p>
+    Il download della versione Windows 2.0.0.3 si trova [linkcap 'qui', 'https://sourceforge.net/projects/briscola-net/files/latest/download'].</p>
   <p>In Windows 11 funziona ancora perfettamente come se l'era della New Economy non fosse mai finita.</p>
 
   <h3>Screenshots di Briscola_Net</h3>
