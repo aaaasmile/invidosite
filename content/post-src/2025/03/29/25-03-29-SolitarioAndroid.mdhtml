@@ -13,7 +13,7 @@ tags: solitario
 <section>
   <p>Ho pubblicato una versione del Solitario per Android.
     Si trova su:
-    [linkcap 'Solitario-2.3.1.apk', '/pages/solitario/#android'].
+    [linknext 'Solitario-2.3.1.apk', '/pages/solitario/#android'].
   </p>
   <p>Il file apk viene generato direttamente dal progretto <i>Solitario</i>, che utilizza la libreria libsdl.
   Esso utilizza il target debug, può essere installato su uno Smartphone Android senza problemi e 
