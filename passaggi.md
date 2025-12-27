@@ -199,6 +199,10 @@ non dover avere un server che gestisca il sito (nota che non ho previsto comment
 Se per caso devo ricreare il sito (links, pages e posts)
 
     .\invido-site.exe -rebuildall
+Nota che alla fine del processo è necessario lanciare anche 
+
+    .\invido-site.exe -all4sync
+per aggiornare i tags nel main.
 
 ## Creare una nuova page
 
