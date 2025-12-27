@@ -1,0 +1,40 @@
+title: Nuovo layout per Invido
+datetime: 2025-12-27
+id: 25-12-27-NuovolayoutperInvido-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Nuovo layout per Invido</h1>
+    <time>27 Dicembre 2025</time>
+  </div>
+  <img src="foto01.jpg" /> 
+</header>
+<section>
+  <p>Dopo molti anni ho deciso di cambiare il layout del sito dell'<i>Invido.it</i>. È stata una scelta  
+  un po' dolorosa in quanto l'aria vintage del sito, dallo stile fine anni novanta, non era così male 
+  ed era rimasta invariata per così tanti anni.</p>
+  <p>Ma dopo aver creato un generatore statico per il mio blog sulla corsa e dover ora inglobare nel sito 
+    nuove applicazioni web, gli strumenti che avevo a disposizione erano troppo datati ed inadeguati.
+  </p>
+  <p> Il sito dell'Invido l'ho generato usando [linkcap 'webgen', 'https://webgen.gettalong.org/'], 
+    un software nato nel 2004 per generare pagine web statiche (ultima release nel 2021). </p>
+  <p>Nel passato sono riuscito a manetenere il generatore <i>webgen</i> usando un mio  
+   [linkcap 'preprocessor', 'https://github.com/aaaasmile/vido-preproc'] che curava una parte del workflow.
+  Il sorgente del sito si trova su [linkcap 'Github', ''] ed è ormai archiviato.</p>
+
+  <p>
+    [figstack 
+      'foto03.jpg', 'Il layout che ha resistito per anni'
+    ]
+  </p>
+
+  <h3>Solitario nel browser</h3>  
+  <p>Per rendere meno doloroso il cambio del layout, ho inserito la nuovissima versione web del solitario,
+    giocabile senza nessuna installazione e direttamente nel browser. Funziona sia sullo smartphone che sul PC.
+  </p>
+  <p class="center">
+    [img_link_run 'foto02_320.jpg', '/web/solitario', 'Gioca nel Browser']
+  </p>
+
+</section>    
