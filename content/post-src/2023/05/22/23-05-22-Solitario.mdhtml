@@ -1,0 +1,43 @@
+title: Solitario
+datetime: 2023-05-22
+id: 23-05-22-Solitario-PS
+tags: solitario
+---
+<header class="withimg">
+  <div>
+    <h1>Solitario 2.0.1</h1>
+    <time>22 Maggio 2023</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>In quest'ultimo periodo mi sono dedicato alla riscrittura del programma Solitario.
+    Precedentemente ne avevo programmato due versioni differenti.
+    Entrambe le versioni sono ora confluite in un unico programma denominato <i>Solitario</i>.
+    Il Solitario è il classico programma che si trova in Windows, ma il mio programma utilizza
+    le carte da briscola italiane di 40 carte. Un altro mazzo disponibile è il mazzo del Tarocco Piemontese
+    composto da 56 carte.</p>
+
+  <p>I sorgenti, che ho sviluppato sotto Windows con msys64,
+    si trovano su github al link [linkcap 'github.com/aaaasmile/Solitario', 'https://github.com/aaaasmile/Solitario'].
+  </p>
+
+  <p>Il setup per Windows si trova su [linknext 'Solitario', '/pages/solitario'].</p>
+
+  <p>Riscrivere il programma dopo 18 anni dalla sua prima versione mi ha molto divertito,
+    specialmente la parte in C. Mi ha sorpreso lo sviluppo del Solitario in Windows utilizzando dei tools
+    che nel passato erano disponibili solo sui sistemi Linux (gcc, make, CMake, ninja e compagnia). </p>
+
+  <p>Ho aggiunto anche un punteggio che premia i più veloci nel risolvere il solitario.
+    Un più alto punteggio teorico può essere raggiunto usando il mazzo da 56 carte.
+    Però, con il mazzo da 40 carte si raggiunge la soluzione più velocemente.
+    Il tempo è un fattore importante che ha una grande influenza sul punteggio finale. </p>
+
+  <p>Un punteggio superiore ai 6000 punti merita sicuramente uno screenshot da inviare al sito
+    (vedi [linknext 'Autore', '/pages/autore']).
+    Buon divertimento! </p>
+
+  [figstack 
+    'foto02.jpg', 'High Score personale'
+  ]
+</section>
