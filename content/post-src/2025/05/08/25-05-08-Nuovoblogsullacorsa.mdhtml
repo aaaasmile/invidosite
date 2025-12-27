@@ -1,0 +1,64 @@
+title: Nuovo blog sulla corsa
+datetime: 2025-05-08
+id: 25-05-08-Nuovoblogsullacorsa-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>Nuovo blog sulla corsa: igorrun.invido.it</h1>
+    <time>8 Maggio 2025</time>
+  </div>
+  <img src="foto01.jpg" />
+</header>
+<section>
+  <p>Ho spostato il mio blog sulla corsa su [linkcap 'igorrun.invido.it', 'https://igorrun.invido.it']
+    in quanto il sito <i>Stesosopra</i> su Blogspot non mi entusiasmava più.</p>
+  <p>
+    Mi ha sempre affascinato l'idea di avere il mio blog sulla corsa sul server dell'invido.it, ma
+    il dover programmare tutto il sito mi ha sempre frenato in quanto, per un blog
+    personale su Blogspot, non bisogna programmare nulla.</p>
+
+  <p>All'inizio sono partito con il generatore statico [linkcap 'Zine', 'https://zine-ssg.io/'],
+    tipo quello del sito di Zig, tanto
+    per provare un nuovo linguaggio di programmazione. Però qui mi sono scontrato subito con
+    i suoi limiti e, dopo un paio di tentativi, ho visto che non riuscivo a generare quello
+    che avevo in mente, anche se il design mi è piaciuto.</p>
+
+  <p>Così mi sono detto: <i>Sarà così difficile creare delle pagine html con un po' di
+      metadata attorno?</i> Ho guardato il formato <i>md</i> e ben presto mi sono accorto delle sue limitazioni.
+    Così ho pensato di usare html con l'aggiunta di macro mantenendo la sezione metadata
+    come viene usata nel file md. Ne è uscito un nuovo formato: <i>mdhtml</i>. Ecco l'esempio per questo post:</p>
+
+  [figstack
+  'foto02.jpg', 'file mdhtml'
+  ]
+
+  <p>Scrivere un parser in golang per questo nuovo tipo di formato è stato abbastanza semplice, così ho
+    continuato con il mio generatore statico, che non deve creare tutti i siti possibili, ma solo
+    il mio Blog. Vale a dire testo, galleria di immagini, links ed includere video da youtube. </p>
+
+  <p>Non sono proprio delle funzionalità immediate da programmare, ma il semantic web,
+    nonché le nuove funzioni di css, mi hanno stimolato ad andare avanti.
+    La parte più ostica è stata quella che riguarda i commenti. Un generatore statico, di solito,
+    non supporta commenti se non usando servizi esterni. Se devo usare un servizio esterno allora
+    tanto vale lasciare il sito su Blogspot. Però usando htmx ed un semplice database sqlite sono
+    riuscito ad avere un servizio di commenti molto semplice che fa al caso mio.</p>
+
+  <p> Per quanto riguarda la parte di edit del testo uso Visual Code con CSpell che funziona
+    molto bene anche per l'Italiano. Il risultato è un sito per la maggior parte statico con la
+    parte dinamica solo per quanto riguarda i commenti.</p>
+
+  <p> L'unico scoglio sembra essere l'indicizzazione
+    su Google, che sembra rimanere ferma al palo senza nessuna giustificazione. 
+    Un problema di qualità dei miei testi? I miei contenuti su Blogspot sono indicizzati
+    senza problemi e visto che su [linkcap 'igorrun.invido.it', 'https://igorrun.invido.it'] 
+    sono per la maggiorparte gli stessi, non mi sembra che sia questa la ragione. 
+    Magari Google non è così propenso ad avere
+    dei contenuti uguali su un altro sito, però visto che le pagine le ho scritte tutte io, comprese quelle nuove,
+    non mi sembra molto gentile. Nel frattempo ho cancellato completamente il mio account su Blogspot, così che 
+    anche la scusa dei contenuti duplicati dovrebbe decadere.</p>
+
+  <p>Tutti i sorgenti del mio nuovo blog li trovate su
+    [linkcap 'github.com/aaaasmile/blog-corsa', 'https://github.com/aaaasmile/blog-corsa'].
+  </p>
+</section>
