@@ -1,0 +1,29 @@
+title: Solitario Android
+datetime: 2025-03-29
+id: 25-03-29-SolitarioAndroid-PS
+tags: solitario
+---
+<header class="withimg">
+  <div>
+    <h1>Solitario 2.3.1 versione Android</h1>
+    <time>29 Marzo 2025</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>Ho pubblicato una versione del Solitario per Android.
+    Si trova su:
+    [linkcap 'Solitario-2.3.1.apk', '/pages/solitario/#android'].
+  </p>
+  <p>Il file apk viene generato direttamente dal progretto <i>Solitario</i>, che utilizza la libreria libsdl.
+  Esso utilizza il target debug, può essere installato su uno Smartphone Android senza problemi e 
+  senza doverlo scaricare da Google Store.</p>
+
+  <p>
+    I sorgenti li potete trovare su 
+    [linkcap 'github', 'https://github.com/aaaasmile/AndroSolitario/releases/tag/v2.3.1']
+  </p>
+  [figstack 
+    'foto02.png', 'Inizio'
+  ]
+</section>

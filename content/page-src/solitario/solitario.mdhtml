@@ -25,8 +25,8 @@ comments: no
   <h3>Versione Windows</h3>
   <p>La versione Windows 2.0.1 la potete scaricare da questo link: [linkcap 'Versione Windows', 'https://sourceforge.net/projects/solitarioita/files/latest/download']
 
-  <h3>Versione Android</h3>  
-  <p>La versione Android (file apk) la potete scaricare da questo link: 
+  <h3 id="android">Versione Android</h3>  
+  <p>La versione 2.3.1 Android (file apk) la potete scaricare da questo link: 
     [linkcap 'Versione Android', 'https://sourceforge.net/projects/solitarioita/files/Android/Solitario-2.3.1.apk/download']
 
   <h3>Codici sorgenti</h3>
