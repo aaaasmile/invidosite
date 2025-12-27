@@ -1,0 +1,51 @@
+title: TTGO ed emulatore NES
+datetime: 2022-02-19
+id: 22-02-19-TTGOedemulatoreNES-PS
+tags:
+---
+<header class="withimg">
+  <div>
+    <h1>TTGO ed emulatore NES</h1>
+    <time>19 Febbraio 2022</time>
+  </div>
+  <img src="foto01.png" />
+</header>
+<section>
+  <p>Una delle piacevoli novità di quest'ultimo periodo è provare a giocare con dei microcontroller che hanno
+    ormai una capacità di calcolo molto vicina a quelli dei personal computer di qualche decina d'anni fa.
+    Se però un computer Intel 486, il mio primo personal computer, trentasette anni fa costava
+    come un mese e mezzo di uno stipendio di un operaio, ora un microcontroller costa quanto una birra media.</p>
+  <p>Mancano un po' di periferie, ma la sostanza non cambia: i prezzi, a parità d calcolo, sono molto bassi.
+    Tra i diversi dispositivi che ho, il TTGO è uno di quelli più divertenti. È un microcontroller ESP32
+    con integrato un mini display e porta USB per la programmazione. Penso di averlo pagato intorno ai 14 euro,
+    ma i prezzi sono abbastanza instabili. Con un po' di voglia di provare diversi software e giocare con una
+    basetta sono riuscito a far funzionare un emulatore NES con qualche classico gioco tipo pacman, invaders
+    e altri ancora. </p>
+
+  <p>Il codice che ho adattato dalla repository channel2007 di riferimento lo trovate su
+    [linkcap 'github.com/aaaasmile/TTGO-Nes-Cup', 'https://github.com/aaaasmile/TTGO-Nes-Cup'].</p>
+  <p> Per quanto riguarda i componenti usati essi sono:
+  <ul>
+    <li> TTGO T-Display ESP32 microcontroller</li>
+
+    <li> PAM8302A amplificatore audio</li>
+
+    <li> 5 resistenze da 10K</li>
+
+    <li> 8 pulsanti</li>
+
+    <li> 1 altoparlante 0.5W</li>
+  </ul>
+  </p>
+  <p>
+    I collegamenti sono visibili nella figura qui sotto.
+    Sono sei porte GPIO per i pulsanti e 2 per l'audio.
+    [figstack
+    'foto02.jpg', 'Collegamenti'
+    ]
+  </p>
+
+  <p>Qualche nota che ho scritto durante lo sviluppo si trova
+    [linkcap 'qui', 'https://github.com/aaaasmile/TTGO-Nes-Cup/blob/main/passaggi.md']
+  </p>
+</section>

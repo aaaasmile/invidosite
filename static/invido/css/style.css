@@ -91,6 +91,8 @@ body {
   background-color: #111;
   color: #ccc;
   display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
   flex-direction: column;
   padding-bottom: 20px;
   scrollbar-gutter: stable;
@@ -689,7 +691,6 @@ p.center {
   margin: 20px 30px 20px 0px;
   /* Space around it */
   width: 180px;
-  background: #111;
   border: 1px solid #747070;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -834,4 +835,8 @@ p.center {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+footer.extnav{
+  background-color: #222;
 }
