@@ -770,36 +770,6 @@ p.center {
 }
 
 
-
-  /* Optional: Show a small menu button instead */
-  .mobile-menu-toggle {
-    display: block;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background: #333;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    z-index: 1000;
-    cursor: pointer;
-  }
-
-  /* When mobile menu is toggled open */
-  .scroll-menu.mobile-visible {
-    display: block;
-    position: fixed;
-    top: 50px;
-    left: 10px;
-    right: 10px;
-    width: auto;
-    z-index: 999;
-    background: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-}
-
 /* ===== OPTIONAL: Floating header alternative ===== */
 /* If you want the menu to be at the very top in its own container */
 .menu-container {
