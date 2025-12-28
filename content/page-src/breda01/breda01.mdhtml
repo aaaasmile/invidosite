@@ -34,16 +34,17 @@ comments: no
     al di qua della Torre d’Oglio.</p>
 
   <p class="center">
-    <figure class="small">
-      <img src="foto01_320.jpg">
-      <figcaption>
-        <i>Longitudine 10° 31’ 52" 32</i>
-      </figcaption>
-      <figcaption>
-        <i>Latitudine 45° 0’ 41" 76'</i>
-      </figcaption>
-    </figure>
+  <figure class="small">
+    <img src="foto01_320.jpg">
+    <figcaption>
+      <i>Longitudine 10° 31’ 52" 32</i>
+    </figcaption>
+    <figcaption>
+      <i>Latitudine 45° 0’ 41" 76'</i>
+    </figcaption>
+  </figure>
   </p>
-
-  <a href="\pages\breda_origini">Origini &gt;</a>
+  <p>
+    <a href="\pages\breda_origini">Origini &gt;</a>
+  </p>
 </section>

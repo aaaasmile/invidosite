@@ -769,12 +769,7 @@ p.center {
   }
 }
 
-/* For mobile phones - menu disappears */
-@media (max-width: 480px) {
-  .scroll-menu {
-    display: none;
-    /* Hide completely on small screens */
-  }
+
 
   /* Optional: Show a small menu button instead */
   .mobile-menu-toggle {
