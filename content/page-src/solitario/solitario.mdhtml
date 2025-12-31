@@ -11,46 +11,54 @@ description: Programma per giocare al Solitario nel browser, Android e download 
   <p>Il solitario che ho creato è il classico Klondike, che ho implementato
     usando le quaranta carte da briscola e le cinquantasei del Tarocco Piemontese.
     Le regole del gioco le potete trovare su
-    [linkcap 'wikipedia', 'https://it.wikipedia.org/wiki/Klondike_(solitario)']. 
-    Credo che questo sia stato il mio primo gioco di carte che abbia implementato in C++ nel lontano 2001, 
+    [linkcap 'wikipedia', 'https://it.wikipedia.org/wiki/Klondike_(solitario)'].
+    Credo che questo sia stato il mio primo gioco di carte che abbia implementato in C++ nel lontano 2001,
     mentre nel 2025 l'ho aggiornato aggiungendo anche la versione Web in Wasm/Escripten.</p>
   <p>Il Solitario è disponibile in diverse versioni: <i>Web, Windows, WSL e Android</i>.</p>
 
   <h3>Versione Web</h3>
   <p>La versione Web (nessuna installazione necessaria) è pronta per giocare
-    su questo [linkcap 'link','/web/solitario'].
+    su questo [linkcap 'link','/web/solitario'].</p>
+  <p>
+  <ul>
+    <li>Pubblicata il: 31.12.2025</li>
+    <li>Target: Wasm</li>
+    <li>Versione: 3.0.8</li>
+  </ul>
+  </p>
   <p class="center">
     [img_link_run 'foto01_320.jpg', '/web/solitario', 'RUN nel Browser']
   </p>
 
   <h3>Versione Windows</h3>
-  <p>La versione Windows 3.0.8 la potete scaricare da questo link: 
+  <p>La versione Windows 3.0.8 la potete scaricare da questo link:
     [linkcap 'Ultima Versione Windows', 'https://sourceforge.net/projects/solitarioita/files/latest/download']
   <ul>
     <li>Data: 31.12.2025</li>
     <li>Dimensione: 22 MB</li>
     <li>Target: Windows 11, MySys2</li>
-  </ul>  
+  </ul>
 
-  <h3 id="android">Versione Android</h3>  
-  <p>La versione 2.3.1 Android (file apk) la potete scaricare da questo link: 
-    [linkcap 'Versione Android', 'https://sourceforge.net/projects/solitarioita/files/Android/Solitario-2.3.1.apk/download']
+  <h3 id="android">Versione Android</h3>
+  <p>La versione 2.3.1 Android (file apk) la potete scaricare da questo link:
+    [linkcap 'Versione Android',
+    'https://sourceforge.net/projects/solitarioita/files/Android/Solitario-2.3.1.apk/download']
 
   <h3>Codici sorgenti</h3>
-  <p>I sorgenti del programma per tutte le versioni li potete trovare su 
+  <p>I sorgenti del programma per tutte le versioni li potete trovare su
     [linkcap 'GitHub', 'https://github.com/aaaasmile/AndroSolitario'].</p>
-  <p>Il progetto utilizza gli stessi sorgenti per i vari target (Windows, Escripten, WSL e Android). 
-    La base di tutte le versioni è la libreria C libSdl versione 3, mentre i miei sorgenti sono in C++. 
+  <p>Il progetto utilizza gli stessi sorgenti per i vari target (Windows, Escripten, WSL e Android).
+    La base di tutte le versioni è la libreria C libSdl versione 3, mentre i miei sorgenti sono in C++.
   </p>
   <p>Il target WSL/Linux è disponibile solo in codice sorgente.</p>
 
-  <h3>Screenshots</h3>  
+  <h3>Screenshots</h3>
   <p class="center">
     [figstack
-        'foto01.jpg', 'Versione Web Wasm',
-        'foto02.jpg', 'Tarocco Piemontese',
-        'foto03.jpg', 'Carte Piacentine',
-        'photo2.png', 'Versione Android'
+    'foto01.jpg', 'Versione Web Wasm',
+    'foto02.jpg', 'Tarocco Piemontese',
+    'foto03.jpg', 'Carte Piacentine',
+    'photo2.png', 'Versione Android'
     ]
   </p>
 </section>
