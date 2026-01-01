@@ -30,6 +30,11 @@ description: Programma per giocare al Solitario nel browser, Android e download 
     [img_link_run 'foto01_320.jpg', '/web/solitario', 'RUN nel Browser']
   </p>
 
+  <figure>
+    [youtube 'KtHomVgc7uk']
+    <figcaption>Giocare al Solitario nel browser</figcaption>
+  </figure>
+
   <h3>Versione Windows</h3>
   <p>La versione Windows 3.0.8 la potete scaricare da questo link:
     [linkcap 'Ultima Versione Windows', 'https://sourceforge.net/projects/solitarioita/files/latest/download']
