@@ -805,3 +805,8 @@ p.center {
 footer.extnav{
   background-color: #222;
 }
+
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
