@@ -54,7 +54,7 @@ func main() {
 	var buildpages = flag.Bool("buildpages", false, "create pages (all)")
 	var buildonepage = flag.Bool("buildonepage", false, "build one page")
 	var buildmain = flag.Bool("buildmain", false, "create main index.html")
-	var buildfeed = flag.Bool("buildfeed", false, "create feed.xml")
+	var buildfeed = flag.Bool("buildfeed", false, "create feed.xml and sitemap.xml")
 	var buildtags = flag.Bool("buildtags", false, "create tags html")
 	var force = flag.Bool("force", false, "force flag")
 	var debug = flag.Bool("debug", false, "debug flag")

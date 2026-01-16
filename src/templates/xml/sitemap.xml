@@ -1,0 +1,21 @@
+{{- define "sitebeg" -}}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://invido.it/</loc>
+        <lastmod>{{.InvidoDateTimeRfC822}}</lastmod>
+    </url>
+{{- range .ListPage}}
+    <url>
+        <loc>https://invido.it{{.Uri}}</loc>
+        <lastmod>{{.DateTimeRfC822}}</lastmod>
+    </url>
+{{- end }}
+{{- range .ListPost}}
+    <url>
+        <loc>https://invido.it{{.Uri}}</loc>
+        <lastmod>{{.DateTimeRfC822}}</lastmod>
+    </url>
+{{- end }}
+</urlset>
+{{- end -}}

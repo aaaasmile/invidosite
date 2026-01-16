@@ -115,6 +115,9 @@ func BuildFeed() error {
 	if err := bb.buildFeed(); err != nil {
 		return err
 	}
+	if err := bb.buildSiteMap(); err != nil {
+		return err
+	}
 	log.Println("[BuildFeed] completed, elapsed time ", time.Since(start))
 	return nil
 }
@@ -282,6 +285,50 @@ func (bb *Builder) createTagMdhtml(tag_item *idl.TagItem, pageItem *idl.PageItem
 	return nil
 }
 
+func (bb *Builder) buildSiteMap() error {
+	log.Println("[buildSiteMap] start ")
+	templDir := "src/templates/xml"
+	templName := path.Join(templDir, "sitemap.xml")
+	var partFirst bytes.Buffer
+	tmplPage := template.Must(template.New("FeedSrc").ParseFiles(templName))
+
+	ctx := struct {
+		InvidoDateTimeRfC822 string
+		ListPost             []idl.PostItem
+		ListPage             []idl.PageItem
+	}{
+		InvidoDateTimeRfC822: time.Now().UTC().Format("2006-01-02"),
+	}
+	for _, v := range bb.mapLinks.ListPage {
+		v.Uri = strings.ReplaceAll(v.Uri, "/#", "/")
+		v.DateTimeRfC822 = v.DateTime.Format("2006-01-02")
+		ctx.ListPage = append(ctx.ListPage, v)
+	}
+	for _, v := range bb.mapLinks.ListPost {
+		v.Uri = strings.ReplaceAll(v.Uri, "/#", "/")
+		v.DateTimeRfC822 = v.DateTime.Format("2006-01-02")
+		ctx.ListPost = append(ctx.ListPost, v)
+	}
+
+	if err := tmplPage.ExecuteTemplate(&partFirst, "sitebeg", ctx); err != nil {
+		return err
+	}
+	rootStaticDir := fmt.Sprintf("static\\%s\\", conf.Current.StaticSiteDir)
+	fname := path.Join(rootStaticDir, "sitemap.xml")
+	f, err := os.Create(fname)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+
+	if _, err := f.Write(partFirst.Bytes()); err != nil {
+		return err
+	}
+	log.Println("[buildSiteMap] file created ", fname)
+
+	return nil
+}
+
 func (bb *Builder) buildFeed() error {
 	log.Println("[rebuildFeed] start ")
 	templDir := "src/templates/xml"
@@ -301,7 +348,7 @@ func (bb *Builder) buildFeed() error {
 		return err
 	}
 	rootStaticDir := fmt.Sprintf("static\\%s\\", conf.Current.StaticSiteDir)
-	fname := path.Join(rootStaticDir, "feed")
+	fname := path.Join(rootStaticDir, "feed.xml")
 	f, err := os.Create(fname)
 	if err != nil {
 		return err
