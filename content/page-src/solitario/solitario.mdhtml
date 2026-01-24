@@ -2,7 +2,7 @@ title: Gioco del solitario
 datetime: 2025-12-15
 id: solitario-PG
 comments: no
-description: Programma per giocare al Solitario nel browser, Android e download della versione Windows
+description: Scopri le regole del gioco di carte Solitario, le varianti più comuni e come si gioca. Guida chiara e completa su Invido.it.
 ---
 <header>
   <h1>Solitario</h1>
@@ -10,8 +10,6 @@ description: Programma per giocare al Solitario nel browser, Android e download 
 <section>
   <p>Il solitario che ho creato è il classico Klondike, che ho implementato
     usando le quaranta carte da briscola e le cinquantasei del Tarocco Piemontese.
-    Le regole del gioco le potete trovare su
-    [linkcap 'wikipedia', 'https://it.wikipedia.org/wiki/Klondike_(solitario)'].
     Credo che questo sia stato il mio primo gioco di carte che abbia implementato in C++ nel lontano 2001,
     mentre nel 2025 l'ho aggiornato aggiungendo anche la versione Web in Wasm/Escripten.</p>
   <p>Il Solitario è disponibile in diverse versioni: <i>Web, Windows, WSL e Android</i>.</p>
@@ -37,7 +35,8 @@ description: Programma per giocare al Solitario nel browser, Android e download 
 
   <h3>Versione Windows</h3>
   <p>La versione Windows 3.0.8 la potete scaricare da questo link su itch.io:
-    [linkcap 'Ultima Versione Windows', 'https://aaaasmile.itch.io/solitario']
+    [linkcap 'Ultima Versione Windows', 'https://aaaasmile.itch.io/solitario']</p>
+  <p>Oppure su [linkcap 'sf.net', 'https://sourceforge.net/projects/solitarioita/files/latest/download']</p>
   <ul>
     <li>Data: 31.12.2025</li>
     <li>Dimensione: 22 MB</li>
