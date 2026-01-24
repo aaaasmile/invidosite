@@ -245,20 +245,26 @@ Questo è quello che esegue il flag -all4sync
 
     .\invido-site.exe -scancontent
 
-2) Creare i posts col feed xml
+2) Attualizzare i nuovi tags
+
+    .\invido-site.exe -buildtags
+
+3) Creare i posts
 
     .\invido-site.exe -buildposts
 
-3) Creare le pages che sono cambiate 
+4) Creare le pages che sono cambiate
 
     .\invido-site.exe -buildpages
 
-4) Creare la main page sempre
+5) Crea il feed e sitemap
+
+    .\invido-site.exe -buildfeed
+
+6) Creare la main page (archivio e main con -force)
 
     .\invido-site.exe -buildmain
 
-
-In futuro, con la funzione "cerca", il sync del db con i dati della ricerca probabilmente sarà necessario.
 
 ### Archivio
 La pagina archivio situata su content/page-src/archivio non viene creata automaticamente 
@@ -295,4 +301,13 @@ Se il tag esiste già, nulla viene creato o modificato, tranne se la pagina ha u
 - con il comando:
      go run .\main.go  -buildonepage -name "briscola"
 non viene creato in modo corretto il file json di photos.json (function func (mp *MdHtmlProcess) parsedToHtml() error ). [DONE]
-- dopo il rebuildall i tag nel main non vengono aggiornati, occorre lanciare all4sync 
+- dopo il rebuildall i tag nel main non vengono aggiornati, occorre lanciare all4sync [DONE] 
+
+## Sitemap
+Il sitemap viene creato assieme al feed. Nota che il Feed non è la stessa cosa del sitemap.
+Il sitemap è per SEO, il Feed per coloro che voglio seguire gli aggiornamenti del sito web.
+Ho dei link (per esempio https://invido.it/web/solitario/) che vengono generati quando compilo
+il progetto AndroSolitario che però non viene creato da questo generatore statico (wasm segue delle altre regole
+e per il momento non riesco a combinare i due templates, sopratutto per il meta viewport).
+Allora ho introdotto il file verbatin_pages.json nel quale descrivo questo tipo di pagine che vanno poi
+a completare il sitemap.xml

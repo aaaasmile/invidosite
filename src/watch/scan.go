@@ -15,7 +15,7 @@ import (
 	"golang.org/x/net/html/atom"
 )
 
-func ScanContent(force bool, debug bool) error {
+func ScanContent(force bool, debug bool) (*Builder, error) {
 	start := time.Now()
 	post_src := conf.Current.ContentPost
 	page_src := conf.Current.ContentPage
@@ -24,23 +24,23 @@ func ScanContent(force bool, debug bool) error {
 		debug: debug,
 	}
 	if err := bb.InitDBData(); err != nil {
-		return err
+		return nil, err
 	}
 	if err := bb.scanPostsMdHtml(post_src); err != nil {
-		return err
+		return nil, err
 	}
 	if err := bb.scanPageMdHtml(page_src); err != nil {
-		return err
+		return nil, err
 	}
 	if err := bb.liteDB.UpdateNumOfPostInTags(); err != nil {
-		return err
+		return nil, err
 	}
 	var err error
 	if bb.mapLinks, err = CreateMapLinks(bb.liteDB); err != nil {
-		return err
+		return nil, err
 	}
 	log.Println("[ScanContent] completed, elapsed time ", time.Since(start))
-	return nil
+	return &bb, nil
 }
 
 func (bb *Builder) scanPostsMdHtml(srcDir string) error {

@@ -69,7 +69,7 @@ func main() {
 		log.Fatal("ERROR: ", err)
 	}
 	if *scancontent {
-		if err := watch.ScanContent(*force, *debug); err != nil {
+		if _, err := watch.ScanContent(*force, *debug); err != nil {
 			log.Fatal("ERROR: ", err)
 		}
 		return
@@ -110,7 +110,7 @@ func main() {
 			log.Fatal("ERROR: ", err)
 		}
 	} else if *buildfeed {
-		if err := watch.BuildFeed(); err != nil {
+		if err := watch.BuildFeedAndSitemap(); err != nil {
 			log.Fatal("ERROR: ", err)
 		}
 	} else if *buildtags {
@@ -118,7 +118,7 @@ func main() {
 			log.Fatal("ERROR: ", err)
 		}
 	} else if *all4sync {
-		if err := watch.PrepareForRsync(*debug); err != nil {
+		if err := watch.Alla4sync(*debug); err != nil {
 			log.Fatal("ERROR: ", err)
 		}
 	}

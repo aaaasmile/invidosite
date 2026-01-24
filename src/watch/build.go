@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/md5"
 	"database/sql"
+	"encoding/json"
 	"fmt"
 	"invido-site/src/conf"
 	"invido-site/src/db"
@@ -35,24 +36,17 @@ func RebuildAll() error {
 	post_src := conf.Current.ContentPost
 	page_src := conf.Current.ContentPage
 
-	bb := Builder{force: true}
-	if err := bb.InitDBData(); err != nil {
-		return err
-	}
-	if err := bb.scanPostsMdHtml(post_src); err != nil {
-		return err
-	}
-	if err := bb.scanPageMdHtml(page_src); err != nil {
-		return err
-	}
-	var err error
-	if bb.mapLinks, err = CreateMapLinks(bb.liteDB); err != nil {
+	bb, err := ScanContent(true, conf.Current.Debug)
+	if err != nil {
 		return err
 	}
 	if err := bb.buildPosts(post_src); err != nil {
 		return err
 	}
 	if err := bb.buildFeed(); err != nil {
+		return err
+	}
+	if err := bb.buildSiteMap(); err != nil {
 		return err
 	}
 	if err := bb.buildTags(); err != nil {
@@ -65,10 +59,10 @@ func RebuildAll() error {
 	return nil
 }
 
-func PrepareForRsync(debug bool) error {
+func Alla4sync(debug bool) error {
 	start := time.Now()
 	log.Println("[PrepareForRsync] start")
-	if err := ScanContent(false, debug); err != nil {
+	if _, err := ScanContent(false, debug); err != nil {
 		return err
 	}
 	if err := BuildTags(); err != nil {
@@ -78,6 +72,9 @@ func PrepareForRsync(debug bool) error {
 		return err
 	}
 	if err := BuildPages(false); err != nil {
+		return err
+	}
+	if err := BuildFeedAndSitemap(); err != nil {
 		return err
 	}
 	if err := BuildMain(); err != nil {
@@ -103,7 +100,7 @@ func BuildTags() error {
 	return nil
 }
 
-func BuildFeed() error {
+func BuildFeedAndSitemap() error {
 	start := time.Now()
 	log.Println("[BuildFeed] start")
 
@@ -135,9 +132,6 @@ func BuildPosts() error {
 	}
 
 	if err := bb.buildPosts(post_src); err != nil {
-		return err
-	}
-	if err := bb.buildFeed(); err != nil {
 		return err
 	}
 	log.Println("[BuildPosts] completed, elapsed time ", time.Since(start))
@@ -299,6 +293,21 @@ func (bb *Builder) buildSiteMap() error {
 	}{
 		InvidoDateTimeRfC822: time.Now().UTC().Format("2006-01-02"),
 	}
+
+	log.Println("[buildSiteMap] include verbatin pages")
+	body, err := os.ReadFile("verbatin_pages.json")
+	if err != nil {
+		return err
+	}
+	extraPages := struct {
+		ExtraPages []idl.PageItem
+	}{}
+	if err := json.Unmarshal(body, &extraPages); err != nil {
+		return err
+	}
+	log.Println("[buildSiteMap] verbatin pages size: ", len(extraPages.ExtraPages))
+	ctx.ListPage = append(ctx.ListPage, extraPages.ExtraPages...)
+
 	for _, v := range bb.mapLinks.ListPage {
 		v.Uri = strings.ReplaceAll(v.Uri, "/#", "/")
 		v.DateTimeRfC822 = v.DateTime.Format("2006-01-02")
